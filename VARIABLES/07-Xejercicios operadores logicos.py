@@ -42,3 +42,4 @@ print(resultado)
 resultado=not((a>b)and(b<c)) #la negacion de algo que es falso es true
 print(resultado)
 
+print("hola")
