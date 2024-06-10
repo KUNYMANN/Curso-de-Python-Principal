@@ -6,4 +6,3 @@ print(type(resultado))#aqui me esta diciendo que el resultado es un texto (str) 
 print(resultado + 22) #va arrojar un error porque no puede sumar un texto con un numero (string+number)
                       #solo puede concatenar un string con otro string 
 
-          print("hola")    
