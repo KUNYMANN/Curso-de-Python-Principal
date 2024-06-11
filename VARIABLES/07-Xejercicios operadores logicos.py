@@ -1,7 +1,8 @@
 # Prioridadde los operadores logicos
-# 1. not negacion invierte el resultado si es true pasa a ser salse y si es false pasa a ser true
-# 2. and "y ademas" (en AND para que el resultado sea verdadero todo debe resultar verdadero)
-# 3. or (en OR para que el resultado sea verdadero, basta con que uno sea verdadero)
+# 1. not lo contrario a lo evaluado, la negacion invierte el resultado si es true pasa a ser false y si es false pasa a ser true
+# 2. and componente de evaluacion entre una cosa "y" otra si sucede tal cosa,  va a pasar tal otra
+# (en AND para que el resultado sea verdadero todo debe resultar verdadero)
+# 3. or componente que evalua si es esto "o" esto (en OR para que el resultado sea verdadero, basta con que uno sea verdadero)
 
 # EJEMPLO
 # a=10
@@ -32,7 +33,7 @@ print(resultado)
 resultado=((a>b)or(b<c)) #un falso  y un verdadero en OR es true
 print(resultado)
 
-resultado=((a<b)or(b<c)) #des verdadero en OR es true
+resultado=((a<b)or(b<c)) #dos verdaderos en OR es true
 print(resultado)
 
 
