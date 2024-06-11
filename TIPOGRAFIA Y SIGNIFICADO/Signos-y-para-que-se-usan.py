@@ -1,12 +1,13 @@
+
 '' delimitan cadenas de textos
 "" delimitan cadenas de textos 
 Las 3 comillas te permiten hacer saltos de línea. Por ejemplo puedes imprimir información en pantalla:
 print("""Hola, esto es un párrafo 
 Esto es otro párrafo 
-Y esto es otro párrafo""") 
+Y este es otro párrafo""") 
 
-O simplemente hacer comentarios
-
+O simplemente hacer comentarios  (#)
+# esto es un cometario de una linea o si necesitas hacer comentarios de varias lineas se utiliza """ """
 """Esto es un comentario 
 usando varias líneas""" 
 '''tambien puede utilizarse tres comillas simples'''
@@ -34,4 +35,3 @@ si lo que pedimos internamente esta entre comillas va a arrojar un texto,
 en cambio si lo hacemos sin las commillas  va a arrojar un valor
 print(type()) me arroja que tipo o clase "class"" de valor es, sea ""int" numero entero, "float" numero con decimales o "str" texto
 
-and significaria "y esto"

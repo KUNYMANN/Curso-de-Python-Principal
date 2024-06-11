@@ -5,8 +5,15 @@
 #  verdadero=True # SI esta es una funcion llamada boolean
 #  falso=False # NO esta es una funcion llamada boolean
 
-print("hola mundo") # aqui print () seguido de comillas te imprime "el mensaje" en este caso "hola mundo"
+# TIPADO DINAMICO: es que a una variable se le puede asignar valores de diferentes tipos (number o string) en diferentes momentos del programa
+valor=10 
+print(valor)
+print(type(valor))
+valor="Kunymann" 
+print(valor)
+print(type(valor))
 #NUMEROS ENTEROS "INT"
+print("hola mundo") # aqui print () seguido de comillas te imprime "el mensaje" en este caso "hola mundo"
 numero=10
 print(numero) #aqui print() sin las comillas nos muestra "el valor" de la variable "10" y no el mensaje como en hola mundo
 print(type(numero))
