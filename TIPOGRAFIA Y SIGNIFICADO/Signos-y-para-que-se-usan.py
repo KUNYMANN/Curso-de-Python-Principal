@@ -12,7 +12,9 @@ O simplemente hacer comentarios  (#)
 usando varias líneas""" 
 '''tambien puede utilizarse tres comillas simples'''
 
-la coma , es un separador
+El  "=" es un simbolo de asignacion que difiere del == que se utiliza en los Operadores Aritmeticos
+la coma "," es un separador
+El ";" permite cambiar de linea
 
 Los paréntesis () en Python se utilizan para la creación de tuplas, que son colecciones no modificables de objetos. 
 También se utilizan para la definición de funciones así como para su invocación.

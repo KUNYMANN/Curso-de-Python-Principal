@@ -3,24 +3,24 @@
 # or..... disyuncion o suma logica
 # not.... negacion      
 
-#OPERADOR AND
-#operando1   operador   operando2   RESULTADO
-#True           and        True       TRUE  (solo se da si ambos operandos valores son verdaderos el resultado siempre sera true)
-#True           and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
-#False          and        True       FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
-#False          and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
+"""OPERADOR AND
+operando1   operador   operando2   RESULTADO
+True           and        True       TRUE  (solo se da si ambos operandos valores son verdaderos el resultado siempre sera true)
+True           and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
+False          and        True       FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
+False          and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
 
-#OPERADOR OR
-#operando  RESULTADO
-#True           or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
-#True           or        False      TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
-#False          or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
-#False          or        False      FALSE (cuando ambos operandos son falso el resultado siempre sera false)
+OPERADOR OR
+operando  RESULTADO
+True           or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
+True           or        False      TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
+False          or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
+False          or        False      FALSE (cuando ambos operandos son falso el resultado siempre sera false)
 
-#OPERADOR NOT
-#operando    RESULTADO
-#not(True)    FALSE  (UNA VERDAD NEGADA ES UNA MENTIRA) Ejemplo: #mentira (jesus sí existió)...FALSO porque se esta mintiendo sobre una verdad jesus existio
-#not(False)   TRUE   (UNA MENTIRA NEGADA ES UNA VERDAD) Ejemplo: #mentira (jesus no existio)...VERDAD porque jesus existio
+OPERADOR NOT
+operando    RESULTADO
+not(True)    FALSE  (UNA VERDAD NEGADA ES UNA MENTIRA) Ejemplo: #mentira (jesus sí existió)...FALSO porque se esta mintiendo sobre una verdad jesus existio
+not(False)   TRUE   (UNA MENTIRA NEGADA ES UNA VERDAD) Ejemplo: #mentira (jesus no existio)...VERDAD porque jesus existio"""
 
 
 edad=54

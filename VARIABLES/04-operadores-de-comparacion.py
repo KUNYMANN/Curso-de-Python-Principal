@@ -1,3 +1,10 @@
+'''OPERADORES RELACIONALES
+Se utiliza para establecer una relacion entre 2 valores.
+Compara estos valores entre si y esta comparacion produce
+un resultado de certeza o falsedad (Verdadero(true) o Falso(false)) un Booleano
+Tienen el mismo nivel de prioridad en su evaluacion
+Los Operadores Relacionales tienen menos prioridad que los Aritmeticos'''
+
 n1=10   
 n2=15
 
