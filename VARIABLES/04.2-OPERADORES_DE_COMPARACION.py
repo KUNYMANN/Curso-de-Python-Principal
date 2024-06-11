@@ -51,12 +51,12 @@ es_mayor_que= 5>6
 es_mayor_o_igual_que= 5>=6
 
 # RESULTADOS
-#print(es_igual_que)
-#print(es_distinto_de)
-#print(es_menor_que)
-#print(es_menor_o_igual_que)
-#print(es_mayor_que)
-#print(es_mayor_o_igual_que)
+print(es_igual_que)
+print(es_distinto_de)
+print(es_menor_que)
+print(es_menor_o_igual_que)
+print(es_mayor_que)
+print(es_mayor_o_igual_que)
 
 #EJERCICIOS
 a=5
@@ -70,3 +70,5 @@ contraseña_almacenada="kunymann programador"
 contraseña_escrita="kunymann programador"
 print(contraseña_almacenada==contraseña_escrita)
 
+resultado= a*2+b==c
+print(resultado)
