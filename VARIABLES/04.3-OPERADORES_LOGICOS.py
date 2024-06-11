@@ -3,19 +3,23 @@
 # or..... disyuncion o suma logica
 # not.... negacion      
 
-"""OPERADOR AND
-operando1   operador   operando2   RESULTADO
-True           and        True       TRUE  (solo se da si ambos operandos valores son verdaderos el resultado siempre sera true)
-True           and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
-False          and        True       FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
-False          and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)
+"""OPERADOR AND "multiplicacion logica" con un minimo de dos operandos de valores logicos o booleanos a comparar
+
+En la programacion TRUE tiene el valor de 1 dado que solo el 1 multiplicado por si mismo da 1
+y FALSE tiene el valor 0 porque todo numero multiplicado por 0 es siempre 0
+
+operando1   operador   operando2   RESULTADO   
+True           and        True       TRUE  (solo se da si ambos operandos son verdaderos el resultado siempre sera true) 1 
+True           and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 
+False          and        True       FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 
+False          and        False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 
 
 OPERADOR OR
 operando  RESULTADO
-True           or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
-True           or        False      TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
-False          or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true)
-False          or        False      FALSE (cuando ambos operandos son falso el resultado siempre sera false)
+True           or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
+True           or        False      TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
+False          or        True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
+False          or        False      FALSE (cuando ambos operandos son falso el resultado siempre sera false) 0
 
 OPERADOR NOT
 operando    RESULTADO
