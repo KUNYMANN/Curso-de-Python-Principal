@@ -7,6 +7,7 @@ print(type(resultado))#aqui me esta diciendo que el resultado es un texto (str) 
                       #solo puede concatenar un string con otro string 
 print(resultado + "22" ) #de esta manera no va arrojar un error porque lo esta tomando como un string, un texto no un numero (string+string)
                       #solo puede concatenar un string con otro string 
+print(type(resultado))
 
 "IMPORTANTE"
 #los numeros guardados en IMPUT son string
@@ -20,6 +21,7 @@ print(f"Hola {nombre}")
 
 numero=int(input("Digite un numero entero:"))# esta es la manera de comprobar que el numero esta tomado como tal no como un texto (string)
 print(f"el numero es {numero +2}")# aqui se puede realizar cualquier operatoria aritmetica
+
 
 numero=int(input("Digite un numero entero:"))# esta es la manera de comprobar que el numero esta tomado como tal no como un texto (string)
 print(f"el numero es {numero +4*(6**3/2)-3}")# aqui se puede realizar cualquier operatoria aritmetica
