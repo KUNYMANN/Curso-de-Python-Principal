@@ -23,6 +23,7 @@ print(numero)
 numero=6
 numero+=3
 print(numero)
+
 # INCLUSIVE SE PUEDEN COLOCAR NUMEROS NEGATIVOS
 numero=-11
 numero+=9
