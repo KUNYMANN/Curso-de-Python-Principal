@@ -9,3 +9,6 @@ ejercicio1= (a**3*(b**2-2*a*c))/(2*b)
 print("El resultado es:", ejercicio1, "exelente")
 
 print(f"el resultado es {ejercicio1} exelente!!!")
+
+m=("MARIA DEL VALLE RAMIRES")
+print(m)
