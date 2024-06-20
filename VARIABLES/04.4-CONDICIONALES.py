@@ -11,7 +11,7 @@ if numero>0:     #En la mayoria de los lenguajes de programacion para indicar qu
     (se utilizan cuatro espacios vacios a partir del margen)"""
 
 
-#elif: es para mostrar condicion intermedia entre la primera condicon y la segunda condicion 
+#elif: es para mostrar un condicion intermedia entre la primera condicion(if) y la segunda condicion(else)
 elif numero==0:
     print("el numero es cero") #esta instruccion ya no pertenece a la de arriba sino al nuevo condicional, en este caso a elif
     """ estos cuatros caracteres antes de las comillas es para mostrar lo que es una identacion, o sangria, o tabulacion
