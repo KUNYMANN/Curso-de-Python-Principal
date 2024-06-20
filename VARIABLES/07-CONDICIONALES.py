@@ -1,5 +1,5 @@
 
-#LOS CONDICIONALES SON SENTENCIAS PARA COMPARAR DOS VALORES Y ESA COMPARACION ME VA A DAR COMO RESULTADO UN VALOR LOGICO 
+#LOS CONDICIONALES SON TRES TIPOS DE SENTENCIAS PARA COMPARAR DOS VALORES Y ESA COMPARACION ME VA A DAR COMO RESULTADO UN VALOR LOGICO 
 numero=int(input("digite un numero: ")) #aqui le estamos solicitando al usuario que ingrese (input) un numero entero (int)
 
 # if: significa SI, quiere decir que si (if) la siguiente condicion se cumple, se van a ejecutar un numero determinado de acciones o no se ejecute nada
@@ -11,7 +11,7 @@ if numero>0:     #En la mayoria de los lenguajes de programacion para indicar qu
     (se utilizan cuatro espacios vacios a partir del margen)"""
 
 
-#elif: es para mostrar si no se cumple la primera condicon 
+#elif: es para mostrar condicion intermedia entre la primera condicon y la segunda condicion 
 elif numero==0:
     print("el numero es cero") #esta instruccion ya no pertenece a la de arriba sino al nuevo condicional, en este caso a elif
     """ estos cuatros caracteres antes de las comillas es para mostrar lo que es una identacion, o sangria, o tabulacion
