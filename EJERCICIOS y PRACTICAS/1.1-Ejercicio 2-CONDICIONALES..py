@@ -1,10 +1,10 @@
 #EJERCICIO
 #hacer un programa que pida 3 numeros y determine cual es el mayor.
+ """asi lo pense yo pero hay un error de sintaxis"""
+
 '''numero=int(input ("coloque un numero:"))
 numero1=int(input ("coloque un numero1:"))
 numero2=int(input ("coloque un numero2:"))
-
- asi lo pense yo pero hay un error de sintaxis"""
 if numero>=numero1>=numero2:
     print(f"el numero {numero} es mayor")
 elif numero1>=numero2>=numero:
