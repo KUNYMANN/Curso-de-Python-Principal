@@ -40,9 +40,9 @@ elif usuario=="llueve" and usu2=="no":
     print("imposible")  
 elif usuario=="llueve" and usu2=="no":
     print("no llevo pilotin")
-elif usuario=="hay sol" and usu2=="no":
-    print("Soleado")
-elif usuario=="hay sol" and usu2=="si":
+elif usuario=="Soleado" and usu2=="no":
+    print("hay sol")
+elif usuario=="Soleado" and usu2=="si":
     print("dicen que se casa una bruja jajajjaj")
 
    
