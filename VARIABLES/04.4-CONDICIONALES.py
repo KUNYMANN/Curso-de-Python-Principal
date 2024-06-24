@@ -2,7 +2,7 @@
 #LOS CONDICIONALES SON TRES TIPOS DE SENTENCIAS PARA COMPARAR DOS VALORES Y ESA COMPARACION ME VA A DAR COMO RESULTADO UN VALOR LOGICO 
 numero=int(input("digite un numero: ")) #aqui le estamos solicitando al usuario que ingrese (input) un numero entero (int)
 
-# if: significa SI, quiere decir que si (if) la siguiente condicion se cumple, se van a ejecutar un numero determinado de acciones o no se ejecute nada
+# if: significa SI, esto quiere decir que si la siguiente condicion se cumple, se van a ejecutar un numero determinado de acciones o no se ejecute nada
 if numero>0:     #En la mayoria de los lenguajes de programacion para indicar que todo pertenece al mismo bloque se coloca entre llaves {}
     print("el numero es positivo") #en cambio en python para indicar que todo pertenece al mismo bloque se utiliza la identacion (sangria)
     #esto quiere decir que todas las linea de instrucciones que esten colocadas con la misma sangria en los sucesivos renglones
