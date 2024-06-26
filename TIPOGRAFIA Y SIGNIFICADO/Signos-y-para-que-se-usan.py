@@ -27,6 +27,8 @@ y tambien para el acceso de escritura a listas y diccionarios.
 Las llaves {} en Python se utilizan para definir diccionarios y para formatear cadenas de texto
 incluyendo valores de variables o expresiones.'''
 
+'''n\ se utiliza para cambiar de renglon'''
+
 '''el input se utiliza siempre cuando es algo que solicite que ingrese el usuario 
 ejemplo: ''' 
 coloque_su_clave=input("coloque la clave: ") 
