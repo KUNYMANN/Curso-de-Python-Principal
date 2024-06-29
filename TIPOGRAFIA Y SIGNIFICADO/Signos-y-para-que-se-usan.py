@@ -31,13 +31,18 @@ incluyendo valores de variables o expresiones.'''
 
 '''el input se utiliza siempre cuando es algo que solicite que ingrese el usuario 
 ejemplo: ''' 
-coloque_su_clave=input("coloque la clave: ") 
+'''coloque_su_clave=input("coloque la clave: ") 
 print=(coloque_su_clave)
-'''y si solicito que sea un numero (ya que los numeros son float) 
-ejemplo:  '''
+y si solicito que sea un numero (ya que los numeros son float) 
+ejemplo:  
 temperatura= float(input("ingrese la temperatura: "))
 print=(temperatura)
-'''print ()es para que ejecute la solicitud de lo que deseamos y siempre va entre parentesis
+print ()es para que ejecute la solicitud de lo que deseamos y siempre va entre parentesis
 si lo que pedimos internamente esta entre comillas va a arrojar un texto, 
 en cambio si lo hacemos sin las commillas  va a arrojar un valor
-print(type()) #me arroja que tipo o clase "class"" de valor es, sea ""int" numero entero, "float" numero con decimales o "str" texto'''
+print(type()) me arroja que tipo o clase "class"" de valor es, sea ""int" numero entero, "float" numero con decimales o "str" texto
+
+calculo de interes anual
+interes_anual=4/100 
+calculo de interes acumulado, se le agrega un 1 delante al calculo del interes anual
+interes_acumulado=1+4/100'''
