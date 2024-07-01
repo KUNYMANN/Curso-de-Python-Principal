@@ -28,10 +28,12 @@ Las llaves {} en Python se utilizan para definir diccionarios y para formatear c
 incluyendo valores de variables o expresiones.'''
 
 '''n\ se utiliza para cambiar de renglon'''
-
+'''\t.:MENU:." se utiliza en el print para que el titulo aparezca desplazado del margen a 4 espacios'''
 '''el input se utiliza siempre cuando es algo que solicite que ingrese el usuario 
-ejemplo: ''' 
-'''coloque_su_clave=input("coloque la clave: ") 
+el print() solo se utiliza como salto de linea para mostrar resultados
+
+ejemplo: 
+coloque_su_clave=input("coloque la clave: ") 
 print=(coloque_su_clave)
 y si solicito que sea un numero (ya que los numeros son float) 
 ejemplo:  

@@ -1,22 +1,22 @@
-#Hacer un programa que simule un cajeroautomatico con 
+#Hacer un programa que simule un cajero automatico con 
 # un saldo inicial de 1000 y el siguiente menu de opciones:
 # INGRESAR DINERO A LA CUENTA
 # RETIRAR DINERO DE LA CUENTA
 # MOSTRAR DINERO DISPONIBLE
 # SALIR
 saldo_inicial=1000
-print("\t.:MENU:.")
+print("\t.:MENU:.") #el ("\t.:  .") es para que cuando se imprima el titulo aparezca despazado del margen unos 4 espacios
 print("1.INGRESAR DINERO A LA CUENTA")
 print("2.RETIRAR DINERO DE LA CUENTA")
 print("3.MOSTRAR DINERO DISPONIBLE")
 print("4.SALIR")
 opcion=int(input("Digite una opcion de MENU: "))
-print()
+print() # este print(vacio) es para hacer un salto de renglon al print("jhhdhdh") siguiente
 
 
 if opcion==1:
     deposito=float(input("Ingrese el monto a depositar: "))
-    saldo_inicial+=deposito
+    saldo_inicial+=deposito #que es lo mismo qu escribir saldo_inicial= saldo_inicial + deposito
     print(f"Saldo acumulado $: {saldo_inicial:.2f}") 
 
 
@@ -34,11 +34,11 @@ elif opcion==3:
 elif opcion==4:
     print("good bye")
 else:
-    ("Error al ingresar la opcion de MENU")
+    ("Error al ingresar la opcion de MENÚ")
 
 
 def mostrar_menu():    #muestra las opciones del MENU
-    print("\nMENU:")
+    print("\nMENÚ:")
     print("1. Ingresar dinero a la cuenta")
     print("2. Extraer dinero de la cuenta")
     print("3. Mostrar Saldo")
@@ -66,7 +66,7 @@ def main():                      #es el bucle principal del programa. Muestra el
     saldo=0.0                    #Segun la opcion ingresada, llama a la funcion correspondiente, si el usuario selecciona salir,
     while True:                  #rompe el bucle y termina el programa
         mostrar_menu()
-        opcion=input("Seleccione una opcion: ")
+        opcion=input("Seleccione una opción: ")
         if opcion=="1":
             saldo=ingresar_dinero(saldo)
         elif opcion=="2":
@@ -77,7 +77,7 @@ def main():                      #es el bucle principal del programa. Muestra el
             print("Gracias por operar con nuestro BANCO")
             break 
         else:
-            print("Opcion No Valida.Por favor ingrese una opcion valida")
+            print("Opcion No Valida.Por favor ingrese una opción valida")
 if __name__=="__main__":
         main()
     
