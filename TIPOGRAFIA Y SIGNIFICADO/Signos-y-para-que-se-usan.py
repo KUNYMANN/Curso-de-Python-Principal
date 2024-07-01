@@ -28,21 +28,20 @@ Las llaves {} en Python se utilizan para definir diccionarios y para formatear c
 incluyendo valores de variables o expresiones.'''
 
 '''n\ se utiliza para cambiar de renglon'''
+
 '''\t.:MENU:." se utiliza en el print para que el titulo aparezca desplazado del margen a 4 espacios'''
+
 '''el input se utiliza siempre cuando es algo que solicite que ingrese el usuario 
+
 el print() solo se utiliza como salto de linea para mostrar resultados
 
-ejemplo: 
-coloque_su_clave=input("coloque la clave: ") 
-print=(coloque_su_clave)
-y si solicito que sea un numero (ya que los numeros son float) 
-ejemplo:  
-temperatura= float(input("ingrese la temperatura: "))
-print=(temperatura)
+la funcion len() es para solicitar la cantidad de caracteres que posee el valor de una variable, el print de la variavle se solicita entre {}
+
 print ()es para que ejecute la solicitud de lo que deseamos y siempre va entre parentesis
 si lo que pedimos internamente esta entre comillas va a arrojar un texto, 
-en cambio si lo hacemos sin las commillas  va a arrojar un valor
-print(type()) me arroja que tipo o clase "class"" de valor es, sea ""int" numero entero, "float" numero con decimales o "str" texto
+en cambio si lo hacemos sin las commillas va a arrojar un valor
+
+print(type()) me arroja que tipo o clase "class"" del valor es, sea ""int" numero entero, "float" numero con decimales o "str" texto
 
 calculo de interes anual
 interes_anual=4/100 

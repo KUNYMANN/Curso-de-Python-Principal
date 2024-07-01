@@ -28,3 +28,12 @@ print("PHP"in lenguajes)#si esta dentro del listado dira True, si no esta dira F
 print(len(lenguajes)) #acceder cuantos elementos contiene un listado
 lenguajes.clear() #para limpiar el listado y que no contenga absolutamente nada
 print(lenguajes)
+
+ejemplo: 
+coloque_su_clave=input("coloque la clave: ") 
+print=(coloque_su_clave)
+#y si solicito que sea un numero (ya que los numeros son float) 
+ejemplo:  
+temperatura= float(input("ingrese la temperatura: "))
+print=(temperatura)
+

@@ -4,6 +4,7 @@ texto="Hola Mundo" #dato STRING
 print(texto) #con Shift + Alt mas flecha hacia abajo se duplica la linea 
 print(texto.upper()) #si elegimos el metodo UPPER()automaticamente pasa todo el texto a MAYUSCULAS
 print(texto.lower()) #si elegimos el metodo LOWER()automaticamente pasa todo el texto a minusculas
+print(texto.title()) # si elegimo el metodo TITLA()automaticamente pasa a mayuscula las primera letra de cada palabra Del Texto
 print(texto.find("M")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el caracter solicitado
 print(texto.find("Mun")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado
 print(texto.find("mun")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado
