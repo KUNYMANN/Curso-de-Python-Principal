@@ -19,3 +19,11 @@ for i in range(5): # los ":" significa que lo que sigue a continuacion pertenece
     a+=1
     print(a)
     
+print("HOLA buen dia!!")
+nombre=input("Como te llamas: \n")
+edad=input("que edad tienes: \n")
+nacionalidad=input("De que nacionalidad eres: \n")
+print()
+print("Hola " + ( nombre) + " tienes " + ( edad)+" años de edad y eres de nacionalidad " + ( nacionalidad))
+print()
+

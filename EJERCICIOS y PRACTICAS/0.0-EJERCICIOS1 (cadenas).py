@@ -29,7 +29,8 @@ donde <NOMBRE> es el nombre de usuario en mayúsculas
 y <n> es el número de letras que tienen el nombre.'''
 '''nombre=input("Coloque su nombre: ")
 caracteres=len(nombre)
-print(f"Su nombre es {nombre} y tiene la cantida de {caracteres} caracteres")'''
+print(f"Su nombre es {nombre} y tiene la cantida de {caracteres} caracteres")
+print(len(nombre)) #tambien se puede pedir directamente asi la cantidad de caracteres de una variable'''
 
 #Ejercicio 4
 '''Los teléfonos de una empresa tienen el siguiente formato prefijo-número-extension donde el prefijo 

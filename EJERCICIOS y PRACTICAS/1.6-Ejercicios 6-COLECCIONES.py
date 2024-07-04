@@ -1,5 +1,5 @@
 lenguajes=["Python","Ruby", "PHP","Javascript","Java"]
-#indice       0       1      2         3         4 
+#indice       0       1       2         3         4 
 print(lenguajes[0]) # de esta manera se solicita un indice en espcial correspondiente al dato
 lenguajes[1]="HTML" # cuando quiero cambiar algun dato de la lista, cambiamos el valor del indice 1 "Rubi" por "HTML"
 print(lenguajes)
@@ -29,11 +29,11 @@ print(len(lenguajes)) #acceder cuantos elementos contiene un listado
 lenguajes.clear() #para limpiar el listado y que no contenga absolutamente nada
 print(lenguajes)
 
-ejemplo: 
+#ejemplo: 
 coloque_su_clave=input("coloque la clave: ") 
 print=(coloque_su_clave)
 #y si solicito que sea un numero (ya que los numeros son float) 
-ejemplo:  
+#ejemplo:  
 temperatura= float(input("ingrese la temperatura: "))
 print=(temperatura)
 

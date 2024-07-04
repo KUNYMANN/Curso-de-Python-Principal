@@ -21,11 +21,15 @@ También se utilizan para la definición de funciones así como para su invocaci
 El último uso habitual es establecer el orden de evaluación dentro de una expresión.
 
 Los corchetes [] en Python se utilizan para la definición de listas, 
-para el acceso de lectura a los elementos de tuplas, listas, diccionarios y strings
-y tambien para el acceso de escritura a listas y diccionarios.
+para el acceso de lectura a los elementos de tuplas, listas, diccionarios y strings, como para la busqueda de posicion de un elemento,
+tambien para el acceso de escritura a listas y diccionarios.
 
 Las llaves {} en Python se utilizan para definir diccionarios y para formatear cadenas de texto
 incluyendo valores de variables o expresiones.'''
+
+'''para resaltar una palabra se utilizan las comillas dobles per para solicitarlo se utilizan comillas simples, ejemplo
+print('"Kuny" es mi apodo') aqui se imprimira lo siguiente  "Kuny" es mi apodo, tambien podria ser print("'Kuny' es mi apodo")
+ dependiendo de con que comillas quiero que se imprima las invierto, nunca se utiliza las mismas para imprimir y resaltar una palabra'''
 
 '''n\ se utiliza para cambiar de renglon'''
 
@@ -35,7 +39,9 @@ incluyendo valores de variables o expresiones.'''
 
 el print() solo se utiliza como salto de linea para mostrar resultados
 
-la funcion len() es para solicitar la cantidad de caracteres que posee el valor de una variable, el print de la variavle se solicita entre {}
+la funcion len() es para solicitar la cantidad de caracteres que posee el valor de una variable
+
+el print de la variable en el modo f se solicita entre {} ejemplo print(f"jajaja{}")
 
 print ()es para que ejecute la solicitud de lo que deseamos y siempre va entre parentesis
 si lo que pedimos internamente esta entre comillas va a arrojar un texto, 
@@ -47,3 +53,4 @@ calculo de interes anual
 interes_anual=4/100 
 calculo de interes acumulado, se le agrega un 1 delante al calculo del interes anual
 interes_acumulado=1+4/100'''
+

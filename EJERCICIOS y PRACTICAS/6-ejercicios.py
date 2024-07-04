@@ -36,3 +36,4 @@ print((resultado4+(2/num1))/num4)
 
 ecuacion=3**3*(13/5-(2*4))
 print(ecuacion)
+
