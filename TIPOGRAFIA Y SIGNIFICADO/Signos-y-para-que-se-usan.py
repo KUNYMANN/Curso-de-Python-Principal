@@ -39,7 +39,7 @@ print('"Kuny" es mi apodo') aqui se imprimira lo siguiente  "Kuny" es mi apodo, 
 
 el print() solo se utiliza como salto de linea para mostrar resultados
 
-la funcion len() es para solicitar la cantidad de caracteres que posee el valor de una variable
+la funcion len() es para solicitar la cantidad de caracteres que posee el valor de una variable y SOLO se utiliza con string
 
 el print de la variable en el modo f se solicita entre {} ejemplo print(f"jajaja{}")
 

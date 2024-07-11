@@ -13,3 +13,4 @@ elif dato1%2!=0 and dato2%2==0:
     
 else:
     print("ambos numeros son impares")
+

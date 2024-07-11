@@ -30,7 +30,7 @@ dato="ingrese el valor del objeto 4: "
 precio1=float(input(dato))
 descuento1=precio1*15/100
 valor_final=precio1-descuento
-a52="el importe a pagar del objeto con el 15% es de: "
+a52="el importe a pagar del objeto con el 15% de Descueto es de: "
 print( a52 + f"{valor_final:.2f}")
 
 valor=float(input("inserte el importe del producto 5: "))

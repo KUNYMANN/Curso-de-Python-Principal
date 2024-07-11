@@ -1,39 +1,97 @@
-#COMENTARIOS DE UNA LINEA Y VARIAS LINEAS
+#1
+# "Hoy es un dia para programas" correcto
+# 'El dia esta nublado" incorrecto
+# '¿Que dia es hoy?' correcto
+# "Mañana, en inglés se dice"morning"" incorrecto
 
-# ESTO ES UN COMENTARIO DE UNA SOLA LINEA Y SE UTILIZA EL SIMBOLO DE CARDINAL (#)
+#2
+#El tipo de error que devuelve un string mal escrito es un SyntaxError (error de sintaxis)
 
-# ESTO ES UN COMENTARIO QUE PUEDE LLEVAR VARIAS LINEAS, PARA HACERLO DEBO ABRIR TRES COMILLAS Y CERRAR CON TRES COMILLAS """ """ O COMILLAS SIMPLES''' '''
-"""LINEA UNO
-LINEA DOS
-LINEA TRES
-Y ASI SUCECIVAMENTE"""
+#3
+#imprimir por consola la cantidad de caracteres de la palabra "automaticamente"
+'''palabra="automáticamente"
+print(len(palabra)) # la funcion len es para contar la catidad de caracteres 
 
-'''TAMBIEN SE PUEDE 
-UTILIZAR LAS COMILLAS SIMPLES
-PARA INDICAR UN COMENTARIO
-DE VARIAS LINEAS'''
+#4
+#Mostrar en consola solo el caracter de la "á" mediante la posicion del string
+palabra1="automáticamente"
+print(palabra1[5]) #colocando entre corchetes el numero de indice a partir del 0nos dira que caracter se aloja en ese indice
+print(palabra1.find("á")) #la funcion find es para ubicar un caracter en especial dentro de un texto o palabra y nos dice en que indice se encuentra
 
-#EJERCICIOS CON OPERADORES ARITMETICOS
-'''Prioridades de Operadores Aritmeticos
-Parentesis ()
-Exponenciacion **
-Multiplicacion *, Division / y Modulo %
-Suma + y Resta -'''
+#5
+#Realizar 10 elevado a la 5 con el operador exponente
+operacion_exponencial=10**5
+print(operacion_exponencial)
+#aqui optra manera
+operacion=10
+operacion **=5
+print(operacion)
 
+#6
+#aqui sin la funcion exponente
+operacion2=10*10*10*10*10
+print(operacion2)
 
-num1=2
-num2=4
-num3=6
-num4=8
-resultado1=(num2*8)+(6/num1)
-resultado2=num2**num1
-resultado3=6/2*num4+num4**2
-resultado4=(resultado1+resultado2+resultado3)
-print(resultado1)
-print(resultado2)
-print(resultado3)
-print((resultado4+(2/num1))/num4)
+#7
+#En que dos estados puede estar un dato booleano
+#en True o en False
 
-ecuacion=3**3*(13/5-(2*4))
-print(ecuacion)
+#8 
+#Mostrar que tipo de dato tiene esta variable
+nunm1=675.87
+print(type(nunm1))
 
+#9 
+#LEN solo funciona con string NO con numeros
+#mostrar la cantidad de digitos de una variable, utilizando la funcion len
+variable=768763843
+print(len(str(variable))) #primero hay que volver un string al numero de la variable para despues pedir un len
+
+#10 convertir en enteros estos datos float mediante tipos y sumalos
+numx="14.527"
+numv="560.92"
+numr=float(numx)
+nums=float(numv)
+print(int(numr)+int(nums))
+
+#11
+#Redondear estos numeros con la cantidad de decimales indicada en los comentarion e imprimelos en la consola
+numer1=10.897654876534  #3 decimales
+numer2=7674.7886 #2 decimales
+numer3=68754.78 #un decimal
+print(round(numer1,3)) #con la funcion round (redondeo)
+print(round(numer2,2))
+print(round(numer3,1))
+
+print(f"{numer1:.3f}") #con la funcion f (format)
+print(f"{numer2:.2f}")
+print(f"{numer3:.1f}")
+
+#12
+#cual es la diferencia entre el operador modulo y el floor division
+#el operador modulo devuelve el resto de una division y el floor devuelve el resultado de la operacion un numero sin decimales (int)
+
+#13
+#asigna con los operadores de asignacion los siguientes valores indicados
+valor=10        #  +60
+valor1=24       # -100
+valor2=65.67    #   +4.33
+valor+=60
+valor1-=100
+valor2+=4.33
+print(valor)
+print(valor1)
+print(valor2)'''
+
+#14
+#Mediante la tecnica de formateo de string muestra literalmente estos calores en una
+#frase en el print sin utilizar la concatenacion 
+nu1=4
+nu2=769.97
+tex="ai i a string"
+decision=True
+inicio="VALOR"
+decorado="es bastante mas grande que"
+relleno="the answer is"
+
+print(f"El {inicio.lower()} {nu2} {decorado.capitalize()} {nu1}. ¿{tex.title()}? {relleno.upper()} {decision}")

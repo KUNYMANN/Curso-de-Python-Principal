@@ -16,14 +16,15 @@ nombre = input("Digite su nombre: ")
 print(f"Hola {nombre} bienvenido!!!")
 
 """para que los numeros en INPUT sean tomados como INT o FLOAT (tipos de numeros), se hace de la siguiente manera"""
-
+#si queremos que el numero ingresado sea un entero se solicita asi:
 #para numeros INT (enteros)
 numero=int(input("Digite un numero entero: "))# esta es la manera de comprobar que el numero esta tomado como tal no como un texto (string)
-print(f"el numero es {numero +2}")# aqui se puede realizar cualquier operatoria aritmetica
+print(f"el numero es {numero +2} porque le acabo de sumar dos")# aqui se puede realizar cualquier operatoria aritmetica
 numero=int(input("Digite un numero entero: "))# esta es la manera de comprobar que el numero esta tomado como tal no como un texto (string)
-print(f"el numero es {numero +4*(6**3/2)-3}")# aqui se puede realizar cualquier operatoria aritmetica
+print(f"el numero es {numero +4*(6**3/2)-3} por la funcion que le agregue")# aqui se puede realizar cualquier operatoria aritmetica
 
-
+#si queremos que el numero ingresado sea con decimales se solicita asi:
 #para numeros FLOAT (con decimales)
 numero=float(input("Digite un numero con decimales: "))# esta es la manera de comprobar que el numero esta tomado como tal no como un texto (string)
-print(f"el numero es {numero *2}")# aqui se puede realizar cualquier operatoria aritmetica
+print(f"el numero es {numero *2} porque lo multiplique por dos")# aqui se puede realizar cualquier operatoria aritmetica
+

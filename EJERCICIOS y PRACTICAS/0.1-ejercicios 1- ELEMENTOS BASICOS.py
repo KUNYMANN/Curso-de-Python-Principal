@@ -10,5 +10,5 @@ print("El resultado es:", ejercicio1, "exelente")
 
 print(f"el resultado es {ejercicio1} exelente!!!")
 
-m=("MARIA DEL VALLE RAMIRES")
+m=("MARIA DEL VALLE RAMIREZ")
 print(m)
