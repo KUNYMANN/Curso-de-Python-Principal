@@ -24,7 +24,7 @@ print(lista[-2])# jueves
 print(lista[-3])# miercoles
 print(lista[-4])# martes
 print(lista[-5])# lunes
-
+#aqui podemos solicitar que nos muestre en el print una seccion de numeros en especial
 print(lista[0:3])
 print(lista[:3])
 print(lista[2:5])
@@ -42,10 +42,10 @@ print(lista[9])
 print(lista[3:11])
 
 
-# aqui hay una sub lista () y se cuenta como un solo elemento
+# aqui hay una sub lista, se cuenta como un solo elemento, es la que esta encerrada entre [] dentro de la lista[a,b[c],d]
 lista=["lunes","martes","miercoles","jueves","viernes",   1, 2, 3, 4, 0, [11.36, 9.5, 7.84], True]  
-#indices  0        1         2         3          4       5  6  7  8  9           10          11
-#         1        2         3         4          5       6  7  8  9  10          11          12 asi toma python para indicar cuantos elementos hay en la lista
+#indices  0        1         2         3          4       5  6  7  8  9     10 sub-lista      11
+#         1        2         3         4          5       6  7  8  9  10    11 sub-lista      12 asi toma python para indicar cuantos elementos hay en la lista
 #siempre se cuenta el indice 0 como el 1er. elemento y asi sucesivamente, en este ejemplo serian 12 elementos
 print(len(lista)) 
 print(lista[10:11]) 

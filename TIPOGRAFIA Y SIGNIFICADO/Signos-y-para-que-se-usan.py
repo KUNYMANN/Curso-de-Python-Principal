@@ -49,6 +49,9 @@ en cambio si lo hacemos sin las commillas va a arrojar un valor
 
 print(type()) me arroja que tipo o clase "class"" del valor es, sea ""int" numero entero, "float" numero con decimales o "str" texto
 
+"None" es un tipo de dato especial que representa la ausencia de valor o la falta de definición de un valor. 
+Se utiliza para indicar que una variable no tiene asignado ningún valor válido. 
+
 calculo de interes anual
 interes_anual=4/100 
 calculo de interes acumulado, se le agrega un 1 delante al calculo del interes anual

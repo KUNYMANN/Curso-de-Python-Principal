@@ -9,7 +9,7 @@
 
 #3
 #imprimir por consola la cantidad de caracteres de la palabra "automaticamente"
-'''palabra="automáticamente"
+palabra="automáticamente"
 print(len(palabra)) # la funcion len es para contar la catidad de caracteres 
 
 #4
@@ -81,7 +81,7 @@ valor1-=100
 valor2+=4.33
 print(valor)
 print(valor1)
-print(valor2)'''
+print(valor2)
 
 #14
 #Mediante la tecnica de formateo de string muestra literalmente estos calores en una
@@ -95,3 +95,11 @@ decorado="es bastante mas grande que"
 relleno="the answer is"
 
 print(f"El {inicio.lower()} {nu2} {decorado.capitalize()} {nu1}. ¿{tex.title()}? {relleno.upper()} {decision}")
+
+#15 
+#Armar una calculadora de exponente
+print("\tCALCULADORA EXPONENCIAL")
+numero_ingresado=int(input("Coloque el numero que desee exponenciar: \n"))
+exponente=int(input("Coloque el numero al que quiere elevarlo: \n"))
+resultado=(int(numero_ingresado))**(int(exponente))
+print(f"El resultado de la operacion es: {resultado}")

@@ -14,7 +14,7 @@ nuevo_texto=texto.replace("Mun","chanchito feliz")
 print(texto,nuevo_texto)
 print("Mundo"in texto)
 print(type(texto)) #con la palabra type () me esta diciendo que tipo de dato es el que estoy solicitando, en este caso me dice que es un string o sea un texto
-print(texto.capitalize()) #con capitalize coloca en mayusculas la primera letra de la primer palabra solamente el resto quedara igual
+print(texto.capitalize()) #con capitalize coloca en mayusculas la primera letra de la primer palabra solamente, el resto quedara igual
 
 
 nombre=input("Coloque aqui su nombre ")

@@ -7,7 +7,7 @@ num=int(input("Coloque un numero de cantidades de veces que aparecera su nombre:
 for i in range(num):
     print(nombre)'''
 #con \n.join 
-'''nombre=input("Coloque su nombre: ")
+'''# nombre=input("Coloque su nombre: ")
 num=int(input("Coloque un numero de cantidades de veces que aparecera su nombre: "))
 print("\n".join(nombre)*num)'''
 
@@ -37,3 +37,5 @@ print(len(nombre)) #tambien se puede pedir directamente asi la cantidad de carac
 es el código del país +34, y la extensión tiene dos dígitos (por ejemplo +34-913724710-56). 
 Escribir un programa que pregunte por un número de teléfono con este formato 
 y muestre por pantalla el número de teléfono sin el prefijo y la extensión.'''
+numtelef=input("coloque su numero de telefono con este formato +xx-xxxxxxxxx-xx: ")
+print("el Numero ingresado es: ", numtelef[4:-3])
