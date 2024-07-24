@@ -205,7 +205,7 @@ elif año<cualquiera:
 elif año>cualquiera:
     print(f"Ya han pasado {año-cualquiera} años desde {cualquiera}")
 else:
-    print("Estamos en el mismo año")'''
+    print("Estamos en el mismo año")
 
 
 print("COMPARADOR DE MULTIPLOS\t")
@@ -223,5 +223,5 @@ elif numeroZ%numeroX==0:
     print(f"el segundo numero ingresado {numeroX} es multiplo de {numeroZ} ")
 
 else:
-    print(f"{numeroX} no es multiplo de {numeroZ} ")
+    print(f"{numeroX} no es multiplo de {numeroZ} ")'''
 
