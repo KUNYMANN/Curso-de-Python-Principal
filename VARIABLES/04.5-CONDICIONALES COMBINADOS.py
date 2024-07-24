@@ -171,7 +171,7 @@ if numeroA<numeroB:
 elif numeroA>numeroB:
     print(f"Menor: {numeroB:.2F}; Mayor: {numeroA:.2F}")
 else:
-    print("Ambos numeros son iguales")'''
+    print("Ambos numeros son iguales")
 
 #asi lo habia hecho 
 print("COMPARADOR DE AÑOS")
@@ -205,5 +205,23 @@ elif año<cualquiera:
 elif año>cualquiera:
     print(f"Ya han pasado {año-cualquiera} años desde {cualquiera}")
 else:
-    print("Estamos en el mismo año")
+    print("Estamos en el mismo año")'''
+
+
+print("COMPARADOR DE MULTIPLOS\t")
+numeroX=int(input("Ingrese un numero: "))
+numeroZ=int(input("Ingrese otro numero: "))
+if numeroX==numeroZ:
+    print(f"{numeroX} es multiplo de {numeroZ}")
+elif numeroX==0:
+    print("El Cero es multiplo de todos")  
+elif numeroZ==0:
+    print("El Cero es multiplo de todos") 
+elif numeroX%numeroZ==0:
+    print(f"el primer numero ingresado {numeroX} es multiplo de {numeroZ} ")
+elif numeroZ%numeroX==0:
+    print(f"el segundo numero ingresado {numeroX} es multiplo de {numeroZ} ")
+
+else:
+    print(f"{numeroX} no es multiplo de {numeroZ} ")
 
