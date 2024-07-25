@@ -207,21 +207,32 @@ elif año>cualquiera:
 else:
     print("Estamos en el mismo año")
 
-
 print("COMPARADOR DE MULTIPLOS\t")
 numeroX=int(input("Ingrese un numero: "))
 numeroZ=int(input("Ingrese otro numero: "))
 if numeroX==numeroZ:
     print(f"{numeroX} es multiplo de {numeroZ}")
-elif numeroX==0:
+elif numeroX<0 or numeroZ<0:
+    print("No se admiten numeros negativos")
+elif numeroX==0 or numeroZ==0:
     print("El Cero es multiplo de todos")  
-elif numeroZ==0:
-    print("El Cero es multiplo de todos") 
 elif numeroX%numeroZ==0:
     print(f"el primer numero ingresado {numeroX} es multiplo de {numeroZ} ")
 elif numeroZ%numeroX==0:
-    print(f"el segundo numero ingresado {numeroX} es multiplo de {numeroZ} ")
-
+    print(f"el segundo numero ingresado {numeroZ} es multiplo de {numeroX} ")
 else:
-    print(f"{numeroX} no es multiplo de {numeroZ} ")'''
+    print(f"{numeroX} no es multiplo de {numeroZ} ")
+
+print("COMPARADOR DE TRES NUMEROS")
+comp1=int(input("Ingrese un numero: "))
+comp2=int(input("Ingrese otro numero: "))
+comp3=int(input("Ingrese un tercer numero: "))
+if comp1==comp2 and comp2==comp3:
+    print("Has ingresado tres veces el mismo numero")
+elif comp1==comp3 or comp2==comp3 or comp1==comp2:
+    print("Has ingresado dos veces el mismo numero") 
+else:
+    print("Los tres numeros son distintos")'''
+
+
 
