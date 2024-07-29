@@ -1,5 +1,5 @@
 
-'''# Condicionales combinados o anidados
+# Condicionales combinados o anidados
 #los condicionales son estructuras de codigos que nos van a servir, para que nuestro programa sea mas "inteligente"
 # y sea capaz de tomar desiciones en ciertas cosas
 numero=10 #si este numero fuera menor o igual a 7 no se ejecutaria nada porque la condicion if es que sea mayor que 7
@@ -35,12 +35,12 @@ else:         #else esta siempre sujeto a que no se cumplan las condiciones de  
 # y si no se dan as condiciones anteriores (osea que todas arrogen un False. 
 # se ejecuta indefectiblemente el else
 #EN RESUMEN, SI EN IF TENEMOS UN TRUE SE EJECUTA, SI TENEMOS UN FALSE PASA A EJECUTARSE LA SIGUIENTE CONDICION ELIF QUE SI ARROJA UN TRUE LO EJECUTA
-#Y ASI SUCECIVAMENTE HASTA QUE ARROJE UN FALSE EN ESE CASO AUTOMATICAMENTE SE EJECUTA LA CONDICION ELSE QUE ES LA RESTANTE DE LAS CONDICIONES '''
+#Y ASI SUCECIVAMENTE HASTA QUE ARROJE UN FALSE EN ESE CASO AUTOMATICAMENTE SE EJECUTA LA CONDICION ELSE QUE ES LA RESTANTE DE LAS CONDICIONES 
 
 
 
 
-'''vamos a solicitarle al usuario que digite su edad, que es un dato entero, 
+vamos a solicitarle al usuario que digite su edad, que es un dato entero, 
 ahora vamoa a calcular si este usuario es mayor de edad o no
 
 edad=int(input("digite su edad: \n"))
@@ -232,7 +232,27 @@ if comp1==comp2 and comp2==comp3:
 elif comp1==comp3 or comp2==comp3 or comp1==comp2:
     print("Has ingresado dos veces el mismo numero") 
 else:
-    print("Los tres numeros son distintos")'''
+    print("Los tres numeros son distintos")
 
 
+print("COMPARADOR DE AÑOS BISIESTOS")
+año=int(input("Escriba un año y le dire si es bisisesto:"))
+if año%4!=0: # Aqui dice que si "año" dividido "4" su (resto"%") es (distinto"!=") de "O" 
+    print (f"El año {año} no es un año bisiesto ")#....muestre tal cosa
+elif año%100==0 and año%400!=0:# O si "año" es al dividirlo por "100" es (igual"==") a "0" (y "and") "año" dividido 400 su (resto"%") es (distinto"!=") de "O" 
+    print(f"El año {año} no es un año bisiesto porque es múltiplo 100.") #....muestre tal otra
+elif año%4==0 and año%100!=0: # O si "año" es al dividirlo por "4" es (igual"==") a "0" (y "and") "año" dividido 100 su (resto"%") es (distinto"!=") de "O"
+    print(f"El año {año} es un año bisiesto porque es múltiplo de 4 sin ser múltiplo de 100.")#....muestre tal otra
+else:
+    print(f"El año {año} es un año bisiesto porque es múltiplo de 400.")# si no se cumple ninguna de las anteriores entonces muestre esto 
 
+coeficienteA=float(input("Ingrese un coeficiente: "))
+coeficienteB=float(input("Ingrese otro coeficiente: "))
+
+if coeficienteA==0 and coeficienteB==0:
+    print("Todos los números son solución.")
+elif coeficienteA==0 and coeficienteB!=0:
+    print("la ecuacion no tiene solucion")
+
+else: 
+    print(f"La ecuación tiene una solución: {-coeficienteB/coeficienteA} ")
