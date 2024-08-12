@@ -1,4 +1,4 @@
-
+'''
 # Condicionales combinados o anidados
 #los condicionales son estructuras de codigos que nos van a servir, para que nuestro programa sea mas "inteligente"
 # y sea capaz de tomar desiciones en ciertas cosas
@@ -40,8 +40,8 @@ else:         #else esta siempre sujeto a que no se cumplan las condiciones de  
 
 
 
-vamos a solicitarle al usuario que digite su edad, que es un dato entero, 
-ahora vamoa a calcular si este usuario es mayor de edad o no
+#vamos a solicitarle al usuario que digite su edad, que es un dato entero, 
+#ahora vamoa a calcular si este usuario es mayor de edad o no
 
 edad=int(input("digite su edad: \n"))
 
@@ -256,3 +256,30 @@ elif coeficienteA==0 and coeficienteB!=0:
 
 else: 
     print(f"La ecuación tiene una solución: {-coeficienteB/coeficienteA} ")
+
+
+a=float(input("ingrese coeficiente:"))
+b=float(input("ingrese coeficiente:"))
+c=float(input("ingrese coeficiente:"))
+d = b * b - 4 * a * c
+if a == b == c == 0:
+        print("Todos los números son solución.")
+elif a == b == 0:
+        print("La ecuación no tiene solución.")
+elif a == 0:
+        print(f"La ecuación tiene una solución: {- c / b}")
+elif d < 0:
+        print("La ecuación no tiene solución real.")
+elif d == 0:
+        print(f"La ecuación tiene una solución: {- b / (2 * a)}")
+else:
+        print(
+            f"La ecuación tiene dos soluciones: {(-b - d ** 0.5) / (2 * a)} y {(-b + d ** 0.5) / (2 * a)}"
+        )
+
+import math
+def encontrar_raices(a,b,c):
+    resultado=(b**2)-(4*a*c)
+    r=math.sqrt(resultado)
+    d=-b+r/2*a
+    print (d)'''

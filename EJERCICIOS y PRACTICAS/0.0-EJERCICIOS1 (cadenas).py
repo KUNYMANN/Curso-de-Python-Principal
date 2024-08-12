@@ -35,7 +35,42 @@ print(len(nombre)) #tambien se puede pedir directamente asi la cantidad de carac
 #Ejercicio 4
 '''Los teléfonos de una empresa tienen el siguiente formato prefijo-número-extension donde el prefijo 
 es el código del país +34, y la extensión tiene dos dígitos (por ejemplo +34-913724710-56). 
-Escribir un programa que pregunte por un número de teléfono con este formato 
+Escribir un programa que pregunte por un número de teléfono con este formato
 y muestre por pantalla el número de teléfono sin el prefijo y la extensión.'''
-numtelef=input("coloque su numero de telefono con este formato +xx-xxxxxxxxx-xx: ")
-print("el Numero ingresado es: ", numtelef[4:-3])
+'''numtelef=input("coloque su numero de telefono con este formato +xx-xxxxxxxxx-xx: ")
+print("el Numero ingresado es: ", numtelef[4:-3])'''
+
+#Ejercicio 5
+'''Escribir un programa que pida al usuario que introduzca una frase 
+en la consola y muestre por pantalla la frase invertida.'''
+'''frase=input("Ingrese una frase: ")
+print(frase[::-1])'''
+
+#Ejercicio 6
+'''Escribir un programa que pida al usuario que introduzca una frase en la consola y una vocal,
+ y después muestre por pantalla la misma frase pero con la vocal introducida en mayúscula.'''
+'''frase1=input("Ingrese una frase: ")
+vocal=input("Ingrese  una vocal: ")
+print(f"{frase1.lower()} {vocal.title()}")'''
+
+#Ejercicio 7
+'''Escribir un programa que pregunte el correo electrónico del usuario en la consola
+ y muestre por pantalla otro correo electrónico con el mismo nombre 
+ (la parte delante de la arroba @) pero con dominio ceu.es.'''
+
+'''correo=input("Ingrese su correo electronico: ")
+print(correo[:correo.find("@")] + "@ceu.es.com")
+email = input("Introduce tu correo electrónico: ")
+print(email[:email.find('@')] + '@ceu.es')'''
+
+#Ejercicio 8
+'''Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y 
+muestre por pantalla el número de euros y el número de céntimos del precio introducido.'''
+precio = input("Introduce el precio del producto con dos decimales:  ")
+print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centimos.") # aqui toma en el valor de la variable "precio" 
+#desde el indice 0 por eso no hay nada escrito antes de los ":"  hasta el punto (.) en el valor colocado,
+# luego incertamos lo que queremos que aparezca en consola en este caso "euros y" despues colocamos "," para concatenar la segunda parte 
+# del valor que resta a partir del punto (.) por eso se pide del valor introducido en la variable "precio" a partir del (.) en adelante por eso se 
+# coloca "+ 1" lo cual sera el siguiente indice que quiero utilizar, si coloco los ":" sin nada detras quiere decir que es hasta el final e la variable
+
+

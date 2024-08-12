@@ -8,7 +8,18 @@ print(texto.title()) # si elegimo el metodo TITLE()automaticamente pasa a mayusc
 print(texto.find("M")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el caracter solicitado
 print(texto.find("Mun")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado
 print(texto.find("mun")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado
-#si colocamos mal va a dar error (-1) porque la busqueda se realiza colocando exactamente como esta escrito, respetando si esta en mayuscula o minuscula
+correo=input("Ingrese su correo electronico: ") 
+print(correo[:correo.find("@")] + "@ceu.es.com") #de esta manera find busca el indice en que esta ubicado el caracter solicitado "@" y a partir de ahi 
+                                                 # con el + se ejecuta en consola el reemplazo por el texto que querramos introducir
+precio = input("Introduce el precio del producto con dos decimales:  ")
+print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centimos.") # aqui toma en el valor de la variable "precio" 
+#desde el indice 0 por eso no hay nada escrito antes de los ":"  hasta el punto (.) en el valor colocado, ya que pide un valor con decimales, y lo separa
+#en dos cadenas. que nos permiten introducir el "string" que querramos, asi que incertamos lo que queremos que aparezca en consola en este caso "euros y" 
+# despues colocamos "," para concatenar con la segunda parte del valor que resta a partir del punto (.) por eso se pide del valor introducido en la variable 
+# "precio" a partir del (.) en adelante por eso se de ahi que se coloca "+ 1" lo cual sera el siguiente indice que quiero utilizar, 
+# si coloco los ":" sin nada detras quiere decir que es hasta el final de la variable que va a imprimir la consola
+                                            
+# ATENCION!!! si colocamos mal va a dar error (-1) porque la busqueda se realiza colocando exactamente como esta escrito, respetando si esta en mayuscula o minuscula
 print(texto.replace("Mun","chanchito feliz"))#reemplaza al nuevo texto o parte del nuevo texto
 nuevo_texto=texto.replace("Mun","chanchito feliz")
 print(texto,nuevo_texto)
