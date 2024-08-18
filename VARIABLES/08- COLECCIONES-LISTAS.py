@@ -87,7 +87,7 @@ print(listado2.count(16))
 print(listado2.count("avion"))
 print(listado2.count(81))
 print(listado2.count("ventilador"))
-
+print(listado2.index(6))
 listado3=[3,"m",5,"y",11]
 listado3.pop() #con el metodo .pop(vacio) elimina el ultimo elemento del listado o tambien podemos pasarle el indice que queremos eliminar ejemplo: .pop (2)
 print(listado3)
@@ -154,7 +154,7 @@ print(coloque_su_clave)
 temperatura= float(input("ingrese la temperatura: "))
 print(temperatura)
 
-#CUANDO TENEMOS VARIOS ELEMENTOS QUE QUEREMOS MOSTRAR SE COLOCAN EN UNA LISTA O EL NOMBRE QUE LE QUERRAMOS ASIGNAR
+#CUANDO TENEMOS VARIOS ELEMENTOS QUE QUEREMOS MOSTRAR SE COLOCAN EN UNA "LISTA" [] O EL NOMBRE QUE LE QUERRAMOS ASIGNAR
 listas=["kunymann" , "Soy juegador basquet" , "1.87"]
 #LO PEDIMOS PARA QUE LO MUESTRE ASI
 print(listas)

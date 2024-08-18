@@ -1,4 +1,4 @@
-
+#con Shift + Alt mas flecha hacia abajo se duplica la linea 
 '''delimitan cadenas de textos
 "" delimitan cadenas de textos 
 Las 3 comillas te permiten hacer saltos de línea. Por ejemplo puedes imprimir información en pantalla:
@@ -63,7 +63,7 @@ Utiliza “not in” para asegurarte de que un término no aparece en el string.
 es posible dividir un string con la funcion "split()". Un ejemplo sencillo de división es el siguiente:'''
 text = "Esto es un ejemplo"
 print(type(text)) # es un string
-print(text.split()) #aqui el metodo split me divide a la frase en elementos de la lista, utilizando para dividirla los espacios vacios
+print(text.split()) #aqui el metodo split me divide a la frase en elementos de una la lista, utilizando para dividirla los espacios vacios
 #El resultado quedaria asi:  ["Esto", "es", "un", "ejemplo"] en text ha sido dividida en todos sus espacios y se devolvió una lista de subcadenas
 print(type(text.split())) # es una lista
 mi_cadena="soy Hector, mi apodo es kuny, tengo 58 años, juego al basquet"
@@ -84,3 +84,12 @@ interes_anual=4/100
 #calculo de interes acumulado, se le agrega un 1 delante al calculo del interes anual
 interes_acumulado=1+4/100
 
+listado2=[1,6,8,"avion",16,81,14,5,"ventilador",6,13,81,"ventilador",1,81,6,1,"ventilador",81]
+print(listado2.count(1))
+print(listado2.count(16))
+print(listado2.count("avion"))
+print(listado2.count(81))
+print(listado2.count("ventilador"))
+listado2.index(6)
+print(f"El indice del numero 6 es: {listado2.index(6)}")
+listado3=[3,"m",5,"y",11]
