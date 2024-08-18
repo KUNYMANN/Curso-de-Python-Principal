@@ -11,7 +11,7 @@ print("como estan\nmanga de genios") #       colocando "n\"" el resultado es igu
 cancion_de_cuna="Arroro mi Niño"
 artista_compositor=" de Joan Manuel Serrat " "El Catalan"
 print(cancion_de_cuna + artista_compositor); print(saludo) #de esta manera con el ";" se puede colocar otra orden "print" 
-                                                           #que lo va a imprimir en el renglon siguiente
+                                                           #que lo va a imprimir en el renglon siguiente, no es aconcejable 
 
 # IDENTAR significa dejar cuatro espacios con el espaciador o un tablulado desde el borde izquierdo 
 a=0

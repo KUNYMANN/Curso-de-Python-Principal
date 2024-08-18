@@ -65,12 +65,30 @@ print(email[:email.find('@')] + '@ceu.es')'''
 
 #Ejercicio 8
 '''Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y 
-muestre por pantalla el número de euros y el número de céntimos del precio introducido.'''
+muestre por pantalla el número de euros y el número de céntimos del precio introducido.
 precio = input("Introduce el precio del producto con dos decimales:  ")
 print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centimos.") # aqui toma en el valor de la variable "precio" 
-#desde el indice 0 por eso no hay nada escrito antes de los ":"  hasta el punto (.) en el valor colocado,
+#desde el indice 0 por eso no hay nada escrito antes de los ":"  hasta el punto ("." que representa la coma de los num decimales) en el valor colocado,
 # luego incertamos lo que queremos que aparezca en consola en este caso "euros y" despues colocamos "," para concatenar la segunda parte 
 # del valor que resta a partir del punto (.) por eso se pide del valor introducido en la variable "precio" a partir del (.) en adelante por eso se 
-# coloca "+ 1" lo cual sera el siguiente indice que quiero utilizar, si coloco los ":" sin nada detras quiere decir que es hasta el final e la variable
+# coloca "+ 1" lo cual sera el siguiente indice que quiero utilizar, si coloco los ":" sin nada detras quiere decir que es hasta el final de la variable'''
 
-
+#Ejercicio 9
+#longitud de una cadena
+cadena="No voy en tren voy en avion"
+print("la cantidad de caracteres incluidos los espacio de esta frase es de :", len(cadena))
+#numero de veces que aparece la letra "o". 
+print("Cantidad de repeticiones de la letra 'v' : ",cadena.count("v"))
+#Si no se encuentra, arrojar este mensaje: "La letra no aparece"
+no_esta=cadena.count("u")
+if no_esta==0:
+      print("la letra solicitada no aparece")
+else:
+      print("Cantidad de repeticiones de la letra : ",cadena.count("u"))
+#numero de veces que aparece una vocal en la cadena
+vocal="aeiou"
+contador=0
+for x in cadena:
+      if x in vocal:
+            contador=contador+1
+print("esta frase tiene la cantidad de", contador, "vocales")
