@@ -121,3 +121,26 @@ No obstante, se puede simular con un string de un solo carácter:'''
 caracter_a = 'a'
 print(caracter_a) #a
 
+
+
+
+'''class Persona{
+    private:
+    int Numero_Telefono;
+    int Domicilio;
+
+    public:
+    str Dni;
+    str Nombre;
+
+}
+
+
+Persona Santi,Kuny,Marita,Gorda;
+
+Santi.Dni=
+Santi.Nombre
+
+print(Santi.Dni)'''
+
+

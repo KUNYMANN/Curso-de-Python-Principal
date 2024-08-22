@@ -111,15 +111,29 @@ También se usa para sobrescribir mensajes en la consola.'''
 
 #*Ejemplo de barra de progreso:*
 
-
 import time
 
 for i in range(10):
     print(f"\rProgreso: {i+1}/10", end="")
     time.sleep(0.5)
 
+print()
 #*Salida (sobrescribiéndose en la misma línea):*
-'''Progreso: 1/10
-Progreso: 2/10
+'''Progreso: 1/10,
+Progreso: 2/10 y asi sucesivamene hasta llegar a
 Progreso: 10/10
 Aquí, el cursor regresa al inicio de la línea y sobrescribe el texto sin crear nuevas líneas.'''
+
+# Aquí, \n es interpretado como nueva línea
+s = 'C:\python\noticias' #como deberiamos hacer para que no se reconozca \n como un salto de linea
+print(s)
+#C:\python
+#oticias
+
+# hay que incertar una "r" al comienzo del valor de la variable
+# En una raw string no se interpreta el carácter \
+s = r'C:\python\noticias'
+print(s)
+#C:\python\noticias
+str()
+print(str)

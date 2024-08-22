@@ -155,3 +155,4 @@ print(f"El precio del pan con descuento por no ser del dia $ {descuento:.2f} ")
 print(f"total compra de pan del dia $ {pan_del_dia:.2f}")
 print(f"total compra de pan por no ser del dia $ {pan_viejo:.2f}")
 print(f"El total final de la compra $ {total_compra:.2f}")'''
+
