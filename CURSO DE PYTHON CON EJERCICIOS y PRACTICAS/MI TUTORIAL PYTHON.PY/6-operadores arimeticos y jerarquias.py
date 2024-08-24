@@ -36,6 +36,24 @@ print(division_comun) # 8.8
 division_entera=44//5 # con doble "//" nos va a mostrar la parte entera del cociente, aunque este tuviese decimales
 print(division_entera) # 8
 
+"""PARA LA RADICACION NO EXISTE UN OPERADOR ARITMETICO IMPLICITO sino que en lugar se utilizan
+   operadores y funciones disponibles para calcular RAICES"""
+
+numero=25
+raiz_cuadrada = numero ** (1/2)
+print(raiz_cuadrada)  # Salida: 5.0
+
+numero1=27
+raiz_cuadrada=numero1**(1/3)
+print(raiz_cuadrada)
+
+numero2=10  #numero al que queremos aplicar la raiz
+n=5         #este dato es el valor de raiz que queremos extraer
+raiz_n=numero2**(1/n) #operacion realizada para obtener el resultado de hallar la raiz 5 del numero 10 
+                      #(numero2 elevado a (1 dividido el valor de raiz))
+print(raiz_n)# 3.105422 resultado
+
+
 #JERARQUIAS DE LAS OPERACIONES
 '''que es una JERARQUIA; cuando se presentan muchas operaciones aritméticas, la ferarquia determina
 el orden con el que deben realizarse dichas operaciones matemáticas'''
@@ -47,5 +65,5 @@ el orden con el que deben realizarse dichas operaciones matemáticas'''
 
 #MULTIPLICACION O DIVISION ocupa el penultimo de los procesos de la operacion matematica
 
-#SUMA Y RESTA iniciando de izquierda a derecha
+#SUMA Y RESTA al final. iniciando de izquierda a derecha
 
