@@ -59,11 +59,12 @@ print(raiz_n)# 3.105422 resultado
 el orden con el que deben realizarse dichas operaciones matemáticas'''
 
 #orden de operaciones en python: 
-#PARENTESIS: es el primer proceso que realiza, resuelve lo que esta dentro de los parentesis
 
-#EXPONENCIACION: si el programa detecta una exponanciacion, es el segundo proceso que realiza
+'PARENTESIS:' # es el primer proceso que realiza, resuelve lo que esta dentro de los parentesis
 
-#MULTIPLICACION O DIVISION ocupa el penultimo de los procesos de la operacion matematica
+'EXPONENCIACION:' # si el programa detecta una exponanciacion, es el segundo proceso que realiza
 
-#SUMA Y RESTA al final. iniciando de izquierda a derecha
+'MULTIPLICACION O DIVISION:' # ocupa el penultimo de los procesos de la operacion matematica
+
+'SUMA Y RESTA' # al final, iniciando siempre de izquierda a derecha
 
