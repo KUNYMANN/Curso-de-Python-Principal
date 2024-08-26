@@ -67,3 +67,16 @@ print(cadena[0:12])
 """cuando uno solicita un determinado numero de caracteres de una cadena, si se tomo el primero no incluye el ultimo, dado que la solicitud se hace
 hasta tal numero, NO INCLUSIVE, si queremos que lo incluya a este ultimo,  debemos solicita un caracter mas, como cuando contamos con los dedos"""
 'no ocurre esto a la inversa, cuando la solicitud la hacemos con numeros negativos'
+
+
+telefono=input("Ingrese un numero de telefono con codigo de area: ")
+if telefono[0:3]=="549":
+    print("Argentina")
+else: 
+    print("Es de otro pais")
+
+#reglas de las cadenas
+1- '''"las cadenas siempre se escriben entre comillas" inclusive 
+si un numero se escribe entre comillas es una cadena o strings'''
+# numero= 4 este es un numero
+# numero="4" este es una cadena o string
