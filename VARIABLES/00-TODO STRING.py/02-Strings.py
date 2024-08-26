@@ -36,8 +36,7 @@ a="hola"
 b="hola"
 print(a==b) #True
 '''Dos strings son iguales "si y solo si" ambas cadenas contienen la misma secuencia de caracteres
- (se distingue entre mayúsculas y minúsculas).
-'''
+ (se distingue entre mayúsculas y minúsculas).'''
 c="holA"
 print(a==c) #False (porque la A del final de la palabra esta en mayusculas)
 
@@ -65,15 +64,18 @@ t=("""'Hola\
   ¿Te gusta Python?'""")
 print(t)
 'si el texto esta en un solo renglon y queremos que lo imprima en varios renglones utilizamos"\n"'
-n="\neste\nstring\nocupa\nmuchos\n lugares" #si aplico un espacio en n\ y la palabra lo imprimira tambien por consola
-print(n)
-
+n="\neste\nstring\nocupa\nmuchos\n renglones" #() luego del \n hay un espacio y luego la palabra renglones
+print(n)  # este
+          # string
+          # ocupa
+          # muchos
+          #  renglones"  ()aqui la palabra esta separada del margen y no como lo esta el resto porque?
+                          #porque si aplico un espacio entre n\ y la palabra lo imprimira tambien por consola
 '''Además del carácter ' y ", hay otros caracteres especiales que para ser usados dentro de una cadena necesitan ser «escapados» con el carácter \.
 Son, entre otros, los siguientes: tabulador (\t), barra invertida (\\), retroceso (\b), nueva línea (\n) o retorno de carro (\r).'''
 # Ejemplo para declarar una ruta en Windows
 s = 'C:\\Users\\Documents\\'
-print(s)
-#C:\Users\Documents\
+print(s) #C:\Users\Documents\
 
 # Nueva línea más tabulador
 s = 'Hola\n\tPythonista'
@@ -125,11 +127,11 @@ Progreso: 10/10
 Aquí, el cursor regresa al inicio de la línea y sobrescribe el texto sin crear nuevas líneas.'''
 
 # Aquí, \n es interpretado como nueva línea
-s = 'C:\python\noticias' #como deberiamos hacer para que no se reconozca \n como un salto de linea
+s = 'C:\python\noticias' 
 print(s)
 #C:\python
 #oticias
-
+'como deberiamos hacer para que no se reconozca \n como un salto de linea'
 # hay que incertar una "r" al comienzo del valor de la variable
 # En una raw string no se interpreta el carácter \
 s = r'C:\python\noticias'
