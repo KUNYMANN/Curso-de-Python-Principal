@@ -47,4 +47,4 @@ print(cadena[23:-5])#"ubstring o lo que es lo mismo Debanado de Ca"
 #Es lo mismo que pedirlo asi utilizando dos parametros positivos para el mismo ejemplo
 print(cadena[23:67])#"ubstring o lo que es lo mismo Debanado de Ca"
 print(cadena[-0])#"E" muestra el incice 0 por mas que este en negativo porque el cero es neutro
-print(cadena[-6])#"a" de la palabra Cadena, ya que estoy solicitando que solo me muestre que caracter hay en el espacio -6 contando de atras hacia adelante
+print(cadena[-6])#"a" de la palabra Cadenas, ya que estoy solicitando que solo me muestre que caracter hay en el espacio -6 contando de atras hacia adelante
