@@ -4,11 +4,13 @@ texto="Hola Mundo" #dato STRING
 print(texto) #con Shift + Alt mas flecha hacia abajo se duplica la linea 
 print(texto.upper()) #si elegimos el metodo UPPER()automaticamente pasa todo el texto a MAYUSCULAS
 print(texto.lower()) #si elegimos el metodo LOWER()automaticamente pasa todo el texto a minusculas
+print(texto.capitalize()) #con capitalize coloca en mayusculas la primera letra de la primer palabra solamente, el resto quedara igual
 print(texto.title()) # si elegimo el metodo TITLE()automaticamente pasa a mayuscula las primera letra de cada palabra Del Texto
 print(texto.find("M")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el caracter solicitado
 print(texto.find("Mun")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado
 print(texto.find("mun")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado, ATENCION!!! que
 # si colocamos mal el texto va a dar error (-1) porque la busqueda se realiza colocando exactamente como esta escrito, respetando si esta en mayuscula o minuscula
+
 correo=input("Ingrese su correo electronico: ") 
 print(correo[:correo.find("@")] + "@ceu.es.com") #de esta manera find busca el indice en que esta ubicado el caracter solicitado "@" y a partir de ahi 
                                                  # con el + se ejecuta en consola el reemplazo por el texto que querramos introducir
@@ -27,7 +29,7 @@ nuevo_texto=texto.replace("Mun","Calzada//") # los Slahs solo estan para identif
 print(texto,nuevo_texto)
 print("Mundo"in texto)
 print(type(texto)) #con la palabra type () me esta diciendo que tipo de dato es el que estoy solicitando, en este caso me dice que es un string o sea un texto
-print(texto.capitalize()) #con capitalize coloca en mayusculas la primera letra de la primer palabra solamente, el resto quedara igual
+
 
 #PROGRAMA CREADO ESPECIALMENTE PARA MARITA
 nombre=input("Coloque aqui su nombre ")

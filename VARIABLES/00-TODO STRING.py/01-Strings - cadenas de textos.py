@@ -13,13 +13,13 @@ pero no deja de ser una cadena, lo mismo ocurre para la palabra, mensaje, o la p
 #Ejemplo
 "M  O  N  T  Y     P  Y  T  H  O  N"  #CADA CARACTER TIENE UN ESPACIO ASIGNADO EN LA CADENA
 '0  1  2  3  4  5  6  7  8  9  10 11' # como podemos verlo aqui 
-# Ahora bien estos espacios son importantes tenerlos presente, porque las cadenas van a ocupar un espacio, 
-# pero a su vez cada caracter dentro de la cadena va a ocuar otro espacio diferente al de la cadena
+# Ahora bien, estos espacios son importantes tenerlos presente, porque las cadenas van a ocupar un espacio, 
+# pero a su vez, cada caracter dentro de la cadena, va a ocupar otro espacio diferente al de la cadena
 'esto quiere decir que si yo mando a llamar al espacio 4 me va a mostar Y de MONTY'
 #en algunos casos la cuenta es asi: 0 1 2 3, empezando por el 0 la primer letra, 
 # en otros la cuenta no es asi, la cuenta es 1 2 3 empezando por la M que es la primera de la palabra MONTY
 # Y en otros el 0 va a ser la comilla, que no se cuenta pero hay algunas excepciones que si
-#fundamental tener presente siempre que 'CADA CARACTER OCUPA UN ESPACIO EN LA CADENA'
+#fundamental tener presente siempre que 'CADA CARACTER OCUPA UN ESPACIO EN LA CADENA inclisive los ESPACIOS VACIOS'
 
 "DEBANADO DE CADENAS"
 # la mayoria de los lenguajes de programacion permiten el debanado de cadenas JavaScript, Python, C# (SHARP) 

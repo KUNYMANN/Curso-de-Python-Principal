@@ -85,6 +85,21 @@ print(s)
 
 print()# de esta maneta con el print vacio genera un renglon vacio en la consola
 
+# Aquí, \n es interpretado como nueva línea
+s = 'C:\python\noticias' 
+print(s)
+#C:\python
+#oticias
+'como deberiamos hacer para que no se reconozca \n como un salto de linea'
+# hay que incertar una "r" al comienzo del valor de la variable
+# En una raw string no se interpreta el carácter \
+s = r'C:\python\noticias'
+print(s)
+#C:\python\noticias
+str()
+print(str)
+
+
 #Las secuencias de escape \b (backspace) y \r (carriage return) en Python se utilizan para controlar el formato del texto en la salida, 
 # generalmente para modificar lo que se muestra en la terminal. Aquí te explico cómo y cuándo podrías usarlas:
 
@@ -126,16 +141,3 @@ Progreso: 2/10 y asi sucesivamene hasta llegar a
 Progreso: 10/10
 Aquí, el cursor regresa al inicio de la línea y sobrescribe el texto sin crear nuevas líneas.'''
 
-# Aquí, \n es interpretado como nueva línea
-s = 'C:\python\noticias' 
-print(s)
-#C:\python
-#oticias
-'como deberiamos hacer para que no se reconozca \n como un salto de linea'
-# hay que incertar una "r" al comienzo del valor de la variable
-# En una raw string no se interpreta el carácter \
-s = r'C:\python\noticias'
-print(s)
-#C:\python\noticias
-str()
-print(str)

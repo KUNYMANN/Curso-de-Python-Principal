@@ -144,3 +144,4 @@ Santi.Nombre
 print(Santi.Dni)'''
 
 
+ #con Shift + Alt mas flecha hacia abajo se duplica la linea 
