@@ -15,7 +15,7 @@ print(len(palabra)) # la funcion len es para contar la catidad de caracteres
 #4
 #Mostrar en consola solo el caracter de la "á" mediante la posicion del string
 palabra1="automáticamente"
-print(palabra1[5]) #colocando entre corchetes el numero de indice a partir del 0nos dira que caracter se aloja en ese indice
+print(palabra1[5]) #colocando entre corchetes el numero de indice a partir del 0 nos dira que caracter se aloja en ese indice
 print(palabra1.find("á")) #la funcion find es para ubicar un caracter en especial dentro de un texto o palabra y nos dice en que indice se encuentra
 
 #5

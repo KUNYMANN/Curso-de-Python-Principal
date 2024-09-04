@@ -75,7 +75,7 @@ print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centim
 
 #Ejercicio 9
 #longitud de una cadena
-cadena="No voy en tren voy en avion"
+'''cadena="No voy en tren voy en avion"
 print("la cantidad de caracteres incluidos los espacio de esta frase es de :", len(cadena))
 #numero de veces que aparece la letra "o". 
 print("Cantidad de repeticiones de la letra 'v' : ",cadena.count("v"))
@@ -91,4 +91,37 @@ contador=0
 for x in cadena:
       if x in vocal:
             contador=contador+1
-print("esta frase tiene la cantidad de", contador, "vocales")
+print("esta frase tiene la cantidad de", contador, "vocales")'''
+
+
+#Ejercicio 10
+''' Crear un programa, que tenga una variable con la cadena “Te quiero solo como amiga”, y muestre la siguiente información:'''
+
+texto='Te quiero solo como amiga'
+texto2="recta"
+#• Imprima los dos primeros caracteres.
+print(texto[:2])
+#• Imprima los tres últimos caracteres.
+print(texto[-3:])
+#• Imprima dicha cadena cada dos caracteres.
+print(texto2[::2])
+#• Dicha cadena en sentido inverso.
+print(texto[::-1])
+#• Imprima la cadena en un sentido y en sentido inverso.
+print(texto+texto[::-1])
+#otra manera de Imprimir la cadena en un sentido y en sentido inversones asi:
+print(texto2, end='')
+print(texto2[::-1])
+#como tambien se pueden sumar ambos textos
+print(texto+texto2[::-1])
+print(texto[::-1]+texto2)
+
+
+#Ejercicio 11
+'''Crear un programa que tenga una variable con la cadena “Separado” y un carácter de coma (,); 
+e inserte el carácter entre cada letra de la cadena. Ej: separar y , debería devolver s,e,p,a,r,a,r
+Pista: Debes utilizar un método de las cadenas llamado “Replace”, recuerda que la posición de los caracteres empieza en 0.'''
+palabra="separado"
+caracter=","
+mezclado=caracter.join(palabra)
+print(mezclado)

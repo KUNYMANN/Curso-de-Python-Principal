@@ -21,3 +21,21 @@ print(texto.find("zando")) #si elegimos el metodo FIND("")automaticamente busca 
 print(texto.find("metodo")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado, pero ATENCION!!! que
 # si colocamos mal el texto va a dar error (-1) porque la busqueda se realiza colocando exactamente como esta escrito, respetando si esta en mayuscula o minuscula
 
+'''es posible dividir un string con la funcion "split()". Un ejemplo sencillo de división es el siguiente:'''
+text = "Esto es un ejemplo"
+print(type(text)) # es un string
+print(text.split()) #aqui el metodo split me divide a la frase en elementos de una la lista, utilizando para dividirla los espacios vacios
+#El resultado quedaria asi:  ["Esto", "es", "un", "ejemplo"] en text ha sido dividida en todos sus espacios y se devolvió una lista de subcadenas
+print(type(text.split())) # es una lista
+mi_cadena="soy Hector, mi apodo es kuny, tengo 58 años, juego al basquet"
+print(type(mi_cadena))# es un string
+print(mi_cadena.split(",")) #aqui el método split() usando el parametro de division la "," devuelve una lista de mi cadena, donde cada parte de la frase 
+#hasta la coma, es un elemento de la lista. ejemplo: "soy Hector" es un elemento, "mi apodo es kuny" es otro elemento, y asi sucesivamente
+print(type(mi_cadena.split())) # es una lista
+print("".join(mi_cadena)) #con el metodo .join() vuelvo a unir los elementos y los transforma en un solo elemento
+mi_cadena1=["Manzanas","Naranjas","Peras","Platanos","Bayas"]
+'dentro de las comillas puedo colocar con que caracter quiero que me los separe'
+print("---".join(mi_cadena1)) 
+print("***".join(mi_cadena1)) 
+print(type(mi_cadena1))# es una lista
+print(type("---".join(mi_cadena1)))# es un string

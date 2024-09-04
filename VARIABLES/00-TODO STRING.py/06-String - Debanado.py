@@ -48,5 +48,13 @@ print(cadena[23:-5])#"ubstring o lo que es lo mismo Debanado de Ca"
 print(cadena[23:67])#"ubstring o lo que es lo mismo Debanado de Ca"
 print(cadena[-0])#"E" muestra el incice 0 por mas que este en negativo porque el cero es neutro
 print(cadena[-6])#"a" de la palabra Cadenas, ya que estoy solicitando que solo me muestre que caracter hay en el espacio -6 contando de atras hacia adelante
-frase=input("Ingrese una frase: ")
+
+frase="Cuantas veces voy a decir lo mismo"
 print(frase[::-1]) #colocando de esta manera se invierte la frase letra por letra o lo que se haya ingresado como valor en la varianble       
+print(frase[::2])#Imprime dicha cadena cada dos caracteres. 
+print(frase[::5])#si variamos el numero tambien va a variar los saltos de impresion, en este caso lo hara cada 5 caracteres
+texto="campeon"
+texto2="fenomeno"
+#como tambien se pueden sumar ambos textos
+print(texto+texto2[::-1])#imprime el primer texto correctamente y sin salto de espacio imprime invertido el segundo texto
+print(texto[::-1]+texto2)#imprime el primer texto invertido y sin salto de espacio imprime el segundo texto correctamente
