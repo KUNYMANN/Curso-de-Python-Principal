@@ -31,15 +31,12 @@ print(cadena[6:58]) #"s un ejemplo de substring o lo que es lo mismo Deban"
 
 'OTRAS FORMAS'
 # Veamos que ocurre si dejo un espacio vacio para cualquiera de los parametros. 
-
 "Primer caso"
 # Cuando no colocamos un parametro de inicio, Python va a interpretar que queremos que nos muestre desde el primer indice en este caso el indice 0, aunque no lo exprese, hasta el indice indicado
 print(cadena[:20])#"Este es un ejemplo d" 
-
 "Segundo caso"
 # Cuando indicamos desde que indice queremos que nos mestre pero no colocamos el segundo parametro,python entiende que va a mostrar hasta el ultimo indice de la cadena aunque no este expresado
 print(cadena[10:])#"ejemplo de substring o lo que es lo mismo Debanado de Cadenas" 
-
 'Tercer caso'
 print(cadena[23:-5])#"ubstring o lo que es lo mismo Debanado de Ca" 
 #Si coloco numeros negativos python interpreta ese numero negativo como primer condicion o parametro, asi que va a contar desde atras hacia adelante y va a mostrar desde el
@@ -49,6 +46,7 @@ print(cadena[23:67])#"ubstring o lo que es lo mismo Debanado de Ca"
 print(cadena[-0])#"E" muestra el incice 0 por mas que este en negativo porque el cero es neutro
 print(cadena[-6])#"a" de la palabra Cadenas, ya que estoy solicitando que solo me muestre que caracter hay en el espacio -6 contando de atras hacia adelante
 
+'''cadena [inicio:final:saltos o pasos]'''
 frase="Cuantas veces voy a decir lo mismo"
 print(frase[::-1]) #colocando de esta manera se invierte la frase letra por letra o lo que se haya ingresado como valor en la varianble       
 print(frase[::2])#Imprime dicha cadena cada dos caracteres. 

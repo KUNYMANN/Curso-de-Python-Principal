@@ -125,3 +125,6 @@ palabra="separado"
 caracter=","
 mezclado=caracter.join(palabra)
 print(mezclado)
+
+cadena="Estoy usando el metodo Replase"
+print(cadena.replace("e","X")) 

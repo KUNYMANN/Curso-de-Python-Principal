@@ -24,7 +24,7 @@ print(precio[:precio.find(".")], "euros y", precio[precio.find(".")+1:], "centim
 frase=input("Ingrese una frase: ")
 print(frase[::-1]) #colocando de esta manera se invierte la frase letra por letra o lo que se haya ingresado como valor en la variante                                         
 
-print(texto.replace("Mun","Kuny//"))#de esta manera se reemplaza al nuevo texto o parte del nuevo texto los Slahs solo estan para identificar donde esta el cambio
+print(texto.replace("Mun","Kuny//"))#de esta manera se reemplaza al nuevo texto o parte del nuevo texto, los Slahs solo estan para identificar donde esta el cambio
 nuevo_texto=texto.replace("Mun","Calzada//") # los Slahs solo estan para identificar donde esta el cambio en consola, no cumplen ninguna funcion
 print(texto,nuevo_texto)
 print("Mundo"in texto)

@@ -39,3 +39,7 @@ print("---".join(mi_cadena1))
 print("***".join(mi_cadena1)) 
 print(type(mi_cadena1))# es una lista
 print(type("---".join(mi_cadena1)))# es un string
+print(texto.replace("Python","Kuny//"))#de esta manera se reemplaza al nuevo texto o parte del nuevo texto, los Slahs solo los coloque para identificar donde esta el cambio
+nuevo_texto=texto.replace("utili","Calzada//") # los Slahs solo los coloque para identificar donde esta el cambio en consola, no cumplen ninguna funcion
+print(texto,nuevo_texto)
+print(texto.replace("e","X"))#Estoy utilizando los MXtodos dX Python (aqui no rremplazo la primer E porque esta en mayusculas y Python la otoma como otro caracter diferente al de la "e" minuscula)
