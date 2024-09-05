@@ -22,7 +22,7 @@ print(cadena4) #"Esto lo quiero 'resaltar'"
 
 #ESCARPAR CARACTERES (Para la documentacion de PYTHON, o sea lo formal, se lo llama STRING LITERALS)
 #para "ESCAPAR CARACTERES O STRING LITERALS" utilizamos LA BARRA "\" (SLASH INVERTIDO)
-# esta barra "\" va ha hacer que nuestro estring tenga un comportamiento diferente
+# esta barra "\" va ha hacer que nuestro string tenga un comportamiento diferente
 '''vemos que si al usar en una cadena de texto las mismas comillas "para encerrar el strig" y "para resaltar",  
 nos daba un error, en cambio,  si utilizamos el slash invertido \ no nos va a devolver un error'''
 #por que??? porque python detecta que no estas cerrando el string, sino que estas colocando comillas para destarcar algo en el texto
@@ -32,18 +32,18 @@ literals='Esto es un \'ejemplo\' de cadena de texto' # la diferencia esta en que
 print(literal) # Esto es un "ejemplo" de cadena de texto
 print(literals) # Esto es un 'ejemplo' de cadena de texto
 
-#SALTOS DE LINEA para realizarlo se utiliza "\n" (slahs invertido n)
+#SALTOS DE LINEA para realizarlo se utiliza "\n" (slash invertido n)
 salto_de_linea='quiero que se muestre \n"este texto", \nen varias lineas \no renglones'
 print(salto_de_linea) # quiero que se muestre
                       # "este texto",
                       # en varias lineas
                       # o renglones
 
-#TABULACION se utiliza "\t" (slahs invertido t)
+#TABULACION se utiliza "\t" (slash invertido t)
 tabular='quiero que realize una "tabulacion" \taqui'
-print(tabular)#quiero que realize una "tabulacion"     aqui
+print(tabular)#quiero que realize una "tabulacion" ----aqui
 
-#ELIMINAR ESPACIO se utiliza "\b" (slahs invertido b)
+#ELIMINAR ESPACIO se utiliza "\b" (slash invertido b)
 # 1. \b (Backspace)
 'La secuencia \b se usa para eliminar el carácter inmediatamente anterior a donde se coloca la secuencia. Es útil cuando quieres simular la eliminación de texto en la terminal.'
 #*Ejemplo:*
