@@ -17,7 +17,7 @@ print(cadena1)
 cadena3='Esto lo quiero "resaltar"'
 print(cadena3) #'Esto lo quiero "resaltar"'
 cadena4="Esto lo quiero 'resaltar'"
-print(cadena4) #"Esto lo quiero 'resaltar'""
+print(cadena4) #"Esto lo quiero 'resaltar'"
 '''Si yo no alterno las comillas va a dar Error, salvo en el metodo siguiente llamado: ESCARPAR CARACTERES'''
 
 #ESCARPAR CARACTERES (Para la documentacion de PYTHON, o sea lo formal, se lo llama STRING LITERALS)
