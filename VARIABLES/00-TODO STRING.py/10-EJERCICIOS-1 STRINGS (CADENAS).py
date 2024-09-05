@@ -128,3 +128,6 @@ print(mezclado)
 
 cadena="Estoy usando el metodo Replase"
 print(cadena.replace("e","X")) 
+
+cancion="Estaba la Catalina"
+print(cancion.replace("a","@"))
