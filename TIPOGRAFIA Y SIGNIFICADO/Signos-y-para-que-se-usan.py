@@ -13,7 +13,7 @@ usando varias líneas"""
 tambien puede utilizarse tres comillas simples'''
 
 '''El  "=" es un simbolo de asignacion que difiere del == que se utiliza en los Operadores Aritmeticos
-la coma "," es un separador
+la coma "," es un separador, en el PRINT la coma actua como union entre un string y otro, sin producir espacio vacio en la concatenacion
 El ";" permite cambiar de linea
 
 Los paréntesis "()" en Python se utilizan para la creación de tuplas, que son colecciones no modificables de objetos. 

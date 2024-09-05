@@ -42,4 +42,8 @@ print(type("---".join(mi_cadena1)))# es un string
 print(texto.replace("Python","Kuny//"))#de esta manera se reemplaza al nuevo texto o parte del nuevo texto, los Slahs solo los coloque para identificar donde esta el cambio
 nuevo_texto=texto.replace("utili","Calzada//") # los Slahs solo los coloque para identificar donde esta el cambio en consola, no cumplen ninguna funcion
 print(texto,nuevo_texto)
-print(texto.replace("e","X"))#Estoy utilizando los MXtodos dX Python (aqui no rremplazo la primer E porque esta en mayusculas y Python la otoma como otro caracter diferente al de la "e" minuscula)
+print(texto.replace("e","X"))#Estoy utilizando los MXtodos dX Python (aqui no rremplazo la primer E porque esta en mayusculas 
+                             #y Python lo toma como un caracter diferente al de la "e" minuscula)
+print(texto.replace("",","))#cuando le damos el primer parametro vacio "", interpreta como que va a reemplazarce cada uno de los espacios al que va a separar cada caracter 
+                            #por el segundo parametro que en este caso es una coma, pero puede ser cualquier caracter o string)
+print(texto.replace("", "*/*"))# */*E*/*s*/*t*/*o*/*y*/* */*u*/*t*/*i*/*l*/*i*/*z*/*a*/*n*/*d*/*o*/* */*l*/*o*/*s*/* */*M*/*e*/*t*/*o*/*d*/*o*/*s*/* */*d*/*e*/* */*P*/*y*/*t*/*h*/*o*/*n*/*
