@@ -97,7 +97,7 @@ print("esta frase tiene la cantidad de", contador, "vocales")'''
 #Ejercicio 10
 ''' Crear un programa, que tenga una variable con la cadena “Te quiero solo como amiga”, y muestre la siguiente información:'''
 
-texto='Te quiero solo como amiga'
+'''texto='Te quiero solo como amiga'
 texto2="recta"
 #• Imprima los dos primeros caracteres.
 print(texto[:2])
@@ -114,20 +114,30 @@ print(texto2, end='')
 print(texto2[::-1])
 #como tambien se pueden sumar ambos textos
 print(texto+texto2[::-1])
-print(texto[::-1]+texto2)
+print(texto[::-1]+texto2)'''
 
 
 #Ejercicio 11
 '''Crear un programa que tenga una variable con la cadena “Separado” y un carácter de coma (,); 
 e inserte el carácter entre cada letra de la cadena. Ej: separar y , debería devolver s,e,p,a,r,a,r
 Pista: Debes utilizar un método de las cadenas llamado “Replace”, recuerda que la posición de los caracteres empieza en 0.'''
-palabra="separado"
+palabra="separado por una coma"
 caracter=","
 mezclado=caracter.join(palabra)
 print(mezclado)
+
 
 cadena="Estoy usando el metodo Replase"
 print(cadena.replace("e","X")) 
 
 cancion="Estaba la Catalina"
 print(cancion.replace("a","@"))
+
+estilo=["cafe", "te", "licor", "agua"] 
+print(estilo)
+auxiliar="HOLA"
+cambio="jabon"
+nuevo=cambio.join(estilo)
+Extra=cambio.join(auxiliar)
+print(nuevo)
+print(Extra)

@@ -18,6 +18,9 @@ la coma "," es un separador, en el PRINT la coma actua como union entre un strin
 
 El ";" permite cambiar de linea
 
+Un STRING va siempre encerrado entre comillas ejemplo: "yo me llamo Hector" 
+puede ser tambien una sola palabra. ejemplo: "Kunymann"
+
 Los paréntesis "()" en Python se utilizan para la creación de tuplas, que son colecciones no modificables de objetos. 
 También se utilizan para la definición de funciones así como para su invocación.
 El último uso habitual es establecer el orden de evaluación dentro de una expresión.
@@ -25,6 +28,10 @@ El último uso habitual es establecer el orden de evaluación dentro de una expr
 Los corchetes "[]" en Python se utilizan para la definición de listas, 
 para el acceso de lectura a los elementos de tuplas, listas, diccionarios y strings, como para la busqueda de posicion de un elemento,
 tambien para el acceso de escritura a listas y diccionarios.
+
+Una LISTA siempre esta compuesta por varios elementos/objetos que se escriben entre comillas simples o dobles y separados por una coma. ejemplo:["Cafe","Te","Leche"] 
+Atencion!!! que si yo lo escribo asi ["Cafe,Te,Leche"] significa que en el interior de los corchetes hay un solo elemento/objeto (un string) no una lista.
+
 
 Las llaves "{}" en Python se utilizan para definir diccionarios y para formatear cadenas de texto
 incluyendo valores de variables o expresiones.'''

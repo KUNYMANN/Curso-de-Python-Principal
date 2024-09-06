@@ -1,4 +1,4 @@
-# LOS TITULOS SE DENOMINAN "key"(clave) Y LOS DATOS SE DENOMINAN "value" (valor)
+# LOS TITULOS/NOMBRES DE LAS VARIABLES SE DENOMINAN "key"(clave) Y LOS DATOS SE DENOMINAN "value" (valor)
 # LAS VARIABLES LLEVAN UN TITULO LA "KEY" QUE LE ASIGNAMOS, ESTAS SE DECLARAN Y LA VARIABLE PROPIAMNTE DICHA ES EL "VALOR", LO QUE SE PUEDE VARIAR, EL DATO QUE DEFINIMOS ASIGNARLE 
 # O SEA UNA VARIABLE ESTA COMPUESTA POR UN TITULO Y UN DATO, Y SE EXPRESA DE ESTA MANERA...TITULO "KEY" =  DATO "VALUE"
 # EJEMPLO: TITULO DE LA VARIABLE...COLOR = LA VARIABLE ES EL DATO QUE LE ASIGNEMOS... ROJO-VERDE-AZUL EL QUE FUERE
@@ -60,7 +60,7 @@ bienvenida=f"Hola {nombre} ¡Como estas!"
 print("kuny" in bienvenida)
 print("kuny" not in bienvenida)
 
-# EL TITULO DE UNA VARIABLE DE DOS O MAS PALABRAS NO LLEVAN ESPACIOS VACIOS....LAS VARIABLES SI (Ejemplo: tituladelavariable o titulo_de_la_variable)
+# EL TITULO/NOMBRE DE UNA VARIABLE DE DOS O MAS PALABRAS NO LLEVAN ESPACIOS VACIOS....LAS VARIABLES SI (Ejemplo: tituladelavariable o titulo_de_la_variable)
 # EXISTEN VARIAS FORMAS DE EXPRESARLO SEGUN EL PROGRAMA o lenguaje QUE USEMOS
 # EJEMPLO titulo_honorifico_del_rey_de_irlanda   =    "Jack II de Cork" (asi se escribe en PYTHON y se llama Snak_case)
 # EJEMPLO tituloHonorificoDelReyDeIrlanda  =   "Jack II de Cork" (asi se escribe en JAVASCRIPT y se llama CamelCase)

@@ -21,6 +21,8 @@ print(texto.find("zando")) #si elegimos el metodo FIND("")automaticamente busca 
 print(texto.find("metodo")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado, pero ATENCION!!! que
 # si colocamos mal el texto va a dar error (-1) porque la busqueda se realiza colocando exactamente como esta escrito, respetando si esta en mayuscula o minuscula
 
+'LAS LISTAS ESTAN COMPUESTAS POR VARIOS ELEMENTOS'
+
 '''es posible dividir un string con la funcion "split()". Un ejemplo sencillo de división es el siguiente:'''
 text = "Esto es un ejemplo"
 print(type(text)) # es un string
@@ -35,10 +37,13 @@ print(type(mi_cadena.split())) # es una lista
 print("".join(mi_cadena)) #con el metodo .join() vuelvo a unir los elementos y los transforma en un solo elemento
 mi_cadena1=["Manzanas","Naranjas","Peras","Platanos","Bayas"]
 'dentro de las comillas puedo colocar con que caracter quiero que me los separe'
-print("---".join(mi_cadena1)) 
-print("***".join(mi_cadena1)) 
+print("---".join(mi_cadena1))# con el metodo join.(insertar/unir) cambia las comas de una lista por el string elegido como inserto/union, en este caso es ---
+print("***".join(mi_cadena1))# dado que python utiliza para las separaciones de una lista la coma ",".IMPORTANTE ahora la lista, paso a convertirse en un string
 print(type(mi_cadena1))# es una lista
 print(type("---".join(mi_cadena1)))# es un string
+palabra="Campeon"
+print("*/*".join(palabra))#pero en una palabra sola Python va a concatenar letra por letra con el strig utilizado de incerto
+print(type(palabra))
 print(texto.replace("Python","Kuny//"))#de esta manera se reemplaza al nuevo texto o parte del nuevo texto, los Slahs solo los coloque para identificar donde esta el cambio
 nuevo_texto=texto.replace("utili","Calzada//") # los Slahs solo los coloque para identificar donde esta el cambio en consola, no cumplen ninguna funcion
 print(texto,nuevo_texto)
@@ -47,3 +52,13 @@ print(texto.replace("e","X"))#Estoy utilizando los MXtodos dX Python (aqui no rr
 print(texto.replace("",","))#cuando le damos el primer parametro vacio "", interpreta como que va a reemplazarce cada uno de los espacios al que va a separar cada caracter 
                             #por el segundo parametro que en este caso es una coma, pero puede ser cualquier caracter o string)
 print(texto.replace("", "*/*"))# */*E*/*s*/*t*/*o*/*y*/* */*u*/*t*/*i*/*l*/*i*/*z*/*a*/*n*/*d*/*o*/* */*l*/*o*/*s*/* */*M*/*e*/*t*/*o*/*d*/*o*/*s*/* */*d*/*e*/* */*P*/*y*/*t*/*h*/*o*/*n*/*
+
+#CREANDO UN CONJUNTO CONJUNTO O SET
+conjunto={"kunymann"  ,  "soy jugador de basquet" ,  "mido 1.87" ,  "kunymann"} #conjunto va siempre entre {llaves} 
+lista=["kunymann" , "soy jugador de basquet" , "mido 1.87" , "kunymann"] #lista va siempre entre [corchetes] se pueden duplicar datos
+tupla=("kunymann" , "soy jugador de basquet" , "mido 1.87" , "kunymann") #tupla va siempre entre (parentesis) se pueden duplicar datos
+print(lista) #se pueden duplicar datos
+print(tupla) #se pueden duplicar datos
+print(conjunto) #no se pueden duplicar datos y no se puede llamar a los elementos por su indice [0,1,2,3, etc.]
+
+
