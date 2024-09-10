@@ -49,3 +49,22 @@ print(f"el numero es {numero +4*(6**3/2)-3} por la funcion que le agregue")# aqu
 #para numeros FLOAT (con decimales)
 numero=float(input("Digite un numero con decimales: "))# esta es la manera de comprobar que el numero esta tomado como tal no como un texto (string)
 print(f"el numero es {numero *2} porque lo multiplique por dos")# aqui se puede realizar cualquier operatoria aritmetica
+
+
+
+valor1=float(input("ingrese un numero distinto de 0 para 'a':  "))
+valor2=float(input("ingrese un numero distinto de 0 para 'b':  "))
+valor3=float(input("ingrese un numero distinto de 0 para 'c':  "))
+             
+a=valor1
+b=valor2
+c=valor3
+if a==0 or b==0 or c==0:
+    print("El numero ingresado debe ser distinto de '0'")
+
+operacion=((-b)+(((b**2)-(4*a*c)))**(1/2))/(2*a)
+operacion1=((-b)-(((b**2)-(4*a*c)))**(1/2))/(2*a)
+print(f"la solucion es: {operacion:.6f} y {operacion1:.6f}")
+
+
+
