@@ -68,7 +68,7 @@ altura=1.75
 contextura="robusta"
 tamaño_del_calzado=44.5
 print(f"su edad es: {edad} años \nsu sexo es: {sexo}\nsu tono de piel es: {color_de_piel}\nsu color de ojos es: {color_de_ojos} ")
-print(f"su altura es: {altura}\nsu contextura fisica es: {contextura}\nsu tamaño de calzado es:{tamaño_del_calzado}")
+print(f"su altura es: {altura}\nsu contextura fisica es: {contextura}\nsu tamaño de calzado es: {tamaño_del_calzado}")
 print()
 print(f"su edad es: {edad} años")
 print(f"su sexo es: {sexo}")
@@ -78,3 +78,5 @@ print(f"su altura es: {altura}")
 print(f"su contextura fisica es: {contextura}")
 print(f"su tamaño de calzado es:{tamaño_del_calzado}")
 print()
+
+

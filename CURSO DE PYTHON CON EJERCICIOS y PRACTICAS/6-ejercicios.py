@@ -131,3 +131,16 @@ print("Cantidad de dias alojado: ",dias_estadia)
 print("Precio por dia $: ",tarifa_diaria)
 print("Usted reservo una habitacion con vista al mar: ",VAR)
 print("Usted reservo una habitacion con vista al mar: ",Respuesta)
+
+
+
+Producto="Camara Digital"
+Precio=399.99
+Stock=20
+Disponible=True
+
+print("\t***Sistema Tienda Online***")
+print("Producto: ",Producto)
+print("Precio : $",Precio)
+print("Cantidad en el Inventario: ", Stock)
+print("Disponible para entrega: ",Disponible)
