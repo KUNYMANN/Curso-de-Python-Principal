@@ -14,6 +14,10 @@ float 3.14  hace referencia a un numero con decimales
 True verdadero 
 False falso
 
+"None" es un tipo de dato especial que representa la ausencia de valor o la falta de definición de un valor. 
+Se utiliza para indicar que una variable no tiene asignado ningún valor válido. 
+
+
 IMPORTANTE
 con la palabra tipe()nos dice que tipo de dato es el ingresado
 

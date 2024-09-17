@@ -1,4 +1,5 @@
 # TIPOS DE VARIABLES "Python almacena objetos, dentro de esos objetos puede haber distintos tipos de datos"
+"Las variables no son de ningun tipo, sino que almacenan la referencia de un objeto, es por eso que se puede cambiar la referencia como tambien el tipo de dato que esta almacenando"
 #  variable="Hola Mundo" #este tipo de dato se lo conoce como STRING y hace referencia a un texto
 #  numero=42 #llamado NUMBER en este caso es un Nº entero y se lo denomina como INT (INTeger)
 #  decimal=3.141516 #llamado NUMBER en este caso los Nº con decimales se lo denomina FLOAT (flotante)
@@ -6,6 +7,10 @@
 #  falso=False # NO esta es una funcion llamada boolean
 
 # TIPADO DINAMICO: es que a una variable se le puede asignar valores de diferentes tipos (number o string) en diferentes momentos del programa
+
+'''"None" es un tipo de dato especial que representa la ausencia de valor o la falta de definición de un valor. 
+Se utiliza para indicar que una variable no tiene asignado ningún valor válido.'''
+
 valor=10 
 print(valor)
 print(type(valor))
@@ -43,3 +48,7 @@ print(type(valor))
 valor=False
 print(valor)
 print(type(valor))
+#NONE
+direccion=None
+print(direccion)
+print(type(direccion))
