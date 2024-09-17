@@ -6,9 +6,9 @@
 
 #2
 #El tipo de error que devuelve un string mal escrito es un SyntaxError (error de sintaxis)
-
+'''
 #3
-#imprimir por consola la cantidad de caracteres de la palabra "automaticamente"
+#imprimir por consola la cantidad de caracteres de la palabra "automaticamente" 
 palabra="automáticamente"
 print(len(palabra)) # la funcion len es para contar la catidad de caracteres 
 
@@ -102,4 +102,32 @@ print("\tCALCULADORA EXPONENCIAL")
 numero_ingresado=int(input("Coloque el numero que desee exponenciar: \n"))
 exponente=int(input("Coloque el numero al que quiere elevarlo: \n"))
 resultado=(int(numero_ingresado))**(int(exponente))
-print(f"El resultado de la operacion es: {resultado}")
+print(f"El resultado de la operacion es: {resultado}") '''
+print()
+
+
+
+
+cliente=input("Coloque su nombre: ")
+dias_estadia=input("Cuantos dias desea alojarse: ")
+tarifa_diaria= 1200
+Respuesta=input("Desea que la habitacion tenga vista al mar: ")
+
+if Respuesta=="si":
+    VAR=True
+else:
+    VAR=False
+
+if Respuesta=="si":
+    Respuesta="True"
+else:
+    Respuesta="False"
+
+
+
+print("\t*** Sistema de Reserva de Hotel***")
+print("Nombre de la reserva: ",cliente)
+print("Cantidad de dias alojado: ",dias_estadia)
+print("Precio por dia $: ",tarifa_diaria)
+print("Usted reservo una habitacion con vista al mar: ",VAR)
+print("Usted reservo una habitacion con vista al mar: ",Respuesta)
