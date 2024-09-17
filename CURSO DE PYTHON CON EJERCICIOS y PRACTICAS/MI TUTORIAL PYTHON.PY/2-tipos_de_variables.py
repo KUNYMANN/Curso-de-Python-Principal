@@ -80,3 +80,20 @@ print(f"su tamaño de calzado es:{tamaño_del_calzado}")
 print()
 
 
+'''SABEMOS QUE, COMO SU NOMBRE LO INDICA, UNA VARIABLE PUEDE MODIFICAR TANTO SU NOMEBRE COMO SU VALOR, PERO EXISTE UN TIPO DE VARIABLE
+DENOMINADA "CONSTANTE"
+ Y ES AQUELLA QUE SE ESCRIBE TODA EN MAYUSCULAS Y SE DA A ENTENDER QUE EL VALOR QUE ESTA CONTIENE NO SE DEBE MODIFICAR
+SINO QUE DEBE MANTENERSE SIEMPRE EL MISMO VALOR ASIGNADO''' #ESTO ES POR CONVENCION DE PROGRAMADORES Y NO POR UNA REGLA DE PYTHON
+#por ejemplo:
+#una variable que contenga el numero de 
+#PI=3.14159
+#otros pueden ser:
+#MENSAJE_ERROR="Usuario Invalido"
+#NOMBRE_USUARIO_VALIDO="admin"
+
+PADRON_DE_USUARIOS="Clientes"
+print("no modificar el valor de esta constante: ",PADRON_DE_USUARIOS)
+
+'tambien existen constamntes dentro del lenguaje de Python,  pero estas vienen definidas en minusculas y estan dentro del modulo math'
+import math
+print('valor de math.pi:',math.pi)

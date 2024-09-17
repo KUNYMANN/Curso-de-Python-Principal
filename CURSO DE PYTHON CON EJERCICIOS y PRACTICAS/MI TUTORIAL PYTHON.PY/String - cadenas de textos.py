@@ -67,3 +67,18 @@ print(cadena[0:12])
 """cuando uno solicita un determinado numero de caracteres de una cadena, si se tomo el primero no incluye el ultimo, dado que la solicitud se hace
 hasta tal numero, NO INCLUSIVE, si queremos que lo incluya a este ultimo,  debemos solicita un caracter mas, como cuando contamos con los dedos"""
 'no ocurre esto a la inversa, cuando la solicitud la hacemos con numeros negativos'
+
+#CADENA DE MULTIPLES LINEAS
+#ejemplo
+cadena2='''Este es un ejemplo 
+de "multiples lineas"
+en una cadena'''
+print(cadena2)
+
+print()
+
+#aqui vemos que si tabulamos, tambien lo va a hacer por consola
+cadena3='''Este es un ejemplo 
+    de "multiples lineas"
+        en una cadena'''
+print(cadena3)
