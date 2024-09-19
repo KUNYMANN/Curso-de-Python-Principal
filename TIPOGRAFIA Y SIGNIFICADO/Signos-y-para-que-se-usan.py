@@ -40,9 +40,14 @@ incluyendo valores de variables o expresiones.'''
 print('"Kuny" es mi apodo') aqui se imprimira lo siguiente  "Kuny" es mi apodo, tambien podria ser print("'Kuny' es mi apodo")
  dependiendo de con que comillas quiero que se imprima, las invierto, nunca se utiliza las mismas para imprimir y resaltar una palabra'''
 
-''' "n\" se utiliza para cambiar de renglon'''
+''' "n\" (new line) se utiliza para dar un salto de renglon '''
 
-''' "\t.:MENU:." se utiliza en el print para que el titulo aparezca desplazado del margen a 4 espacios'''
+'''\\ (doble slash) permite colocar una \ invertida y que lo tome como un caracter especial para que salga impreso por consola
+s = 'C:\\Users\\Documents\\'
+print(s) #C:\Users\Documents\
+'''
+
+''' "\t (tab o tabulacion) ejemplo \t.:MENU:." se utiliza en el print para que el titulo aparezca desplazado del margen a 4 espacios lo que es igual a una tabulacion'''
 
 '''el input se utiliza siempre cuando es algo que solicite que ingrese el usuario 
 
@@ -70,6 +75,7 @@ Esta función comprueba si el término que buscas está presente en el string y 
 Utiliza “not in” para asegurarte de que un término no aparece en el string. 
 
 es posible dividir un string con la funcion "split()". Un ejemplo sencillo de división es el siguiente:'''
+
 text = "Esto es un ejemplo"
 print(type(text)) # es un string
 print(text.split()) #aqui el metodo split me divide a la frase en elementos de una la lista, utilizando para dividirla los espacios vacios

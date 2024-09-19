@@ -5,6 +5,7 @@
 #METODOS DE CARACTERES
 cadena='Estoy utilizando los Metodos de Python'
 print(cadena) #con Shift + Alt mas flecha hacia abajo se duplica la linea 
+print(cadena) #con Shift + Alt mas flecha hacia abajo se duplica la linea jajajajaj
 
 #primero tengo que identificar a que variabe le voy a aplicar un metodo, luego un punto, recordemos que  cada metodo lleva sus propios ()
 texto='Estoy utilizando los Metodos de Python' #dato STRING
@@ -38,12 +39,13 @@ print("".join(mi_cadena)) #con el metodo .join() vuelvo a unir los elementos y l
 mi_cadena1=["Manzanas","Naranjas","Peras","Platanos","Bayas"]
 'dentro de las comillas puedo colocar con que caracter quiero que me los separe'
 print("---".join(mi_cadena1))# con el metodo join.(insertar/unir) cambia las comas de una lista por el string elegido como inserto/union, en este caso es ---
-print("***".join(mi_cadena1))# dado que python utiliza para las separaciones de una lista la coma ",".IMPORTANTE ahora la lista, paso a convertirse en un string
+print("***".join(mi_cadena1))# dado que python utiliza para las separaciones de una lista la coma ",".IMPORTANTE: ahora la lista, paso a convertirse en un string
 print(type(mi_cadena1))# es una lista
 print(type("---".join(mi_cadena1)))# es un string
 palabra="Campeon"
-print("*/*".join(palabra))#pero en una palabra sola Python va a concatenar letra por letra con el strig utilizado de incerto
-print(type(palabra))
+print("*/*".join(palabra))#para Python una palabra por si sola, ya es una cadena, esto quiere decir que al no haber una lista de elementos a separar, python  va a concatenar
+#letra por letra con el caracter o caracteres utilizado/s como incerto o separador
+print(type(palabra))# es un string
 print(texto.replace("Python","Kuny//"))#de esta manera se reemplaza al nuevo texto o parte del nuevo texto, los Slahs solo los coloque para identificar donde esta el cambio
 nuevo_texto=texto.replace("utili","Calzada//") # los Slahs solo los coloque para identificar donde esta el cambio en consola, no cumplen ninguna funcion
 print(texto,nuevo_texto)

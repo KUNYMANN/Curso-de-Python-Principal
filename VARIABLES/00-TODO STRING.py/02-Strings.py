@@ -72,7 +72,7 @@ print(n)  # este
           #  renglones"  ()aqui la palabra esta separada del margen y no como lo esta el resto porque?
                           #porque si aplico un espacio entre n\ y la palabra lo imprimira tambien por consola
 '''Además del carácter ' y ", hay otros caracteres especiales que para ser usados dentro de una cadena necesitan ser «escapados» con el carácter \.
-Son, entre otros, los siguientes: tabulador (\t), barra invertida (\\), retroceso (\b), nueva línea (\n) o retorno de carro (\r).'''
+Son, entre otros, los siguientes: tabulador (\t), doble barra invertida (\\), retroceso (\b), nueva línea (\n) o retorno de carro (\r).'''
 # Ejemplo para declarar una ruta en Windows
 s = 'C:\\Users\\Documents\\'
 print(s) #C:\Users\Documents\
@@ -112,13 +112,13 @@ print("Hola Mundo\b!")
 En este caso, el carácter "o" en "Mundo" es eliminado y reemplazado por el signo de exclamación.'''
 
 ### 2. \r (Carriage Return)
-'''La secuencia \r mueve el cursor de la terminal al inicio de la línea sin avanzar a la siguiente. 
-Esto significa que cualquier texto escrito después de \r sobrescribirá el texto existente en esa línea.'''
+'''La secuencia \r mueve el cursor de la terminal al inicio de la línea sin avanzar ni hacer un salto de renglon, solo que va a sobreescribir el texto que estaba anteriormente escrito
+por el que se encuentra despues de \r .'''
 #*Ejemplo:*
-print("Hola Mundo\rPython")
+print("EL Texto viejo va a ser reemplazado por \r EL TEXTO NUEVO")
 #*Salida:*
-'''Pythono Mundo
-En este caso, "Python" sobrescribe los primeros caracteres de "Hola Mundo", resultando en "Pythono Mundo".'''
+'''"EL Texto viejo va a ser reemplazado por EL NUEVO TEXTO
+En este caso, "Python" sobrescribe los primeros caracteres de "EL Texto viejo va a ser reemplazado por", resultando en "EL TEXTO NUEVOva a ser reemplazado por".'''
 
 ### ¿Cuándo se usarían?
 '*\b*: Si estás simulando una barra de progreso o deseas corregir un texto sin borrar toda la línea, como en interfaces de consola interactivas.'
@@ -127,13 +127,10 @@ En este caso, "Python" sobrescribe los primeros caracteres de "Hola Mundo", resu
 También se usa para sobrescribir mensajes en la consola.'''
 
 #*Ejemplo de barra de progreso:*
-
 import time
-
 for i in range(10):
     print(f"\rProgreso: {i+1}/10", end="")
     time.sleep(0.5)
-
 print()
 #*Salida (sobrescribiéndose en la misma línea):*
 '''Progreso: 1/10,
