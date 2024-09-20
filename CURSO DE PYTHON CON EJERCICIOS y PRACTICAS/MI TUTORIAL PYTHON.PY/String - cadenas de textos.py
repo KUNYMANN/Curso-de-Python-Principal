@@ -29,10 +29,13 @@ si deseamos modificar una cadena, entonces tendremos que crear una nueva cadena"
 cadena_Inmutable="Kunymann"# dicha cadena es un objeto creado en un lugar especifico de la memoria, por eso es inmutable
 #cadena_Inmutable[0]="C"  como vemos, si quisieramos reemplazar un caracter, en este caso la letra "K" por la letra "C" daria
 #el siguiente error: 'TypeError: "str" object does not support item assignment' PORQUE LAS CADENAS SON INMUTABLES
-'Pero si podemos asignarle un nuevo valor'
+nueva_cadena=cadena_Inmutable #si creamos una nueva variable podemos conservar el valor de la variable original
+print(nueva_cadena)#cambio el nombre de la variable y conserva el valor de la anterior variable
+'ahora si podemos asignarle un nuevo valor'
 cadena_Inmutable="Cunymann"
-print(cadena_Inmutable)
+print(cadena_Inmutable) #cambio el valor de la variable pero no su nombre
 
+'mientras tanto exista una variable que este referenciando al valor, se pueden seguir utilizando y no va a ser eliminado por Python'
 
 "DEBANADO DE CADENAS"
 # la mayoria de los lenguajes de programacion permiten el debanado de cadenas JavaScript, Python, Siyar
@@ -97,3 +100,4 @@ cadena3='''Este es un ejemplo
     de "multiples lineas"
         en una cadena'''
 print(cadena3)
+

@@ -60,7 +60,7 @@ print(s)
 
 'si queremos que el texto salga impreso en un solo renglon utilizamos el slash "\"'
 t=("""'Hola\
- 'santi'\
+ 'Santi'\
   ¿Te gusta Python?'""")
 print(t)
 'si el texto esta en un solo renglon y queremos que lo imprima en varios renglones utilizamos"\n"'

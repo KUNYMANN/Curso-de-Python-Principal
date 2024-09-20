@@ -1,4 +1,4 @@
-'UN METODO va aser una nueva funcion que nos va a permitir crear nuevas utilidadades o que va acambiar el comportamiento de la string'
+'UN METODO va a ser una nueva funcion que nos va a permitir crear nuevas utilidadades o que va acambiar el comportamiento de la string'
 'cuando hablamos de metodos hablamos de palabras ya reservadas del lenguaje'
 'algunos son Metodos que se repiten lenguaje con lenguaje, pero otros son propios de Python'
 
