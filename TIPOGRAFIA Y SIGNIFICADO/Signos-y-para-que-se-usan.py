@@ -42,10 +42,10 @@ print('"Kuny" es mi apodo') aqui se imprimira lo siguiente  "Kuny" es mi apodo, 
 
 ''' "n\" (new line) se utiliza para dar un salto de renglon '''
 
-'''\\ (doble slash) permite colocar una \ invertida y que lo tome como un caracter especial para que salga impreso por consola
-s = 'C:\\Users\\Documents\\'
-print(s) #C:\Users\Documents\
-'''
+#\\ (doble slash) permite colocar una \ invertida y que lo tome como un caracter especial para que salga impreso por consola
+#s = 'C:\\Users\\Documents\\'
+#print(s) #C:\Users\Documents\
+
 
 ''' "\t (tab o tabulacion) ejemplo \t.:MENU:." se utiliza en el print para que el titulo aparezca desplazado del margen a 4 espacios lo que es igual a una tabulacion'''
 
@@ -107,6 +107,6 @@ print(listado2.count(16))
 print(listado2.count("avion"))
 print(listado2.count(81))
 print(listado2.count("ventilador"))
-listado2.index(6)
-print(f"El indice del numero 6 es: {listado2.index(6)}")
+print(listado2.index(14))
+print(f"El indice del numero 81 es: {listado2.index(81)}")
 listado3=[3,"m",5,"y",11]
