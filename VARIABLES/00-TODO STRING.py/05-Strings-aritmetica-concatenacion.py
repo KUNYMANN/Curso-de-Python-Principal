@@ -62,6 +62,6 @@ saludo1=f'Congratulation {padron}'
 print(saludo1)
 
 '2-Metodo format, aunque menos usado es muy versatil y permite construir cadenas muy complejas'
-saludo2='Congratulation {}'.format(padron)
+saludo2='Congratulation {}'.format(padron) #de esta manera cuando el programa lea las primeras llaves va a reelplazar en su interior por la variable asignada
 print(saludo2)
 

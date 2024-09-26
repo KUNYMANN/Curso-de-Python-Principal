@@ -21,7 +21,9 @@ print(texto.find("M")) #si elegimos el metodo FIND("")automaticamente busca en q
 print(texto.find("zando")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado
 print(texto.find("metodo")) #si elegimos el metodo FIND("")automaticamente busca en que INDICE esta colocado el 1er. caracter solicitado, pero ATENCION!!! que
 # si colocamos mal el texto va a dar error (-1) porque la busqueda se realiza colocando exactamente como esta escrito, respetando si esta en mayuscula o minuscula
-
+texto1="  Cancion de cuna  "
+print(texto1)
+print(texto1.strip())#si elegimos el metodo STRIP elimina los espacios vacios al inicio y al final de la cadena
 'LAS LISTAS ESTAN COMPUESTAS POR VARIOS ELEMENTOS'
 
 '''es posible dividir un string con la funcion "split()". Un ejemplo sencillo de división es el siguiente:'''
@@ -63,4 +65,5 @@ print(lista) #se pueden duplicar datos
 print(tupla) #se pueden duplicar datos
 print(conjunto) #no se pueden duplicar datos y no se puede llamar a los elementos por su indice [0,1,2,3, etc.]
 
+#FUNCION LEN
 

@@ -53,7 +53,9 @@ print(s) #C:\Users\Documents\
 
 el "print(vacio)" solo se utiliza como salto de linea para mostrar resultados
 
-la funcion "len()" es para solicitar la cantidad de caracteres que posee el valor de una variable y SOLO se utiliza con string
+la funcion "len()" es para solicitar la cantidad de caracteres que posee el valor de una variable, se utiliza para varios tipos de datos
+incluyendo cadenas, listas, etc. Cuando se calcula el largo de una cadena se toman en cuenta todos los caracteres que la forman incluidos
+espacios en blanco, caracteres especiales, etc.
 
 el print de la variable en el modo f se solicita entre {} ejemplo print(f"jajaja{}")
 
@@ -84,7 +86,7 @@ print(type(text.split())) # es una lista
 mi_cadena="soy Hector, mi apodo es kuny, tengo 58 años, juego al basquet"
 print(type(mi_cadena))# es un string
 print(mi_cadena.split(",")) #aqui el método split() usando el parametro de division la "," devuelve una lista de mi cadena, donde cada parte de la frase 
-#hasta la coma es un elemento de la lista. ejemplo: "soy Hector" es un elemento, "mi apodo es kuny" es otro elemento, y asi sucesivamente
+#hasta la coma, es un elemento de la lista. ejemplo: "soy Hector" es un elemento, "mi apodo es kuny" es otro elemento, y asi sucesivamente
 print(type(mi_cadena.split())) # es una lista
 
 print("".join(mi_cadena)) #con el metodo .join()vuelvo a unir los elementos y los transforma en un solo elemento

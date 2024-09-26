@@ -37,6 +37,8 @@ print(cadena_Inmutable) #cambio el valor de la variable pero no su nombre
 
 'mientras tanto exista una variable que este referenciando al valor, se pueden seguir utilizando y no va a ser eliminado por Python'
 
+#Una CADENA es a su vez como una lista, ya que contiene un conjunto de datos, en este caso los datos son letras
+
 "DEBANADO DE CADENAS"
 # la mayoria de los lenguajes de programacion permiten el debanado de cadenas JavaScript, Python, Siyar
 # y se los identifica con un o varios slash \ invertido
