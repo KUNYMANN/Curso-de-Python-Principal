@@ -29,9 +29,20 @@ Los corchetes "[]" en Python se utilizan para la definición de listas,
 para el acceso de lectura a los elementos de tuplas, listas, diccionarios y strings, como para la busqueda de posicion de un elemento,
 tambien para el acceso de escritura a listas y diccionarios.
 
-Una LISTA siempre esta compuesta por varios elementos/objetos que se escriben entre comillas simples o dobles y separados por una coma. ejemplo:["Cafe","Te","Leche"] 
-Atencion!!! que si yo lo escribo asi ["Cafe,Te,Leche"] significa que en el interior de los corchetes hay un solo elemento/objeto (un string) no una lista.
+Una LISTA siempre esta compuesta por uno o varios elementos/objetos que se escriben entre comillas simples o dobles y separados por una coma. ejemplo:["Cafe","Te","Leche"] 
+Atencion!!! que si yo lo escribo asi ["Cafe,Te,Leche"] significa que en el interior de los corchetes hay un solo elemento/objeto o sea una lista de un solo elemento.
+#€jemplo
+lima=["agua mas azucar, limon" 'y demas ingredientes']
+print(type(lima))
+print(len(lima))
+print(lima[:1])
 
+print()
+
+limonada=["agua","azucar","limon"]
+print(type(limonada))
+print(len(limonada))
+print(limonada[0:2])
 
 Las llaves "{}" en Python se utilizan para definir diccionarios y para formatear cadenas de texto
 incluyendo valores de variables o expresiones.'''
@@ -71,6 +82,7 @@ Se utiliza para indicar que una variable no tiene asignado ningún valor válido
 count() metodo para saber cuantos elementos estan repetidos dentro de una variable, ya sea una letra o un grupo de letras ejemplo: letras, numeros 
 print("Cantidad de repeticiones de la letra o: ",cadena.count("o"))
 
+ITERAR significa reorrer cada uno de los elementos de una cadena, o sea poder acceder a cada uno de los caracteres.
 Utiliza “in” para comprobar si un string contiene ciertas letras o términos. 
 Esta función comprueba si el término que buscas está presente en el string y responde con true (verdadero) o false (falso). 
 

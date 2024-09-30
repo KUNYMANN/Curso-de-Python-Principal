@@ -24,6 +24,7 @@ print(texto.find("metodo")) #si elegimos el metodo FIND("")automaticamente busca
 texto1="  Cancion de cuna  "
 print(texto1)
 print(texto1.strip())#si elegimos el metodo STRIP elimina los espacios vacios al inicio y al final de la cadena
+
 'LAS LISTAS ESTAN COMPUESTAS POR VARIOS ELEMENTOS'
 
 '''es posible dividir un string con la funcion "split()". Un ejemplo sencillo de división es el siguiente:'''
@@ -58,12 +59,29 @@ print(texto.replace("",","))#cuando le damos el primer parametro vacio "", inter
 print(texto.replace("", "*/*"))# */*E*/*s*/*t*/*o*/*y*/* */*u*/*t*/*i*/*l*/*i*/*z*/*a*/*n*/*d*/*o*/* */*l*/*o*/*s*/* */*M*/*e*/*t*/*o*/*d*/*o*/*s*/* */*d*/*e*/* */*P*/*y*/*t*/*h*/*o*/*n*/*
 
 #CREANDO UN CONJUNTO CONJUNTO O SET
-conjunto={"kunymann"  ,  "soy jugador de basquet" ,  "mido 1.87" ,  "kunymann"} #conjunto va siempre entre {llaves} 
 lista=["kunymann" , "soy jugador de basquet" , "mido 1.87" , "kunymann"] #lista va siempre entre [corchetes] se pueden duplicar datos
 tupla=("kunymann" , "soy jugador de basquet" , "mido 1.87" , "kunymann") #tupla va siempre entre (parentesis) se pueden duplicar datos
+conjunto={"kunymann"  ,  "soy jugador de basquet" ,  "mido 1.87" ,  "kunymann"} #conjunto va siempre entre {llaves} 
 print(lista) #se pueden duplicar datos
 print(tupla) #se pueden duplicar datos
 print(conjunto) #no se pueden duplicar datos y no se puede llamar a los elementos por su indice [0,1,2,3, etc.]
 
-#FUNCION LEN
+#FUNCION LEN () para obtener la longitud de una cadena  utilizamos la funcion len(), que funciona con varios tipos de datos incluyendo cadenas, listas, etc.
+"Cuando se calcula el largo de una cadena se toman en cuenta todos los caracteres de la cadena, incluidos caracteres especiales, espacios en blanco, etc."
+cadena1="hola, Papurri!!!"
+largo_cadena=len(cadena1)
+print(f"La cadena original {cadena1}")
+print(f"El largo de la cadena1 es de {largo_cadena}")
+
+lima=["agua mas azucar, limon" 'y demas ingredientes'] #esto es una lista de un solo objeto
+print(type(lima))
+print(len(lima))
+print(lima[:1])
+
+print()
+
+limonada=["agua","azucar","limon"]#esto es una lista de varios objeto
+print(type(limonada))
+print(len(limonada))
+print(limonada[0:2])
 
