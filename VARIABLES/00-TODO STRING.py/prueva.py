@@ -52,15 +52,30 @@ punto_de_guardado=cambios.replace(",","").split()
 print(punto_de_guardado)
 
 print()
-
-lima=["agua azucar,limon" 'y demas ingredientes'] #esta es una lista con un solo objeto(cadena de texto)
-limonada=["agua","azucar","limon"]#esta es una lista con varios objetos
-print(type(lima))
-print(len(lima))
-print(lima[:1])
+caramelos="frutilla, anana, pera, manzana" # esto es un cadena de texto (string)
+print(caramelos)#frutilla, anana, pera, manzana
+print(len(caramelos))#30
+print(type(caramelos))#<class 'str'>
+surtido=caramelos.split()
+print(surtido)#['frutilla,', 'anana,', 'pera,', 'manzana']
+print(len(surtido))#4
+print(surtido[3])#manzana
+print(surtido[1:3])#['anana,', 'pera,'] que se encuentra en el indice 1 y 2 ya que el segundo indice (3) nunca esta incluido
 
 print()
 
+lima=["agua azucar,limon" 'y demas ingredientes'] #esta es una lista con un solo objeto(cadena de texto)
+limonada=["agua","azucar","limon"]#esta es una lista con varios objetos
+print(lima)
+print(type(lima))
+print(len(lima))
+print(lima[:1])#['agua azucar,limony demas ingredientes'] porque es todo un solo objeto y se encuentra en la posicion 0
+print(lima[1:2])#[]esta vacio porque no existe ningun objeto entre la posicion 1 y 2
+print(lima[2:3])#[]esta vacio porque no existe ningun objeto entre la posicion 2 y 3
+
+print()
+
+print(limonada)
 print(type(limonada))
 print(len(limonada))
 print(limonada[0:2])
