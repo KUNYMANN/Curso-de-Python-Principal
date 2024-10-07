@@ -47,6 +47,18 @@ print(lista)#['Juan', ' 30', ' Mexico']
 print(lista[1:2])#[' 30']
 print(len(lista))#3
 
+'Tambien se utilizapara para procesar cadenas, para recuperar datos de una base de datos, etc.'
+print()
+minielementos="arena y sol"
+print(minielementos)
+print(type(minielementos))
+print(len(minielementos))
+ejemplo=minielementos.split()
+print (ejemplo)
+print(type(ejemplo))#<class 'list'>
+print(len(ejemplo))#2
+print(ejemplo[2])
+
 print()
 
 elementos="arena y sol, el mar azul"

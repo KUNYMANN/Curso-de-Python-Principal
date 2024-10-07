@@ -103,3 +103,13 @@ cadena3='''Este es un ejemplo
         en una cadena'''
 print(cadena3)
 
+#MULTIPLICACION DE CADENAS
+texto="give my money "
+veces=4
+resultado=texto*veces
+print(resultado)
+
+texto="give my money"
+veces=0
+resultado=texto*veces
+print(resultado)# el resultado es una cadena vacia porque al ser una operacion aritmetica todo numero multiplicado por 0 da 0
