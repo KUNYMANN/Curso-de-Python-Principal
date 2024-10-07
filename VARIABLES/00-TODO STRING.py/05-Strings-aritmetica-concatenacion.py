@@ -1,6 +1,9 @@
 #CONCATENACION de STRINGS
 'La concatenacion de cadenas es una operacion que permite conbinar dos o mas cadenas para formar una nueva cadena'
-
+cadena="Hola Kuny"
+cadena1="Mann"
+cadena3=f"{cadena}{cadena1}" #utilizando el metodo format f tambien podemos concatenar string
+print(cadena3)
 #El Operador "+"
 cadena="Hola Kuny"
 cadena1="Mann"
