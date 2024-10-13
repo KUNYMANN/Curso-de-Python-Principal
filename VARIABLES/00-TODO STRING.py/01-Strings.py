@@ -126,15 +126,54 @@ En este caso, "Python" sobrescribe los primeros caracteres de "EL Texto viejo va
 ''' *\r*: Es común en la implementación de barras de progreso donde quieres actualizar el estado en la misma línea en lugar de crear una nueva línea cada vez. 
 También se usa para sobrescribir mensajes en la consola.'''
 
-#*Ejemplo de barra de progreso:*
+'''#*Ejemplo de barra de progreso:*
 import time
 for i in range(10):
     print(f"\rProgreso: {i+1}/10", end="")
     time.sleep(0.5)
-print()
+print()'''
 #*Salida (sobrescribiéndose en la misma línea):*
 '''Progreso: 1/10,
 Progreso: 2/10 y asi sucesivamene hasta llegar a
 Progreso: 10/10
 Aquí, el cursor regresa al inicio de la línea y sobrescribe el texto sin crear nuevas líneas.'''
 
+
+#Aquí tienes una lista de los métodos más comunes que puedes utilizar con cadenas (str) en Python:
+
+'''Métodos de str
+Métodos de modificación de texto:
+
+str.lower(): Convierte todos los caracteres a minúsculas.
+str.upper(): Convierte todos los caracteres a mayúsculas.
+str.title(): Convierte la primera letra de cada palabra a mayúscula.
+str.capitalize(): Convierte la primera letra a mayúscula y el resto a minúsculas.
+str.strip(): Elimina espacios en blanco al inicio y al final.
+str.lstrip(): Elimina espacios en blanco a la izquierda.
+str.rstrip(): Elimina espacios en blanco a la derecha.
+Métodos de búsqueda y reemplazo:
+
+str.find(sub): Devuelve el índice de la primera aparición de sub, o -1 si no se encuentra.
+str.rfind(sub): Devuelve el índice de la última aparición de sub, o -1 si no se encuentra.
+str.replace(old, new): Reemplaza todas las apariciones de old por new.
+str.count(sub): Cuenta cuántas veces aparece sub en la cadena.
+Métodos de partición y unión:
+
+str.split(sep=None): Divide la cadena en una lista utilizando sep como delimitador.
+str.join(iterable): Une los elementos de iterable en una sola cadena, separándolos con la cadena original.
+Métodos de formato:
+
+str.format(): Formatea la cadena utilizando marcadores de posición.
+str.fstring(): Permite formatear cadenas usando literales de cadena f.
+Métodos de verificación:
+
+str.isalpha(): Devuelve True si todos los caracteres son letras.
+str.isdigit(): Devuelve True si todos los caracteres son dígitos.
+str.isalnum(): Devuelve True si todos los caracteres son alfanuméricos.
+str.isspace(): Devuelve True si todos los caracteres son espacios en blanco.
+str.startswith(prefix): Devuelve True si la cadena comienza con prefix.
+str.endswith(suffix): Devuelve True si la cadena termina con suffix.
+Métodos de conversión:
+
+str.encode(encoding='utf-8'): Convierte la cadena a bytes usando el encoding especificado.
+str.strip() o str.lstrip() o str.rstrip(): Elimina espacios en blanco.'''
