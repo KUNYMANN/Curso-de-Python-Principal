@@ -15,7 +15,7 @@ qué valor tiene que proporcionar en la consola.
 TIPOS DE DATOS: En este caso la función input siempre devuelve una cadena, pero si requerimos otro tipo de dato, simplemente
 hay que convertirlo con todo lo que ya hemos visto de conversión de tipo de datos.'''
 #EJEMPLO
-'''nombre=input("Ingrese su Nombre: ")#Hector
+nombre=input("Ingrese su Nombre: ")#Hector
 nombre=nombre.upper()
 print(f"Su Nombre es: {nombre}")#Su Nombre es Hector
 edad=input("Ingrese su edad: ")#58
@@ -36,9 +36,9 @@ print(type(altura1))#float
 print()
 #ejercicio
 print(f"Tu edad es: {edad1} pero dentro de dos años tendras {edad1+2}")# al ser un int puedo realizar una operacion aritmetica
-print()'''
-#Generar un programa que solicite los de un empleado
+print()
 
+#Generar un programa que solicite los de un empleado
 print("   *** SISTEMA DE EMPLEADOS ***   ")
 nombre_empleado=input("Ingrese su nombre registrado en la empresa: ")
 nombre_empleado=nombre_empleado.upper()
@@ -56,3 +56,20 @@ print(f"Su salario es de $ {salario:.2f}")
 #print(type(salario))#float
 print(f"Le comunicamos que el puesto de trabajo que usted ingreso segun nuestros registros es {ocupacion}")
 #print(type(puesto_trabajo))#bool
+print()
+print(" *** Receta de Cocina *** ".upper())
+nombre_receta=input("Ingrese un nombre para identificar la receta: ")
+ingredientes=input("Ingrese los ingredientes que se van a utilizar en la receta: ".capitalize())
+tiempo_preparacion=int(input("Introduzca el tiempo que lleva de preparacion expresado en minutos: "))
+dificultad=input("Ingrese que tipo de dificultad posee el hacerla Facil, Madia, Alta: ".capitalize())
+print()
+print("------------------------")
+print()
+print(f"Nombre de la Receta: {nombre_receta}")
+print(f"Ingredientes: {ingredientes}")
+print(f"Tiempo de preparacion: {tiempo_preparacion} minutos")
+print(f"Nivel de Dificultad: {dificultad.title()}")
+print()
+
+
+
