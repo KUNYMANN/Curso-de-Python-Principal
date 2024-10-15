@@ -21,21 +21,21 @@ print(f"Valor aleatorio entre 1 y 10 es: {numero}")
 #Simular un dado con seis caras
 dado=randint(1,6)
 print(f"El numero para esta tirada es: {dado}")
-
+print()
 #SISTEMA GENERADOR ID UNICO
 '''se solicita crear un sistema para generar un ID unico para cada persona
 el sistema debe solicitar al usuario lo siguiente:'''
 print(" *** GENERADOR DE ID *** ")
-nombre_usuario=input("Ingrese su Nombre: ")
+nombre=input("Ingrese su Nombre: ")
 apellido=input("Ingrese su Apellido: ")
 año_nacimiento=input("Ingrese su Año de nacimiento (YYYY): ")
 valor_aleatorio=randint(1000,9999)
-nombre_usuario=nombre_usuario.strip().upper()[0:2]
+nombre_usuario=nombre.strip().upper()[0:2]
 apellido=apellido.strip().upper()[0:2]
 año_nacimiento=año_nacimiento.strip()[2:]
-resultado=nombre_usuario+apellido+año_nacimiento #concatenar en una nueva variable con el signo + para que no queden espacios vacios en las concatenaciones
-'o colocando en el print de esta forma:'
-print(f"otra forma de concatenar es: {nombre_usuario}{apellido}{año_nacimiento} 'para que no aparezcan los espacios vacios entre las concatenaciones'")
+
+'Colocando en el print de esta forma:'
+print(f"La forma de concatenar es: {nombre_usuario}{apellido}{año_nacimiento}{valor_aleatorio} 'para que no aparezcan los espacios vacios entre las concatenaciones'")
 #con los datos recibidos del usuario, el sistema debera realizar lo siguiente:
 #Del valor recibido del Nombre, usar las dos primeras letras y convertirlas a mayusculas
 #Del valor del Apellido, usar las las dos primeras letras y convertirlas a mayusculas
@@ -46,8 +46,30 @@ print(f"otra forma de concatenar es: {nombre_usuario}{apellido}{año_nacimiento}
      #Apellido: Perez ...PE
      #Año: 1986 ...86
      #Valor Aleatorio: randint ...7326
+     #RESULTADO ID UNICO: JUPE957326
 
-'RESULTADO ID UNICO: JUPE957326'
-print("       Tu nuevo ID generado por el sistema es: ")
-print(f"       {resultado}")       
-print("       Felicidades!!!")
+
+#abro con tres comillas para imprimir en varios renglones luego coloco \n hago para que  salto de renglon entre el ultimo codigo y este
+print(f'''\nHola {nombre.title()},
+    Tu nuevo ID generado por el sistema es:
+    {nombre_usuario}{apellido}{año_nacimiento}{valor_aleatorio}     
+    Felicidades!!!''')
+
+print()
+
+#Ejercicio
+
+print("*** GENERADOR DE PATENTE VEHICULO ***")
+nombre_completo=input("Ingrese su nombre completo: ")
+vehiculo=input("Ingrese la marca de su vehiculo: ")
+color=input("Coloque el color de su vehiculo: ")
+dni=randint(100,999)
+vehiculo1=vehiculo.strip().upper()[0:2]
+color1=color.strip().upper()[0:2]
+print(f'''\nSr. Usuario
+      {nombre_completo.upper()} 
+      Su Numero de Patente es: {vehiculo1}{dni}{color1}
+      Gracias por su colaboracion''')
+print()
+
+

@@ -123,25 +123,23 @@ print(caracter_a) #a
 
 
 
+'''
+class Persona:
+    private: 
+    int Numero_Telefono
+    str Domicilio
 
-'''class Persona{
-    private:
-    int Numero_Telefono;
-    int Domicilio;
-
-    public:
-    str Dni;
-    str Nombre;
-
-}
+    public:  
+    int Dni
+    str Nombre
 
 
-Persona Santi,Kuny,Marita,Gorda;
 
-Santi.Dni=
-Santi.Nombre
+Persona Santi,Kuny,Marita,Gorda
+
+Santi.Dni='44496778'
 
 print(Santi.Dni)'''
 
 
- #con Shift + Alt mas flecha hacia abajo se duplica la linea 
+ 

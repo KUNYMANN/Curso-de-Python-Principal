@@ -16,3 +16,6 @@ print(int(num2)) #43 este print(int) me esta convirtiendo a un flotante (float)
                   # en un (int) entero, tomando la parte entera solamente y eliminando la parte decimal, no esta redondeando,
                   # deja de existir la coma, por mas que despues de la misma existan numeros como el (.16)
 print(type(int(num2))) #ahora paso de ser un float a un int
+
+
+'la funcion RANDINT(), que viene definida dentro del modulo Random, nos permite generar numeros aleatorios'
