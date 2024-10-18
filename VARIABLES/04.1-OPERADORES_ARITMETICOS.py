@@ -1,33 +1,34 @@
-
+'LOS OPERADORES ARITMETICOS NOS PERMITEN REALIZAR CALCULOS MATEMATICOS BASICOS ENTRE NUMEROS'
 
 #  OPERADOR    DESCRIPCION                        EJEMPLO
+#--------------------------------------------------------------------------------------------------
 #     +        suma                               a+b=15
 suma=12+5
-
+#--------------------------------------------------------------------------------------------------
 #     -        resta                              b-a=5.0
 resta=12-5
-
+#--------------------------------------------------------------------------------------------------
 #     *        multiplicacion                     a*b=50
 multi=12*5
-
+#--------------------------------------------------------------------------------------------------
 #     /        division                           b/a=2.0
 division=12/5 # la division nos devuelve un dato float (flotante)
 # siempre los numeros en sistemas matematicos tienen coma ejem: 
 # 2.00 aunque es un numero entero tiene coma por eso el dato es float
-
-#     %        RESTO O MODULO -Devuelve el resto          b%a=0
-#              de la division
-resto=12%5
-
-#     **       EXPONENTE -Realiza                 b**a=100000
-#              exponencial (POTENCIACION)         
-exponente=12**5 # (en este ejemplo seria doce elevado a la quinta)
-
+#--------------------------------------------------------
 #     //       DIVISION BAJA -Devuelve el         b//a=2
 #              entero de la division (si da con decimales lo imprime redondeado para abajo)
 division_baja= 12//5 #este ejemplo nos muesta que el numero resultante seria 2.4 pero lo redondea
 #                     para abajo, inclusive si el resultado fuese 2.9999 colocaria 2
-
+#--------------------------------------------------------------------------------------------------
+#     %        RESTO O MODULO -Devuelve el resto          b%a=0
+#              de la division
+resto=12%5
+#--------------------------------------------------------------------------------------------------
+#     **       EXPONENTE -Realiza                 b**a=100000
+#              exponencial (POTENCIACION)         
+exponente=12**5 # (en este ejemplo seria doce elevado a la quinta)
+#--------------------------------------------------------------------------------------------------
 
 #RESULTADOS
 print(suma)
@@ -53,7 +54,7 @@ num3=6
 num4=8
 resultado1=(num2*8)+(6/num1)
 resultado2=num2**num1
-resultado3=6/2*num4+num4**2
+resultado3=6/2*num4+num4**2 #aquiel programa separa en termino automaticamnte de acuerdo a las prioridades de los operadores aritmeticos
 resultado4=(resultado1+resultado2+resultado3)
 print(resultado1)
 print(resultado2)
@@ -84,7 +85,7 @@ suma=10+(6.5*2/5)
 print(suma)
 
 operacion=(num4-num3)*num1/num2
-print(operacion) #aqui dejamos expresado que es lo primero que queremos que resuelva
+print(f"{operacion:.4f}") #aqui dejamos expresado que es lo primero que queremos que resuelva
 operacion=(5-2)*10/6.5
 print(operacion)
 
@@ -153,7 +154,7 @@ num1**=4 #aqui le pido que eleve a la variable al valor que le asigno
 print(num1)
 num1//=100 #aqui le pido que divida a la variable por el valor que le asigno y me arroje el resultado entero sin decimales
 print(num1)
-num1/=10 #aqui le pido que divida a la variable poe el valor que le asigno
+num1/=10 #aqui le pido que divida a la variable poR el valor que le asigno
 print(f"{num1:.3F}") ##aqui le pido que me devuelva el resultado con un maximo de tres decimales
 
 suma=90+67
