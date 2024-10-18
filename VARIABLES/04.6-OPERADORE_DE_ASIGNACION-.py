@@ -57,4 +57,4 @@ print()
 #asignacion multiple de distintos datos
 a,b,c,=10,"Cancion",14.5 #pueden ser tanto numeros (int o float) como str
 #Ejemplo
-x,,y,z=
+x,y,z=
