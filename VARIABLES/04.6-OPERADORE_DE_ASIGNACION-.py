@@ -57,4 +57,5 @@ print()
 #asignacion multiple de distintos datos
 a,b,c,=10,"Cancion",14.5 #pueden ser tanto numeros (int o float) como str
 #Ejemplo
-x,y,z=
+x,y,z=5,"hola",-9.15
+print(f'valor de x={x}, de y={y}, de z={z}')
