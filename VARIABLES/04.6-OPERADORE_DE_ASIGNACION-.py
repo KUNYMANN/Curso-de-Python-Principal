@@ -59,3 +59,15 @@ a,b,c,=10,"Cancion",14.5 #pueden ser tanto numeros (int o float) como str
 #Ejemplo
 x,y,z=5,"hola",-9.15
 print(f'valor de x={x}, de y={y}, de z={z}')
+
+print()
+
+#asignacion encadenada
+'permite agregar el mismo valor a muliples variables'
+#sintaxis de asignacion encadenada
+variablke=variable=variable="valor"
+#Ejemplo
+contador1=contador2=0
+m=n=o=p=10
+print(f"El valor de m= {m}, el valor de n= {n}, el valor de o= {o} y el valor de p= {p}")
+print()
