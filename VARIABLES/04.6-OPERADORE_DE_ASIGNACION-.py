@@ -60,14 +60,29 @@ a,b,c,=10,"Cancion",14.5 #pueden ser tanto numeros (int o float) como str
 x,y,z=5,"hola",-9.15
 print(f'valor de x={x}, de y={y}, de z={z}')
 
-print()
 
 #asignacion encadenada
 'permite agregar el mismo valor a muliples variables'
 #sintaxis de asignacion encadenada
-variablke=variable=variable="valor"
+variable=variable1=variable2="valor"
+print(variable1,variable,variable2)
 #Ejemplo
 contador1=contador2=0
+print(contador1, contador2)
+
 m=n=o=p=10
 print(f"El valor de m= {m}, el valor de n= {n}, el valor de o= {o} y el valor de p= {p}")
-print()
+
+#intercambio de valores de una variable, sin utilizar variables temporales
+x, y=5,10
+print(f"Valores iniciales x={x} y={y}")
+#aplicando asignacion multiple, intercambiamos valores
+x,y=y,x
+print(f"Valores cambiados x={x} y={y}")
+
+#Podemos recibir multiples valores ingresados por un suario
+apellido,nombre=input("ingresa tu apellido y nombre separado por una coma: ").split(",")
+print(f"Apellido:{apellido.upper()}, y nombre:{nombre.title().strip()}")
+
+edad,altura=input("Ingrese su edad y su altura separados por un *: ").split("*")
+print(f"su edad es:{edad} años y su altura es:{altura} mts.")
