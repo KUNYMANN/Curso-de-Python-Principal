@@ -109,8 +109,8 @@ print(suma)
 #Como convertir un numero  string a float
 numerofloatstrig="35.41"
 otronumerofloatstring="26.89"
-numerosfloatstringpasados=float(numerofloatstrig)+float(otronumerofloatstring)
-print(numerosfloatstringpasados)
+numerosstringpasadosfloat=float(numerofloatstrig)+float(otronumerofloatstring)
+print(numerosstringpasadosfloat)
 
 #COMO CONVERTIR UN NUMERO FLOAT(DECIMAL) EN ENTERO(INT)
 #Como truncar un numero float en int
