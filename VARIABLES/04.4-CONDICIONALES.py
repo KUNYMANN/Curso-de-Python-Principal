@@ -26,3 +26,52 @@ else:
 
 print("fin del programa") #esta instruccion sin la sangria significa que esta fuera de las instrucciones de los condicionales anteriores que 
 #si tenia sangria o identacion y se va a imprimir siempre
+print()
+
+'OPERADORES CONDICIONALES: se utilizan para comparar valores'
+#el resultado siempre es un valor booleano "True" o "False", dependiendo de si la condicion se cumple o no
+'Operadores de igualdad (==) compara si dos valores son exactamente iguales'
+# a=b
+#Ejemplo
+print(5==5)#True
+print(5.0==5) #True
+print(5==8) #False
+print()
+
+'Operadores "distinto de" o "no es igual a" (!=)  compara si dos valores son distintos'
+# c!=d 
+#Ejemplo
+print(5!=5)#False
+print(5!=8)#True
+print()
+
+'''Operador de menor que (<): compara si el valor de la izquierda es menor que el de la derecha
+si es menor devuelve True y si no lo es devuelve False'''
+#a<b
+print(5<5)#False (porque el numero es igual pero no menor)
+print(5<8)#True
+print()
+
+'''Operador de "menor o igual que" (<=): verifica si el valor de la izquierda es menor o igual que el de la derecha
+si estas condicion se cumple devuelve True caso contrario devuelve False'''
+#a<b
+print(5<=5)#True
+print(5<=8) #True
+print(5<=2)#False
+print()
+
+'''Operador de mayor que (>): compara si el valor de la izquierda es mayor que el de la derecha
+si es mayor devuelve True y si no lo es devuelve False'''
+#a>b
+print(5>5)#False (porque el numero es igual pero no mayor)
+print(5>8)#False
+print(8>5)#True
+print()
+
+'''Operador de "mayor o igual que" (>=): verifica si el valor de la izquierda es mayor o igual que el de la derecha
+si estas condicion se cumple devuelve True caso contrario devuelve False'''
+#a>b
+print(5>=5)#True
+print(5>=8) #False
+print(5>=2)#True
+print()
