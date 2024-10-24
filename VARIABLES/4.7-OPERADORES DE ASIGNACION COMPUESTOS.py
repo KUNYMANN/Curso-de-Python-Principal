@@ -29,32 +29,41 @@ num1/=10 #aqui le pido que divida a la variable por el valor que le asigno
 print(f"{num1:.3F}") ##aqui le pido que me devuelva el resultado con un maximo de tres decimales 31116960.000
 num1%=51#aqui le pido que me de el resto de la divicion por el valor que le asigno
 print(num1)#24.0
-"Utilizando los operadores compuestos pero reiniciando el valor de 'a' para que no attastre el resultado"
+
+"Utilizando los operadores compuestos pero reiniciando el valor de 'a' para que no arrastre el resultado"
 a,b=10,15
 print(f"El valor inicial de a:{a} y el valor de b:{b}") #10 y 15
+
+
 #operafdor compuesto de suma +=
 a+=b # a=a+b
 print(f"El operaedor de a+=b es:{a}")#25
+
 #operador compuesto de resta
 a=10 #aqui estamos reiniciando la variable "a"
 a-=b # a=a-b
 print(f"El operaedor de a-=b es:{a}")#-5
+
 #operador compuesto multiplicacion
 a=10 #aqui estamos reiniciando la variable "a"
 a*=b # a=a*b
 print(f"El operaedor de a*=b es:{a}")#150
+
 #operador compuesto division
 a=90 #aqui estamos reiniciando la variable "a" y le asignams un nuevo valor
 a/=b # a=a/b
 print(f"El operaedor de a/=b es:{a}")#6.0
+
 #operador compuesto modulo (resto de una division)
 a=87 #aqui estamos reiniciando la variable "a" y le asignams un nuevo valor
 a%=b # a=a%b
 print(f"El operaedor de a%=b es:{a}")#12
-#operador compuesto divisionpero que el resultado sea el numero entero sin los decimales
+
+#operador compuesto division pero que el resultado sea el numero entero sin los decimales
 a=65 #aqui estamos reiniciando la variable "a" y le asignams un nuevo valor
-a//=b # a=a//b
+a//=b # a=a//b (solo va a arrojar del resultado la parte entera sin decimales)
 print(f"El operaedor de a//=b es:{a}")#4 (el numero con decimales seria 4.33333)
+
 #operador compuesto exponenciacion
 a=10 #aqui estamos reiniciando la variable "a"
 b=3 #aqui estamos reiniciando la variable "b" y le asignams un nuevo valor solo para que el resultado no sea tan grande
