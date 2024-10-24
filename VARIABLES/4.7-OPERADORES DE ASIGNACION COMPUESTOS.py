@@ -45,18 +45,18 @@ a*=b # a=a*b
 print(f"El operaedor de a*=b es:{a}")#150
 #operador compuesto division
 a=90 #aqui estamos reiniciando la variable "a" y le asignams un nuevo valor
-a/=b # a=a*b
+a/=b # a=a/b
 print(f"El operaedor de a/=b es:{a}")#6.0
 #operador compuesto modulo (resto de una division)
 a=87 #aqui estamos reiniciando la variable "a" y le asignams un nuevo valor
-a*=b # a=a*b
-print(f"El operaedor de a*=b es:{a}")#1305
-#operador compuesto division exacta
+a%=b # a=a%b
+print(f"El operaedor de a%=b es:{a}")#12
+#operador compuesto divisionpero que el resultado sea el numero entero sin los decimales
 a=65 #aqui estamos reiniciando la variable "a" y le asignams un nuevo valor
-a//=b # a=a*b
-print(f"El operaedor de a//=b es:{a}")#4
+a//=b # a=a//b
+print(f"El operaedor de a//=b es:{a}")#4 (el numero con decimales seria 4.33333)
 #operador compuesto exponenciacion
 a=10 #aqui estamos reiniciando la variable "a"
 b=3 #aqui estamos reiniciando la variable "b" y le asignams un nuevo valor solo para que el resultado no sea tan grande
-a**=b # a=a*b
+a**=b # a=a**b
 print(f"El operaedor de a**=b es:{a}")#1000
