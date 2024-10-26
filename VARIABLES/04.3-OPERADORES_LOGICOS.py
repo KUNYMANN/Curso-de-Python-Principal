@@ -18,21 +18,7 @@ operando1   operador   operando2   RESULTADO
 True        and (y)       True       TRUE  (si ambos operandos son verdaderos el resultado siempre sera true) 1 
 True        and (y)       False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 
 False       and (y)       True       FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 
-False       and (y)       False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 
-
-OPERADOR OR se lo conoce como una suma logica
-IMPORTANTE!!! solo si ambos operandos son falsos el resultado va a ser siempre falso
-operando  RESULTADO
-True         or (o)       True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
-True         or (o)       False      TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
-False        or (o)       True       TRUE (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
-False        or (o)       False      FALSE (cuando ambos operandos son falso el resultado siempre sera false) 0
-
-OPERADOR NOT se lo conoce como un valor de negacion
-IMPORTANTE!!! Invierte el valor del operador y se lo conoce como un Operador Unario porque trabaja con un solo valor
-operando    RESULTADO
-not(True)    FALSE  (UNA VERDAD NEGADA ES UNA MENTIRA) Ejemplo: #si es verdad que jesus no existió...FALSO porque se esta mintiendo sobre una verdad, jesus existio
-not(False)   TRUE   (UNA MENTIRA NEGADA ES UNA VERDAD) Ejemplo: #no es verdad que jesus no existio...VERDAD porque jesus si existio"""
+False       and (y)       False      FALSE (si cuaquiera de los dos operandos es falso el resultado siempre sera false)  0 """
 
 print("*** OPERADOR AND***")
 #Regresa verdadero si ambos valores son verdaderos
@@ -79,3 +65,93 @@ print(not(edad>56))#TRUE...(no es cierto que 54 sea mayor que 56? es verdad porq
 #        (T)           and             (F)          resultante
 #                   (T and F)                       evaluacion final
 #                      (F) False                    conclusion final 
+
+print()
+
+'EJERCICIO'
+print("""Una tienda de supermercado ofrece un descuento especial a los clientes que compren 10 o mas articulos por dia
+y que ademas sean miembros de la tienda
+    el sistema debe solicitar al cliente que indique cuantos articulos a comprado en el dia
+    tambien preguntarle si cuenta con una membresia de la tienda
+    En caso de haber comprado 10 o mas articulos y ser miembro de la tienda tendra acceso 
+    al descuento VIP""")
+
+
+print("***DESCUENTO VIP con el operando AND***")
+numeros_productos=10  #cantidad de productos requerida para descuento
+cantidad=int(input("Ingrese la cantidad de articulos comprados hoy en la tienda: ").strip())
+clientevip=input("Cuenta usted con una cuenta menmbresia de la tienda: (Si/No) ").strip().lower()
+
+articulos=(cantidad>=numeros_productos #aqui preguntamos cuantos articulos compro en el dia y si dicha cantidad superanes igual o mayor a los 10 requeridos 
+           and # y
+           clientevip=="si") #preguntamos con el == si Si o No, el cliente tiene una cuenta membresia, para ver si correspode el descuento
+
+print(f"SU ACCESO AL DESCUENTO VIP ES {articulos}  ")
+print("""Si ambos operandos son verdaderos el resultado siempre sera TRUE
+Si cuaquiera de los dos operandos es falso el resultado siempre sera FALSE""")
+
+print()
+
+"""OPERADOR OR se lo conoce como una suma logica
+IMPORTANTE!!! solo si ambos operandos son falsos el resultado va a ser siempre falso
+operando  RESULTADO
+True         or (o)       True       TRUE    (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
+True         or (o)       False      TRUE    (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
+False        or (o)       True       TRUE    (basta que cualquiera de los dos operandos sea verdadero el resultado siempre sera true) 1
+False        or (o)       False      FALSE   (cuando ambos operandos son falso el resultado siempre sera false) 0"""
+
+
+print("*** OPERADOR LOGICO ***")
+situacion1=False
+situacio2=False
+#El operador OR devuelve False unicamente si ambos operandos son False 
+resultado=situacion1 or situacio2
+print(resultado) #False
+
+print()
+
+#El operador OR devuelve True si cualquiera de los operandos es True
+situacion3=False
+situacion4=True
+resultado=situacion3 or situacion4
+print(resultado)#True
+
+'EJERCICIO'
+print("""Se pide crear un sistema para una biblioteca, la cual desea prestar libros, solo si cumple 
+con qualquiera de las siguientes condiciones
+1-el usuario debe tener credencial de estudiante
+2-el usuario vive a no mas de 3 km a la redonda
+Si cumple con cualquiera de estas condiciones se le puede prestar el libro""")
+print()
+print('*** PRESTAMO DE LIBROS con el operando OR ***')
+estudiante=input("Para retirar un libro nesecitamos saber si tiene credencial de estudiante (Si/No): ").strip().upper()
+cercano=input("Vive a menos de 3 Km de la biblioteca (Si/No): ").strip().upper()
+prestamo=estudiante=="SI"
+prestamo1=cercano=="SI"
+resumen=prestamo or prestamo1
+print(f"DE ACUERDO CON LO INGRESADO VEREMOS SI ESPOSIBLE PRESTARLE UN LIBRO: {resumen}")
+print('''cuando ambos operandos son falso el resultado siempre sera FALSE
+si cualquiera de los dos operandos es verdadero el resultado siempre sera TRUE)''')
+
+print()
+
+print('***Creditos con el operando OR***')
+cliente=input("Para otorgarle un Credito nesecitamos saber si usted es cliente del banco (Si/No): ").strip().upper()
+distancia=int(input("A cuantos Km vive usted del banco : ").strip())
+distancia_permitida=3
+credito=cliente=="SI"
+credito1=distancia<=distancia_permitida
+otorgamiento=credito or credito1
+print(f"DE ACUERDO CON LO INGRESADO PARA ACCEDER A UN CREDITO EN NUESTRO BANCO SU CONDICION ES {otorgamiento}  ")
+print('''cuando ambos operandos son falso el resultado siempre sera FALSE
+si cualquiera de los dos operandos es verdadero el resultado siempre sera TRUE)''')
+print()
+
+
+"""OPERADOR NOT se lo conoce como un valor de negacion
+IMPORTANTE!!! Invierte el valor del operador y se lo conoce como un Operador Unario porque trabaja con un solo valor
+operando    RESULTADO
+not(True)    FALSE  (UNA VERDAD NEGADA ES UNA MENTIRA) Ejemplo: #si es verdad que jesus no existió...FALSO porque se esta mintiendo sobre una verdad, jesus existio
+not(False)   TRUE   (UNA MENTIRA NEGADA ES UNA VERDAD) Ejemplo: #no es verdad que jesus no existio...VERDAD porque jesus si existio"""
+
+print()
