@@ -1,0 +1,259 @@
+*** PRUEBAS DE SOFWARE COMOTRAYECTORIA PROFESIONAL ***
+
+# 1-LA PRUEBA DE SOFWARE (pruebas de caja blanca) ¿QUE SON?
+ES un metodo para verficar si el producto de sofware cumple con los requisitos esperados
+y cumple con los resultados deseados
+Se hacen para:
+    *Verificar si cumple con los requisitos esperados:esto implica la ejecucion de componentes 
+    de sofware en el sistema utilizando herramientas manuales o automatizadas
+    *Pruebas manuales y automatizadas
+    *Que el sofware este sin bugs (Errores)
+
+
+# 2-¿PORQUE ES IMPORTANTE LA PRUEBA DE SOFWARE?
+Si hay errores en el sofware se pueden identificar temprano y se pueden resolver
+ antes de la entrega del sofware o proyecto
+   Se hacen para:
+    *Para identificar posibles errores
+    *El producto debe estar debidamente provado para garantizar la confiabilidad
+    *Ahorar tiempo y dinero, como tambien la satisfaccion del cliente
+
+# 3-¿CUAL ES LA NECESIDAD DE LAS PRUEBAS?
+Se hacen porque:
+    *Porque los errores pueden ser costosos y peligrosos
+    *Perdidas Economicas (La bolsa de londres, whatsaap ambas colapsaron debido a bugs en su sof)
+    *Perdidas Vidas
+    *Desprestigio a la empresa que genero el sofware
+    
+# 4-¿CUALES SON LOS BENEFICIOS DE LAS PRUEBAS DE SOFWARE?
+Se hacen porque:
+    *Es Rentable, si los errores se descubren en la etapa previa su lanzamoiento, cuesta menos repararlo
+    y ahorramos tiempo y dinero
+    *Dan Seguridad, de que el sofware esta listo para su uso y el cliente se sienta seguro de
+    su utilizacion (EJ. aplicaciones bancarias que producen muchos fraudes)
+    *Proveen Calidad al sofwarfe del 100% (requisito escencial) libre de errores
+    *Trasmiten Confiablilidad y satifcaccion del cliente
+
+# 5-TIPOS DE PRUEBAS DDE SOFWARE
+    *Pruebas funcionales: se centran en verificar si el sofware cumple con los requisitos
+     y con las especificaciones funcionales establecidas (Hace lo que deberia hacer) ¿El sofware cumple con lo esperado?
+         -pruebas unitarias
+         -pruebas de integracion
+         -pruebas de sistema
+         -pruebas de aceptacion
+    *Pruebas no funionales: se sentran en aspectos no relacionados con las funciones del sofware, 
+    sino como se comporta en terminos de rendimiento, seguridad, usabilidad, en aspectos
+    amplios de sofware que puede influir en la expreriencia del usuario y en la calidad general del sistema
+         -pruebas de rendimiento (Es optimo?)
+         -pruebas de seguridad (Es seguro?)
+         -pruebas de usabilidad (es facil de usar?, los ususarios pueden entenderlo rapidamente o tienen la 
+         nesecidad de un manual que lo hace mas complejo?)
+    *Pruebas de Mantenimiento (estas se hacen una vez que el sofware ya esta construido)
+         -pruebas de regresion: son las de volver a probar que todo funcione correctamente si se ha hecho algun cambio
+         -pruebas propias del mantenimiemnto
+
+
+
+*** HABILIDADES REQUERIDAS QUE NECESITO PARA SER UN PROBADOR DE SOFWARE *** 
+-Habilidades No Tecnicas
+    -Habilidades analiticas agudas para poder dividir el sistema de sofware complejo en unidades mas pequeñas de comprension y crear casos de prueba
+    -Habilidades de comunicacion verbal y escrita, los artefactos de prueba, como casos de prueba, planes de prueba, estrategias de pruebas, 
+    informe de errores etc, estos son creados por el QA, estos deben ser faciles de leer, faciles de comprender y tambien debe estar en constante
+    comunicacion con los desarrolladores, en caso de que el sistema presente algunos errores. Es importante comunicarlos de manera clara y consisa
+    -Habilidad de gestion y organizacion del tiempo, se debe tener para cuando el trabajo se vuelve muy exigente para cumplir las tareas que se le asignen
+    -Gran actitud (no tecnicas) por ser el encargado de encontrar los errores del sofware y estar orientado al detalle y dispuesto a aprender
+    y a sugerir mejoras en el proceso.
+
+ *** UN BUEN PROVADOR DE SOFWARE YA QUE LA TECNOLOGIA AVANZA DE FORMA ABRUMADORA DEBE ESTAR DISPUESTO A MANTENERSE ACTUALIZADO CON SUS HABILIDADES TECNICAS,
+ MANTENER UN CIERTO GRADO DE INDEPENDENCIA PARA REALIZAR TAREAS ASIGNADAS Y COMPLETARLAS SIN SUPERVICION TECNICA ***
+
+Para sobresalir en cualquier profesion o trabajo es necesario tener el grado significativo de PASION por el trabajo que se esta desempeñando
+
+-Habilidades Tecnicas
+    -Conocimiento basico/medio/abanzado de datos "SQL" (Sistema de base de datos)  alacenados en oracol o en mongod dv
+    un probador de sofware debe tener conocimiento sore base de datos ya que trabaja con base de datos,aunque no va a crear o ingresar base de datos, no va a crear tabla,
+    no va a ingresar datos a la base de datos, pero cuando se este probando sofware, se va a necesitar hacer consultas con la base de datos
+    por ejemplo: si un usuario tiene asignado un rol especifico, enonces se va a buscar esa informacion en la base de datos.
+    Tambien las bases de datos guardan informacion de modificaciones, si algo fue modificado en el sistema, esto se registra en la base de datos
+    -Conocimientos del comando de Linux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

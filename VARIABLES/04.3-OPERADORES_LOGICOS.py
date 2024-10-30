@@ -186,3 +186,14 @@ variable= 'casa Rios' #creamos una variable con un valor asignado
 variable_sin_valor=not variable #preguntamos si la variable tiene algun valor
 print(f"\nLa variable no tiene nungun valor asignado? {variable_sin_valor}")#nos devuelve la respuesta
 print()
+
+#RANGO utilizando el operador NOT
+'revisar si una variable se encuentra dentro de rango entre 1 y 10'
+dato=int(input("Proporciona un dato entero: "))
+#revisamos si esta dentro de rango
+esta_dentro_de_rango=1<= dato <=10
+print(f'Variable esta dentro de rango (entre 1 y 10)? : {esta_dentro_de_rango}')
+#revisamos la logica inversa, si el dato esta fuera del rango
+esta_fuera_de_rango= not (1<= dato <=10)
+print(f'Variable esta fuera de rango (entre 1 y 10)? : {esta_fuera_de_rango}')
+print()
