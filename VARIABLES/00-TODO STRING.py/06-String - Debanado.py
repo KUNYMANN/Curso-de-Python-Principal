@@ -56,3 +56,7 @@ texto2="fenomeno"
 #como tambien se pueden sumar ambos textos
 print(texto+texto2[::-1])#imprime el primer texto correctamente y sin salto de espacio imprime invertido el segundo texto
 print(texto[::-1]+texto2)#imprime el primer texto invertido y sin salto de espacio imprime el segundo texto correctamente
+
+#como saver cuantas veces esta una subcadena dentro de una cadena
+cadena = "tendremos una clase, con una profe y una ayudante, que no falte ninguna"
+print(cadena.count('una')) #4

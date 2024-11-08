@@ -76,6 +76,47 @@ Para sobresalir en cualquier profesion o trabajo es necesario tener el grado sig
     por ejemplo: si un usuario tiene asignado un rol especifico, enonces se va a buscar esa informacion en la base de datos.
     Tambien las bases de datos guardan informacion de modificaciones, si algo fue modificado en el sistema, esto se registra en la base de datos
     -Conocimientos del comando de Linux
+    -Conocimiento y experiencia `practica deuna herramienta de gestion de prueba testlink, jira.
+    -Conocimiento en herramienas de gestion de errores, hay herramientas especializadas en la que uno debe reportar los errores que encuentre,
+     para que esos errores no se pierdan y para que esos errores tengan unos pasos de reproduccion y que cualquier desarrollador
+     pueda agarrar esos errores, reproducirlos y al final corregirlos, algunas de esas herraientas pueden ser Bugzilla, Jira.
+    -Conocimiento en herramientas de API (Postman) se necesita revisar o probar alguna    aplicacion, de este lado del Backend, 
+     y esta (Postman) es una herramienta que se necesita para interactuar con el backend
+    -Conocimiento en un lenguaje de programacion para automatizar las pruebas de sofware, son dificiles de poder gestionar porque llevan mucho tiempo, 
+     teniendo conocimiento en algun lenguaje de programacion, esto permite automatizar las pruebas (Python) --https://computer-database.gatling.io/computers
+
+# Antecedentes Academicos
+Muchas empresas no consideran esto como algo importante
+
+# Remuneracion 
+un QA en EE.UU. recibe entre 45.000 y 50.000 U$s al año, dependiendo de las empresas
+
+# ¿Que hace un probador de sofware en el dia a dia?
+-en cualquier dia de trabajo tipico uno estara: 
+* ocupado entendiendo los documentos,los requisitos y creando casos de pruebas, 
+* ejecutando informando y volviendo a probar errores
+* asistiendo a reuniones de revision y otras actividades de trabajo de equipo
+
+* Reuniones: conversar con los desarrolladores donde se va a explicar como se va a llevar a cabo hacer cierto producto, 
+que se va a hacer en el producto, que cosas se tienen que probar y que tecnologias se van a utilizar, 
+para estar al tanto de como se esta construyendo el sofware
+* Leer Documentos: como se desarrolla un sofware? generalmente se redacta todo esto en   documentos,
+ tecnologias que se van a usar, las librerias y un monton de cosas mas, eso se va a redactar en documentos
+ y uno debe estar constatemente leyendo estos duocumentos para estar informado 
+* Crear casos de Prueba, son documentos que uno tiene que crear para ver las cosas que uno esta probando 
+ (Ej: Verificar que el campo de login sea valido para mails o con formarto correcto)
+* Ejecutar casos de prueba
+* Reportar errores
+* Automatizar (Programar)
+
+# Trayectoria profesional de probador de sofware QA (Quality Assurance)
+* QA Junior (1-3 años)
+* QA Semi Senior QA SSr (+ de 3 años)
+* QA Senior (+ de 4 años)
+* Lider de Equipo (5-8 años)
+* Test Manager (8-11 años)
+* Gerente de Prueba (11-14 años)
+
 
 
 

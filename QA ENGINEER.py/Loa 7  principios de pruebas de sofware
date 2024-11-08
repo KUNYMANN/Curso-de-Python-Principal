@@ -1,0 +1,43 @@
+# Trasfondo
+* supongamos que uno tiene que mover un archivo de una carpeta A a una carpeta B
+* Archivo A -> B 
+aqui hay un monton de posibilidades que se pueden probar
+  1º intentar mover el archivo cuando este abierto (¿que pasa si se mueve un archivo cuando esta abierto?)
+  2º si no tengo permisos para mover el archivo (¿que pasa si el usuario intenta mover el archivo al cual no tiene permiso?)
+  3º que pasa si la carpeta B no tiene espacio, o el disco duro donde se va mover el arhivo A a la carpeta B no tiene espacio?
+  4º que pasa si la carpeta B no tiene permisos para mover ahi el archivo A?
+Y asi sucesivamente, 
+como vemos no podemos hacer un sinfin de pruebas porque implicaria mucho tiempo y dinero, para ello hay principios que se deben seguir
+
+# PRINCIPIO Nº 1 - No es posible realizar pruebas exhautivas
+no es posible realizar todas las pruebas posibles con todos los escenarios posibles
+* Necesitamos una cantidad oprtima de pruebas 
+  ¿como determinamos entonces el riesgo?
+  ej: de que maneras puedo generar fallas en el sistema operativo?
+  muchos diran, abriendo 10 o mas aplicaciones diferentes al mismo tiempo, optando por aquellas que necesitan una gran cantidad de recursos 
+  y ver que pasa con el sistema, esto nos llevaria a provar si hay errores en la actividad multitareas lo que es necesario probarlo a fondo
+
+# PRINCIPIO Nº 2 - Agrupacion de defectos
+* establece que una pequeña cantidad de modulos contiene la mayoria de los defectos detectados, esta es la apliacion del principio de PARETO, 
+y en las pruebas de sofware aproximadamente el 80% de los problemas se encuentra en el 20% de los modulos. 
+Entonces por experiencia se puede identificar tales modulos riegosos, pero este enfoque tiene tambien sus propios problemas
+Si las mismas pruebas se repiten una y otra vez eventualmente los mismos casos de prueba ya no encontraran nuevos errores, entonces generalmente su aplicacion va a tener un porcentaje pequeño de modulos, si la aplicacion tiene un modulo REPORTE, en ese modulo puede estar el 20% de los defectos
+
+# PRINCIPIO Nº 3 - Lo que se llama la "paradoja de los pesticidas"
+"TAMBIEN ES IMPORTANTE QUE NO REPITAMOS LAS MISMAS PRUEBAS UNA Y OTRA VEZ YA QUE CON EL TIEMPO NO ENCONTRARAN MAS ERRORES"
+Utilizar el mismo pesticida por mucho tiempo hace que los insectos desarrollen resistencia a ese pesticida, lo mismo se aplica a las pruebas de sofware,
+entonces si utilizamos el mismo metodo de prueba repetitivas para sofware, el metodo sera inutil,
+porque uno va a ir encontrando defectos con las pruebas que hemos diseñado pero, si a lo largo del tiempo la aplicacion va cambiando y uno realiza las mismas pruebas,
+no se va a poder encontrar nuevos defectos, para superar esto los casos de prueba deben revisarse regularmente, agregando casos de pruebas nuevos y diferentes
+para ayudar a encontrar mas defectos, entonces los provadores no pueden valerse simplemente de las tecnicas de pruebas existente, deben buscar continuamente mejoras 
+en los metodos existentes para que las pruebas sean mas eficases, pero incluso despues de este trabajo que se va a hacer, nunca podra afirmar que su producto esta 100% libre de errores
+* Mejorar las pruebas y las repetitivas automatizarlas
+
+# PRINCIPIO Nº 4 -Las pruebas muestran la presencia de defectos
+por lo tanto el pricipio de pruebas establece que, la prueba de sofware habla de la presencia de defectos y no habla de la ausencia de defecto,
+es decir la prueba de sofware reducen la posiilidad de que queden defectos no descubiertos en el sofware, pero incluso si no se encuentran defectos, 
+no es una prueba de correccion. Ahora ¿que sucede si trabaja mas duro? toma todas las precauciones y hace que su producto de sofware este 99% libre de errores, 
+que cumple con los requisitos y necesidades de los clientes, esto nos puede llevar a pensar en la ausencia de error (falacia)
+* Las pruebas deben estar enfocadas a detectar defectos
+
+# PRINCIPIO Nº 5 - no existe la ausencia de error
