@@ -283,3 +283,19 @@ def encontrar_raices(a,b,c):
     r=math.sqrt(resultado)
     d=-b+r/2*a
     print (d)'''
+
+#€jercicio
+'''solicitar al usuario un valor entre cero y cinco e indicarle si el valor proporcionado está dentro del rango.
+Se deben definir dos constantes indicando el valor mínimo, por ejemplo el valor mínimo que es cero
+y el valor máximo es cinco, ya que el rango que vamos a revisar es el valor entre cero y cinco y entonces
+debemos comprobar si el valor proporcionado se encuentra en este rango entre cero y cinco.
+Finalmente se debe de mandar a imprimir el valor dentro del rango con los valores de true o false dependiendo
+de si se encuentra o no dentro del rango.'''
+
+valor_minimo=0 #primer variable
+valor_maximo=5 #segunda variable
+usuario=int(input(f"Ingrese un valor entre {valor_minimo} y {valor_maximo}: ")) #valor solicitado al usuario
+confirmacion=usuario>=valor_minimo and usuario<=valor_maximo #evaluar si esta entre los rangos solicitados
+print(f"El valor ingresado es {confirmacion}") #imprimir si es verdad o no si el valor ingresado esta dentro del rango
+confirmacion=valor_minimo<=usuario<=valor_maximo #otra manera mas corta de evaluar si esta entre los rangos solicitados
+print(f"El valor ingresado tambien es {confirmacion}") #imprimir si es verdad o no si el valor ingresado esta dentro del rango

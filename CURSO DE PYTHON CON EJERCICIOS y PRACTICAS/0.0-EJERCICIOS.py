@@ -156,3 +156,11 @@ print(f"total compra de pan del dia $ {pan_del_dia:.2f}")
 print(f"total compra de pan por no ser del dia $ {pan_viejo:.2f}")
 print(f"El total final de la compra $ {total_compra:.2f}")'''
 
+#Calcular el area y el primetro de un rectangulo
+base=float(input('Ingrese el valor de la base del rectangulo: '))
+altura=float(input("Ingrese el valor de la altura del rectangulo: "))
+
+area=base*altura
+perimetro=2*(base+altura)
+print(f'El area del rectangulo es: {area}')
+print(f'el perimetro del rectangulo es: {perimetro}')
