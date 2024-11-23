@@ -297,5 +297,6 @@ valor_maximo=5 #segunda variable
 usuario=int(input(f"Ingrese un valor entre {valor_minimo} y {valor_maximo}: ")) #valor solicitado al usuario
 confirmacion=usuario>=valor_minimo and usuario<=valor_maximo #evaluar si esta entre los rangos solicitados
 print(f"El valor ingresado es {confirmacion}") #imprimir si es verdad o no si el valor ingresado esta dentro del rango
+print()
 confirmacion=valor_minimo<=usuario<=valor_maximo #otra manera mas corta de evaluar si esta entre los rangos solicitados
 print(f"El valor ingresado tambien es {confirmacion}") #imprimir si es verdad o no si el valor ingresado esta dentro del rango

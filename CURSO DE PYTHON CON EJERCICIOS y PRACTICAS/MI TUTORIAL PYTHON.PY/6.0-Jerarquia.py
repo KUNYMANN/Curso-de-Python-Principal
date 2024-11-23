@@ -4,13 +4,23 @@ el orden con el que deben realizarse dichas operaciones matemáticas'''
 
 #orden de operaciones en python: 
 
-'PARENTESIS:' # es el primer proceso que realiza, resuelve lo que esta dentro de los parentesis
+'PARENTESIS: ()' # es el primer proceso que realiza, resuelve lo que esta dentro de los parentesis
 
-'EXPONENCIACION:' # si el programa detecta una exponanciacion, es el segundo proceso que realiza
+'EXPONENCIACION:**' # si el programa detecta una exponanciacion, es el segundo proceso que realiza
 
-'MULTIPLICACION O DIVISION:' # ocupa el penultimo de los procesos de la operacion matematica
+'UNARIOS:+ -'# (+)positivo y (-)negativo
+
+'MULTIPLICACION, DIVISION, DIVISION EXACTA Y MODULO: * / // %' # ocupa el penultimo de los procesos de la operacion matematica
 
 'SUMA Y RESTA' # al final, iniciando siempre de izquierda a derecha
+
+'COMPARACION: ==, !=, <, <=, >, >= ' # igual que; distinto de; mayor; mayor o igual; menor; menor o igual
+
+'OPERADORES LOGICOS: ' # not, and y or
+
+'OPERADORES DE ASIGNACION COMPUESTOS: =, +=, -=, /=, //=, %=, **=' #igual, igual mas, igual menos, division igual, division exacta igual, resto igual, exponente igual
+'PRESEDENCIA DE OPERADORES:    ejemplo     5+3*2**2= 17  Distinto de: (5+3)*2**2= 32'
+'se resuleve primero el exponente da 4 luego *3 + 5= 17  Distinto de:   8  *  4 = 32'
 
 num1=100
 num2=50
@@ -27,4 +37,4 @@ print((num1+num2)*num3) # 3750
 print((num1+num2)*(num3-num4)) # 2250
 print((num1+num2)*(num3-num4)/(num1-num1)) #esta operacion va a dar error y es muy importante
 #al arrojar ZeroDividionError: division by zero, nos esta diciendo que una division por 0 el resultado es infinito
-#saber leer los errores que muestra el programa por consola, nos ayudara a comprender que es lo que temenos que solucionar
+#saber leer los errores que muestra el programa por consola, nos ayudara a comprender que es lo que temenos que solucionaroperadores.
