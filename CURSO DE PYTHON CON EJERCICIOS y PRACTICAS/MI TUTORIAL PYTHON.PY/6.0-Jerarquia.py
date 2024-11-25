@@ -37,4 +37,5 @@ print((num1+num2)*num3) # 3750
 print((num1+num2)*(num3-num4)) # 2250
 print((num1+num2)*(num3-num4)/(num1-num1)) #esta operacion va a dar error y es muy importante
 #al arrojar ZeroDividionError: division by zero, nos esta diciendo que una division por 0 el resultado es infinito
-#saber leer los errores que muestra el programa por consola, nos ayudara a comprender que es lo que temenos que solucionaroperadores.
+#saber leer los errores que muestra el programa por consola, nos ayudara a comprender que es lo que temenos que solucionar en los operadores.
+

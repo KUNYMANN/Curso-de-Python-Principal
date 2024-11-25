@@ -2,6 +2,15 @@
 '''Los operadores aritmeticos son símbolos especiales que representan cálculos
 (+-*/%<>) como la suma o la multiplicación. 
 Los valores a los cuales se aplican esos operadores reciben el nombre de operandos.'''
+# 1. Paréntesis (): Los paréntesis tienen la mayor precedencia
+# 2. Exponente **: Este operador calcula la potencia de un número.
+# 3. Unario +, -: Estos operadores realizan operaciones unarias de positivo y negativo
+# 4. Multiplicación *, División /, División entera //, Módulo %
+# 5. Suma +, Resta -: Estos operadores realizan operaciones aritméticas.
+# 6. Comparaciones (==, !=, >, <, >=, <=)
+# 7. Operadores lógicos not, and, or
+# 8. Asignación (=, +=, -=, *=, /=, entre otros)
+
 suma= 5+2
 print(suma)
 
@@ -18,9 +27,9 @@ modulo=25%2
 print(modulo)
 'MODULO: es un operador que sirve para tomar en cuenta la parte del resto o residuo de una operacion (division)'
 "partes de una division"
- #divisor..> 25 L_2_ <...divisor      
- #           04  12 <...cociente
- #   RESTO..> 1 
+ #dividendo..> 25 L_2_ <...divisor      
+ #             04  12 <...cociente
+ #     RESTO..> 1 
 
 'el resto o residuos representa o determina cuanto va a sobrar al realizar una division'
 'EL MODULO EVALUA EL RESIDUO O RESTO, no va a evaluar ni el dividendo, ni el divisor ni el cosiente'
@@ -66,7 +75,7 @@ el orden con el que deben realizarse dichas operaciones matemáticas'''
 
 'UNARIOS:+ -'# (+)positivo y (-)negativo
 
-'MULTIPLICACION, DIVISION, DIVISION EXACTA Y MODULO: * / // %' # ocupa el penultimo de los procesos de la operacion matematica
+'MULTIPLICACION, DIVISION, DIVISION ENTERA Y MODULO: *, /, //, % ' # ocupa el penultimo de los procesos de la operacion matematica
 
 'SUMA Y RESTA' # al final, iniciando siempre de izquierda a derecha
 
@@ -74,6 +83,6 @@ el orden con el que deben realizarse dichas operaciones matemáticas'''
 
 'OPERADORES LOGICOS: ' # not, and y or
 
-'OPERADORES DE ASIGNACION COMPUESTOS: =, +=, -=, /=, //=, %=, **=' #igual, igual mas, igual menos, division igual, division exacta igual, resto igual, exponente igual
-'PRESEDENCIA DE OPERADORES:    ejemplo     5+3*2**2= 17  Distinto de: (5+3)*2**2= 32'
-'se resuleve primero el exponente da 4 luego *3 + 5= 17  Distinto de:   8  *  4 = 32'
+'OPERADORES DE ASIGNACION COMPUESTOS: =, +=, -=, /=, //=, %=, **=' #igual, igual mas, igual menos, division igual, division entera igual, resto igual, exponente igual
+'PRESEDENCIA DE OPERADORES:     ejemplo     5+3*2**2= 17  Distinto de: (5+3)*2**2= 32'
+'se resuleve primero el exponente, da 4 luego *3 + 5= 17  Distinto de:   8  *  4 = 32'

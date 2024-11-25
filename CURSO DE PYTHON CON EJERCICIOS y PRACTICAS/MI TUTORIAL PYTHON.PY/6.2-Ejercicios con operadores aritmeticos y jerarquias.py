@@ -95,8 +95,10 @@ print(combo3) #0
 # 7. Operadores lógicos not, and, or
 # 8. Asignación (=, +=, -=, *=, /=, entre otros)
 
-# Ejemplo de precedencia de operadores
-# 1. Division 12 / 3 = 4
+#€jemplo
+resultado = 12 // 3 + 2 * 3 - 1 #analisis de precedencia de izquierda a derecha (siempre se evalua asi)
+# 1. Division entera 12 // 3 = 4
 # 2. Multiplicacion 2 * 3 = 6
 # 3. Suma 4 + 6 = 10
 # 4. Resta 10 - 1 = 9
+print(f'Resultado: {resultado}') # resultado = 9
