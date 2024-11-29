@@ -141,3 +141,30 @@ else: #en caso que se ingrese un numero mayor a 100 o algun numero negarivo
 #                        O   .......................................................  fin        ovalo        O   
 
 'PARA TENER EN CUENTA, EN TODA EVALUACION IF-ELIF-ELSE SIEMPRE SE IMPRIME LA CONDICION TRUE, AUNQUE EL ELSE LO HAGA POR DEFAULT TAMBIEN ES TRUE'
+
+numero=int(input("Ingrese un numero para saber si es positivo o negativo: "))
+if numero>0:
+    print("Es un numero positivo")
+elif numero<0:
+    print("Es un numero negatido")
+else:
+    print("El numero ingresado es el cero")
+
+'el diagrama seria el siguiente'
+
+#                           O inicio
+#                           |
+#                  [ingrese un numero]
+#                           |
+# IF condicion : ---------<numero >0>---------
+#               |                             |
+#            True                           False
+#               |                             |
+#        [es positivo]  ELIF condicion  --<numero <0>--
+#               |                      |               |
+#               |                    True            False 
+#               |                      |               |
+#               |               [es negativo]      [es cero] ELSE por default
+#               |                      |_______________|
+#               |______________________|
+#                                      O fin
