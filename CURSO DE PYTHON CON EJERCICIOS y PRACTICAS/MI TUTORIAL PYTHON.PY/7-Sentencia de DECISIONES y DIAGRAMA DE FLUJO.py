@@ -10,13 +10,14 @@
    #if condicion :
          #bloque de codigo que se ejecuta si la condicion se cumple
 
-edad=int(input("Ingrese su edad para saber si eres mayor o menor de edad: "))
+edad=int(input("Ingrese desde el teclado numerico su edad para saber si eres mayor o menor de edad: "))
 if 18<=edad<=100: #si la condicion se cumple, en este caso si ingresa un numero mayor o igual a 18 y menor a 100
     print("Eres Mayor de edad") #entonces imprimira la siguiente leyenda "Eres mayor de edad"
 elif 18>edad>=0: #si no se cumple la anterior pero SI esta, que el numero ingresado sea menor a 18 con un parametro minimo de 0 años
     print("Eres menor de edad")#entonces imprimira la siguiente leyenda "Eres menor de edad"
 else: #en caso que se ingrese un numero mayor a 100 o algun numero negarivo
     print("Dato invalido") #entonces imprimira la siguiente leyenda "Dato invalido"'''
+print()
 
 
 'DIAGRAMA DE FLUJO'
@@ -51,8 +52,8 @@ secuencia de acciones.'''
 #                    |
 #                    O   fin                 ovalo
 
-edad=int(input("Ingrese su edad para saber si eres mayor o menor de edad: "))
-if edad>=18: #si la condicion se cumple, en este caso si ingresa un numero mayor o igual a 18 y menor a 100
+edad=int(input("Ingrese desde el teclado numerico su edad para saber si eres mayor o menor de edad: "))
+if edad>=18: #la condicion se cumple, en el caso que ingrese un numero mayor o igual a 18 y menor a 100
     print("Eres mayor de edad") #entonces imprimira la siguiente leyenda "Eres mayor de edad"      
 print()
 
@@ -73,52 +74,70 @@ Entonces solamente se ejecuta el bloque else y manda a imprimir el mensaje Eres 
  # if condicion:
     #bloque de codigo que se ejecuta si la condicion es verdadera
  # else:
-    #bloque de codigo que se ejecuta si la comndicion es falsa
+    #bloque de codigo que se ejecuta si la  condicion anterior es falsa
 #Ejemplo  
-edad=int(input("Ingrese su edad para saber si eres mayor o menor de edad: "))
-if edad>=18:
-    print("Eres Mayor de edad")
-else:
-    print("Eres menor de edad")
+edad=int(input("Ingrese desde el teclado numerico su edad para saber si eres mayor o menor de edad: "))
+if edad>=18:  #la condicion se cumple, en el caso que ingrese un numero mayor o igual a 18 y menor a 100
+    print("Eres Mayor de edad") #entonces imprimira la siguiente leyenda "Eres mayor de edad"
+else:  #si no se cumple la condicion anterior, pero para que se ejecute esta, el numero ingresado debe ser menor a 18 
+    print("Eres menor de edad") #entonces imprimira la siguiente leyenda "Eres menor de edad"
 
 'El diagrama de flujo para este ejemplo if - else seria asi:'
 
-#                        O                     inicio     ovalo
+#                        O                           inicio     ovalo         O
 #                        |   
-#                  [  edad=  ]               variable   rectangulo
+#                   [  edad=  ]                      variable   rectangulo   []
 #           if           |          else           
-#              ----<  edad>=18 >----           condicion  diamante
+#              ----<  edad>=18 >----                 condicion  diamante     <>
 #             |                     |
-#            True                 False    evaluacion
+#            True                 False              evaluacion True/False/por dafault
 #             |                     |
-# ["Eres mayor de edad"]   ["Eres menor de edad"]            
+# ["Eres mayor de edad"]   ["Eres menor de edad"]    print                   ()       
 #             |                     |
 #             |_____________________|
 #                        |   
-#                        O         fin
+#                        O                           fin                      O
 
+print()
 #SENTENCIA IF - ELIF - ELSE
-edad=int(input("Ingrese su edad para saber si eres mayor o menor de edad: "))
-if edad>=18: #si la condicion se cumple, en este caso si ingresa un numero mayor o igual a 18 y menor a 100
+
+''' la sentencia elif es una abreviatura de un bloque else if y se utiliza cuando necesitamos verificar
+múltiples condiciones una tras otra, y se pueden agregar tantas nuevas condiciones de tipo Elif como
+necesitemos. Sin embargo, deben ir después de un if y antes de un bloque else.'''
+
+edad=int(input("Ingrese desde el teclado numerico su edad para saber si eres mayor o menor de edad: "))
+if edad>=18 and edad<=100: #la condicion se cumple, en el caso que ingrese un numero mayor o igual a 18 y menor a 100
     print("Eres Mayor de edad") #entonces imprimira la siguiente leyenda "Eres mayor de edad"
-elif 18>edad>=0: #si no se cumple la anterior pero SI esta, que el numero ingresado sea menor a 18 con un parametro minimo de 0 años
+elif 18>edad>=0: #si no se cumple la condicion anterior, pero para que se cumpla esta, el numero ingresado debe ser menor a 18 con un parametro minimo de 0 años
     print("Eres menor de edad")#entonces imprimira la siguiente leyenda "Eres menor de edad"
 else: #en caso que se ingrese un numero mayor a 100 o algun numero negarivo
     print("Dato invalido") #entonces imprimira la siguiente leyenda "Dato invalido"'''
 
+ #Sintaxis sentencia if else
+ # if condicion1:   
+ #    #bloque de codigo que se ejecuta si la condicion1 es verdadera
+ #elif condicion2:
+ #    #bloque de codigo que se ejecuta si la condicion2 es verdadera
+ # else:    
+ #    #bloque de codigo que se ejecuta si las comndiciones anteriores fueron falsas
+
 'El diagrama de flujo para este ejemplo if - elif - else seria asi:'
 
-#                        O     ...................................................... inicio     ovalo O
+#                        O     ...................................................... inicio      ovalo       O
 #                        |   
-#                  [  edad=  ] ...................................................... variable   rectangulo []
-#           if           |         elif              else
-#              ----<  edad>=18 >---- -----------------    ........................... condicion  diamante <>
+#                    [edad=xx] ...................................................... variable    rectangulo  []
+#           if           |               elif              
+#              ----<  edad>=18 >----------- ......................................... condicion 1 diamante    <>
+#             |                            |
+#           True                         False ...................................... evaluacion True /False
+#             |                            |                                       
+#             |                       <18>edad>=0> .................................. condicion 2 diamante    <>
+#             |
+#             |                  True elif       False else ......................... evaluacion2 True/False
 #             |                     |                 |
-#            True                 False     Fuera de los parametros establecidos..... evaluacion rectangulos []
-#             |                     |                 |
-# ["Eres mayor de edad"] ["Eres menor de edad"] ["Dato Incorrecto"]           
-#             |                     |                 |
+# ["Eres mayor de edad"] ["Eres menor de edad"]["Dato invalido"]..................... print                    ()
 #             |_____________________|_________________|
 #                        |   
-#                        O   .......................................................  fin        ovalo O   
+#                        O   .......................................................  fin        ovalo        O   
 
+'PARA TENER EN CUENTA, EN TODA EVALUACION IF-ELIF-ELSE SIEMPRE SE IMPRIME LA CONDICION TRUE, AUNQUE EL ELSE LO HAGA POR DEFAULT TAMBIEN ES TRUE'
