@@ -44,7 +44,9 @@ secuencia de acciones.'''
 'El diagrama de flujo para este ejemplo if seria asi:'
 
 #                    O        inicio         ovalo
+#                    |
 #              [  edad=30  ]  variable   rectangulo
+#                    |
 #             -<  edad>=18 >- condicion  diamante
 #        True |             | False
 # ["Eres mayor de edad"]    |         
