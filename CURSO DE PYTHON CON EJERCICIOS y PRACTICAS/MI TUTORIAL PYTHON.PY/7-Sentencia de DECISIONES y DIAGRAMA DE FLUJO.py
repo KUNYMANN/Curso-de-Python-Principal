@@ -152,10 +152,10 @@ else:
 
 'el diagrama seria el siguiente'
 
-#                           O inicio
-#                           |
-#                  [ingrese un numero]
-#                           |
+#                              O inicio
+#                              |
+#                      [ingrese un numero]
+#                              |
 # IF condicion : ---------<numero >0>---------
 #               |                             |
 #            True                           False
@@ -168,3 +168,67 @@ else:
 #               |                      |_______________|
 #               |______________________|
 #                                      O fin
+
+
+altura=float(input("Ingrese su altura para determinar su tamaño: "))
+if altura>=1.90 and altura<=3:
+    print(f"Mides {altura} Eres alto")
+elif altura>3:
+    print(f"Mides {altura} Eres gigante")    
+elif altura<1.89 and altura>1:
+    print(f"Mides {altura} Eres de estatura normal")
+elif altura<1 and altura>0:
+    print(f"Mides {altura} Eres petiso")
+else:
+    print("El dato ingresado es invalido")
+
+
+'''Se les pide crear un sistema que ofrezca descuentos dependiendo del monto de la compra o también si
+es miembro de la tienda.
+Así que dependiendo de estos dos factores se puede ofrecer un descuento y entonces se deben de revisar
+las siguientes condiciones.
+Primero vamos a revisar si ha comprado más de 1.000 $ y además es miembro de la tienda.
+Si cumple con ambas condiciones, entonces se le debe de ofrecer un descuento del 10% sobre el monto
+total de su compra.
+
+Ahora, si solo es miembro de la tienda, se le puede ofrecer un descuento del 5% ya que no realizó
+compras superiores a mil, sino que solamente es miembro de la tienda.
+
+Y por último, se va a revisar la condición si no es miembro de la tienda, ni tampoco compró más de
+1.000 $, entonces el descuento que se le ofrece es del 0%.
+
+No podemos ofrecer ningún descuento si no ha comprado más de 1.000 $ y además tampoco es miembro de
+la tienda, así que se les deja realizar este ejercicio.
+Obviamente ustedes de manera interna pueden definir las constantes que necesiten para indicar, por
+ejemplo, el monto mínimo de compra, que en este caso es el valor de mil.
+Posteriormente le deben de pedir al usuario el monto de la compra y también si es miembro de la tienda
+y vamos a revisar cómo debe de funcionar el sistema.
+Así que si ejecutamos nuestro sistema, el sistema de descuentos nos debe de preguntar cuál fue el monto
+de tu compra, por ejemplo 1500.
+Y además también nos pregunta si eres miembro de la tienda.
+En este caso voy a indicar que sí y por lo tanto tiene que mandar el mensaje.
+Felicidades, Has obtenido un descuento del 10% y mostramos el monto de la compra.
+Posteriormente el monto del descuento que se va a aplicar y el monto final de la compra con descuento.
+Así que lo que va a pagar es 1350.
+Esto es lo que debe tener el programa y además también por ejemplo, revisamos otra condición si solamente
+hemos comprado 800 $, pero si somos miembros de la tienda, entonces obtenemos un descuento del 5%.
+Se realizan los cálculos respectivos, el monto de la compra, el descuento y el monto final de la compra
+con descuento es de 760.
+Y por último, si el monto fue menor a 1.000 $ y además no somos miembros de la tienda, entonces nos
+manda el mensaje No obtuviste ningún tipo de descuento?
+Te invitamos a hacerte miembro de la tienda.'''
+monto_compra=float(input("Ingrese el monto total de su compra: "))
+membresia=input("Indique si/no es cliente de la tienda: ").lower()
+descuento=monto_compra-(monto_compra*10/100)
+descuento2=monto_compra-(monto_compra*5/100)
+if monto_compra>=1000 and membresia=="si":
+        print(f"Por ser cliente y su compra superar los $1.000 posee un descuento del 10%, su monto a pagar es $ {descuento:.2f}")
+elif monto_compra<1000 and  membresia=="si":
+    print(f"Por ser cliente y su compra no superar los $1.000 posee un descuento del 5%, su monto a pagar es $ {descuento2:.2f}")
+elif monto_compra>1000 and membresia=="no":
+    print(f'''Por no ser cliente su compra no tiene descuentos, el  monto a pagar es $ {monto_compra:.2f}
+          "TE INVITAMOS A HACERTE SOCIO DE LA TIENDA"''')
+else:
+    print(f'''Por no ser cliente y su compra no superar los $1.000 su monto a pagar es $ {monto_compra:.2f}
+          "TE INVITAMOS A HACERTE SOCIO DE LA TIENDA"''')
+
