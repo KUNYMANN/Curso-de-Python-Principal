@@ -45,8 +45,8 @@ print(edad>50 and edad<60) #si los resultados de esta solicitud son correctos  e
 print(edad>56 and edad<60) #si uno de los resultados de esta solicitud es falso el resultado final es false (54 es mayor que 56 NO y es menor que 60 si)
 print()
 print(edad<60 or edad>53) # TRUE...(ambas condiciones son ciertas, 54 es menor que 60 pero tambien 54 mayor que 53)
-print(not(edad>52))# FALSE...(no es cierto que 54 es mayor que 52? es falso porque 54 es mayor a 52) una verdad negada es falsa
-print(not(edad>56))#TRUE...(no es cierto que 54 sea mayor que 56? es verdad porque 54 no es mayor a 56) una mentira negada es verdad
+print(not(edad>52))# FALSE...(no es verdad que 54 es mayor que 52? es falso porque 54 es mayor a 52) una verdad negada es falsa
+print(not(edad>56))#TRUE...(no es verdad que 54 sea mayor que 56? es verdad porque 54 no es mayor a 56) una mentira negada es verdad
 """
 
 # Prioridadde los operadores logicos

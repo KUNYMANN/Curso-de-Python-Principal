@@ -225,7 +225,7 @@ membresia=input("Indique si/no es cliente de la tienda: ").strip().lower()
 if monto_compra>=1000 and membresia=="si":
     descuento=monto_compra*10/100
     descuento2=monto_compra-descuento
-    print(f"""Felicidades!!! por ser cliente y tu compra superar los $ 1.000 
+    print(f"""\nFelicidades!!! por ser cliente y tu compra superar los $ 1.000 
     Te has hecho acreedor al siguiente descuento
     Monto de la compra: ........$ {monto_compra:.2f} 
     Descuento otorgado del 10%: $  {descuento:.2f}
@@ -233,22 +233,52 @@ if monto_compra>=1000 and membresia=="si":
 elif 1000>monto_compra>=500 and  membresia=="si":
     descuento1=monto_compra*5/100
     descuento3=monto_compra-descuento1
-    print(f"""Por ser cliente pero tu compra no supera los $ 1.000 
+    print(f"""\nPor ser cliente pero tu compra no supera los $ 1.000 
     Te has hecho acreedor al siguiente descuento
     Monto de la compra:....... $ {monto_compra}
     Descuento otorgado del 5%: $  {descuento1:.2F} 
     Tu monto a pagar es ...... $ {descuento3:.2f}""")
-elif monto_compra<500 and membresia=="si":
+elif monto_compra>1000 and membresia=="no":
     descuento4=monto_compra*3/100
     descuento5=monto_compra-descuento4
-    print(f'''Por ser cliente 
+    print(f'''\nPor ser cliente 
     Te has hecho acreedor al siguiente descuento
     Monto de la compra: ........$ {monto_compra:.2f} 
     Descuento otorgado del 3%: $   {descuento4:.2f}
     Tu monto a pagar es ........$ {descuento5:.2f}
 "TE INVITAMOS A HACERTE SOCIO DE LA TIENDA"''')
 else:
-    print(f'''Por no ser cliente 
+    print(f'''\nPor no ser cliente 
      Su monto a pagar es $ {monto_compra:.2f}
+
 "TE INVITAMOS A HACERTE SOCIO DE LA TIENDA"''')
 
+
+print()
+'''Vamos a crear algunos ejemplos para poner en práctica las sentencias de decisión y también el operador
+NOT para aplicar una lógica inversa en nuestros programas.
+Así que para ello vamos a simular que estamos dentro de un sistema bancario.
+Considerando que estamos dentro de un sistema bancario, se solicita preguntar al usuario si desea continuar
+dentro del sistema y utilizando el operador NOT.
+Para aplicar una lógica inversa se debe de programar las siguientes condiciones.
+Si no deseamos salir del sistema, se manda a imprimir el mensaje.
+Continuamos dentro del sistema, de lo contrario se va a mandar a imprimir saliendo del sistema.'''
+
+print('*** SISTEMA BANCARIO ***')
+salir_del_sistema=input('Deseas salir del sistema si/no: ')
+salir_sistema=salir_del_sistema.strip().lower()=='si'
+if not salir_sistema:
+    print("Continuar dentro del sistema")
+else:
+    print('Saliendo del sistema')
+
+print()
+
+print('*** CASA DE LOS ESPEJOS ***')
+edad=float(input("Ingresen su edad: "))
+miedo=input('Le tienes miedo a la oscuridad (Si/No): ')
+miedoso=miedo=="si".strip().lower()
+if not miedoso and edad>=10 :
+    print("Puedes ingresar")
+else:
+     print('No puedes ingresar')
