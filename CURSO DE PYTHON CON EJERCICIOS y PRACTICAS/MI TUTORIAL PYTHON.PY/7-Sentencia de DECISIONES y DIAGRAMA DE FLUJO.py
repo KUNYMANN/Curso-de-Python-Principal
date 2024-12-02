@@ -221,11 +221,13 @@ manda el mensaje No obtuviste ningún tipo de descuento?
 Te invitamos a hacerte miembro de la tienda.'''
 print(   "****   SISTEMA DE DESCUENTO    ****")
 monto_compra=float(input("Ingrese el monto total de su compra: "))
-membresia=input("Indique si/no es cliente de la tienda: ").lower()
+membresia=input("Indique si/no es cliente de la tienda: ").strip().lower()
 descuento=monto_compra*10/100
 descuento1=monto_compra*5/100
 descuento2=monto_compra-descuento
 descuento3=monto_compra-descuento1
+descuento4=monto_compra*3/100
+descuento5=monto_compra-descuento4
 
 if monto_compra>=1000 and membresia=="si":
         print(f"""Felicidades!!! por ser cliente y tu compra superar los $ 1.000 
@@ -233,18 +235,21 @@ if monto_compra>=1000 and membresia=="si":
     Monto de la compra: ........$ {monto_compra:.2f} 
     Descuento otorgado del 10%: $  {descuento:.2f}
     Tu monto a pagar es ........$ {descuento2:.2f}""")
-elif monto_compra<1000 and  membresia=="si":
+elif 1000>monto_compra>=500 and  membresia=="si":
     print(f"""Por ser cliente pero tu compra no supera los $ 1.000 
     Te has hecho acreedor al siguiente descuento
     Monto de la compra:....... $ {monto_compra}
     Descuento otorgado del 5%: $  {descuento1:.2F} 
     Tu monto a pagar es ...... $ {descuento3:.2f}""")
-elif monto_compra>1000 and membresia=="no":
-    print(f'''Por no ser cliente su compra no tiene descuentos, 
-    El  monto a pagar es $ {monto_compra:.2f}
+elif monto_compra<500 and membresia=="si":
+    print(f'''Por ser cliente 
+    Te has hecho acreedor al siguiente descuento
+    Monto de la compra: ........$ {monto_compra:.2f} 
+    Descuento otorgado del 3%: $   {descuento4:.2f}
+    Tu monto a pagar es ........$ {descuento5:.2f}
 "TE INVITAMOS A HACERTE SOCIO DE LA TIENDA"''')
 else:
-    print(f'''Por no ser cliente y su compra no superar los $1.000
+    print(f'''Por no ser cliente 
      Su monto a pagar es $ {monto_compra:.2f}
 "TE INVITAMOS A HACERTE SOCIO DE LA TIENDA"''')
 
