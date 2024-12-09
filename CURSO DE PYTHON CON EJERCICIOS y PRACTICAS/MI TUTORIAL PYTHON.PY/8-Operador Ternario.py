@@ -89,7 +89,6 @@ El cliente Susana.
 Los días de estadía tres El costo total de la reservación 451.50 y también indica que el 4.º no tiene
 vista al mar, así que eso es lo que debe de realizar su aplicación.'''
 
-
 print("    ***SISTEMA RESERVA HOTEL***")
 
 precio1=200
@@ -98,101 +97,54 @@ precio2=150
 print(f"Cuartos con vista al mar $ {precio1} por dia")
 print(f"Cuartos sin vista al mar $ {precio2} por dia")
 print()
-nombre_completo_pasajero=input("Ingrese su nombre y apellido completo: ").strip().title()
-dias_en_el_hotel=int(input("Indique la cantidad de dias que va a alojarse en el hotel: "))
-cuartos_con_vista_al_mar=input("Desea un cuarto con vista al mar? (Si/No): ").strip().lower()
+nombre=input("Ingrese su nombre y apellido completo: ").strip().title()
+dias=int(input("Indique la cantidad de dias que va a alojarse en el hotel: "))
+cuartos_vm=input("Desea un cuarto con vista al mar? (Si/No): ").strip().lower()
 efectivo_debito=input("Si abona en efectivo/debito obterndra un descuento 10% (Si/No): ").strip().lower()
+descuento1=precio1*.80 #20% mas de 20 dias hcvm
+total_desc1=descuento1*dias #precio por la cantidad de dias alojados hcvm
+descuento2=total_desc1*.90 #descuento 10 % pago efectivo
+descuento3=precio2*.80 #20% mas de 20 dias hsvm
+total_desc2=descuento3*dias #precio por la cantidad de dias alojados hsvm
+
 print("\n----------Detalles de la reserva-----------")
 
 #mas de 20 dias, Hab.C V Mar,pago en efectivo
-if dias_en_el_hotel>=20 and cuartos_con_vista_al_mar=="si":    
-   descuento1=precio1*0.80
-   valor_promocion1=descuento1*dias_en_el_hotel
-   if efectivo_debito=="si": 
-    pago_efectivo=valor_promocion1*0.90
-    print(f""""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-Promocion otorgada de un descuento de $ {descuento1} por 20 dias o mas.../
-El total de su reserva por los {dias_en_el_hotel} dias es $ {valor_promocion1} 
-Si abona en efectivo la suma final a pagar es {pago_efectivo}""")
-
+if dias>=20 and cuartos_vm=="si" and efectivo_debito=="si":
+   
+   print(f"Nombre reserva: {nombre}")
+   print(f"cantidad de dias: {dias}")
+   print(f"Hab. vista al mar: {cuartos_vm}")
+   print(f"descuento mas 20 dias $ {descuento1}")
+   print(f"TOTAL con descuento efectivo: {descuento2} ")
+   print(1)
 #mas de 20 dias, Hab.C V Mar,paga con otro medio  
-   if efectivo_debito=="no": 
-    print(f""""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-Promocion otorgada de un descuento de $ {descuento1} por 20 dias o mas...//
-El total de su reserva por los {dias_en_el_hotel} dias es $ {valor_promocion1}""")
+elif dias>=20 and cuartos_vm=="si" :
+   print(f"Nombre reserva: {nombre}")
+   print(f"cantidad de dias: {dias}")
+   print(f"Hab. vista al mar: {cuartos_vm}")
+   print(f"descuento mas 20 dias $ {descuento2} ")
+   print(2)
 
-#menos de 20 dias, Hab.C V Mar,pago en efectivo    
-
-    if efectivo_debito=="no": 
-     valor_s_promocion=precio1*dias_en_el_hotel
-     print(f""""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-**Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-El total de su reserva por los {dias_en_el_hotel} dias es $ {valor_s_promocion}""")
-
-#mas de 20 dias, Hab.sin V Mar,pago en efectivo
-if dias_en_el_hotel>=20 and cuartos_con_vista_al_mar=="no":
-  descuento2=precio2*0.80
-  valor_promocion2=descuento2*dias_en_el_hotel
-  if efectivo_debito=="si": 
-      pago_efectivo=valor_promocion2*0.90
-      print(f""""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-Promocion otorgada de un descuento de $ {descuento2} por 20 dias o mas ***/
-El total de su reserva por los {dias_en_el_hotel} dias es $ {valor_promocion2}
-Si abona en efectivo la suma final a pagar es {pago_efectivo}""") 
-
-#mas de 20 dias, Hab.sin V Mar,paga con otro medio
-if dias_en_el_hotel>=20 and cuartos_con_vista_al_mar=="no":
-     descuento2=precio2*0.80
-     valor_promocion2=descuento2*dias_en_el_hotel
-     print(f""""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-Promocion otorgada de un descuento de $ {descuento2} por 20 dias o mas ***//
-El total de su reserva por los {dias_en_el_hotel} dias es $ {valor_promocion2}""") 
-      
-#menos de 20 dias, Hab.sin V Mar,pago en efectivo
-if dias_en_el_hotel<20 and cuartos_con_vista_al_mar=="no":
-     descuento2=precio2*0.80
-     valor_promocion2=descuento2*dias_en_el_hotel
-     pago_efectivo=valor_promocion2*0.90
-     if efectivo_debito=="si": 
-      print(f""""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-Promocion otorgada de un descuento de $ {descuento2} por 20 dias o mas ***
-El total de su reserva por los {dias_en_el_hotel} dias es $ {valor_promocion2}
-Si abona en efectivo la suma final a pagar es {pago_efectivo}""") 
-
-#menos de 20 dias, hab.sin V Mar, paga con otro medio 
+#mas 20 dias, hab. S V Mar, paga efectivo
+elif dias>=20 and efectivo_debito=="si":
+   print(f"Nombre reserva: {nombre}")
+   print(f"cantidad de dias: {dias}")
+   print(f"Hab. vista al mar: {cuartos_vm}")
+   print(f"descuento mas 20 dias $ {descuento2}")
+   print(f"TOTAL con descuento efectivo: {total_desc2} ")
+   print(3)
+#menos de 20 dias, hab. S V Mar paga, paga efectivo
+elif dias<20 and efectivo_debito=="si":
+   print(f"Nombre reserva: {nombre}")
+   print(f"cantidad de dias: {dias}")
+   print(f"Hab. vista al mar: {cuartos_vm}")
+   print(f"TOTAL con descuento efectivo: {total_desc2} ")
+   print(4)
+#menos de 20 dias, hab. S V Mar, paga otros medios
 else:
-  efectivo_debito=="no"
-  print(f"""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de días de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitación con vista al mar: {cuartos_con_vista_al_mar}
-El total de su reserva por los {dias_en_el_hotel} días es $ {precio2 * dias_en_el_hotel}""")
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''else:
-
-  print(f"""Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
-La cantidad de dias de su reserva es: {dias_en_el_hotel}
-Solicito reserva para una habitacion con vista al mar: {cuartos_con_vista_al_mar}
-El total de su reserva por los {dias_en_el_hotel} dias es $ {precio2*dias_en_el_hotel}""")'''
+    print(f"Nombre reserva: {nombre}")
+    print(f"cantidad de dias: {dias}")
+    print(f"Hab. vista al mar: {cuartos_vm}")
+    print(f"descuento mas 20 dias $ {total_desc1}")
+    print(5)
