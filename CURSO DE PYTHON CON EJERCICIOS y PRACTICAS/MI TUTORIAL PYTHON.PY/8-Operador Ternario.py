@@ -101,50 +101,79 @@ nombre=input("Ingrese su nombre y apellido completo: ").strip().title()
 dias=int(input("Indique la cantidad de dias que va a alojarse en el hotel: "))
 cuartos_vm=input("Desea un cuarto con vista al mar? (Si/No): ").strip().lower()
 efectivo_debito=input("Si abona en efectivo/debito obterndra un descuento 10% (Si/No): ").strip().lower()
-descuento1=precio1*.80 #20% mas de 20 dias hcvm
-total_desc1=descuento1*dias #precio por la cantidad de dias alojados hcvm
-descuento2=total_desc1*.90 #descuento 10 % pago efectivo
-descuento3=precio2*.80 #20% mas de 20 dias hsvm
-total_desc2=descuento3*dias #precio por la cantidad de dias alojados hsvm
-
+totalsdesc=precio1*dias
+totalsdesc1=precio2*dias
 print("\n----------Detalles de la reserva-----------")
 
 #mas de 20 dias, Hab.C V Mar,pago en efectivo
 if dias>=20 and cuartos_vm=="si" and efectivo_debito=="si":
-   
+   descuento1=precio1*.80 #20% mas de 20 dias hcvm
+   total_desc1=descuento1*dias #precio por la cantidad de dias alojados hcvm
+   descuento2=total_desc1*.90 #descuento 10 % pago efectivo
+   descuento3=precio2*.80 #20% mas de 20 dias hsvm
+   total_desc2=descuento3*dias #precio por la cantidad de dias alojados hsvm
    print(f"Nombre reserva: {nombre}")
    print(f"cantidad de dias: {dias}")
    print(f"Hab. vista al mar: {cuartos_vm}")
    print(f"descuento mas 20 dias $ {descuento1}")
    print(f"TOTAL con descuento efectivo: {descuento2} ")
    print(1)
+
 #mas de 20 dias, Hab.C V Mar,paga con otro medio  
 elif dias>=20 and cuartos_vm=="si" :
+   descuento1=precio1*.80 #20% mas de 20 dias hcvm
    print(f"Nombre reserva: {nombre}")
    print(f"cantidad de dias: {dias}")
    print(f"Hab. vista al mar: {cuartos_vm}")
-   print(f"descuento mas 20 dias $ {descuento2} ")
+   print(f"total a pagar {descuento1}")
    print(2)
+
+#menos de 20 dias, hab. C V Mar, paga efectivo
+elif dias<20 and cuartos_vm=="si" and efectivo_debito=="si":
+   descuento1=precio1*.80 #20% mas de 20 dias hcvm
+   print(f"Nombre reserva: {nombre}")
+   print(f"cantidad de dias: {dias}")
+   print(f"Hab. vista al mar: {cuartos_vm}")
+   print(f"total a pagar {descuento1}")
+   print(3)
+
+#menos de 20 dias, hab. C V Mar, paga con otro medio
+elif dias<20:
+   print(f"Nombre reserva: {nombre}")
+   print(f"cantidad de dias: {dias}")
+   print(f"Hab. vista al mar: {cuartos_vm}")
+   print(f"total a pagar $ {totalsdesc}")
+   print(4)
 
 #mas 20 dias, hab. S V Mar, paga efectivo
 elif dias>=20 and efectivo_debito=="si":
+   descuento1=precio1*.80 #20% mas de 20 dias hcvm
+   total_desc1=descuento1*dias #precio por la cantidad de dias alojados hcvm
+   descuento2=total_desc1*.90 #descuento 10 % pago efectivo
+   descuento3=precio2*.80 #20% mas de 20 dias hsvm
+   total_desc2=descuento3*dias #precio por la cantidad de dias alojados hsvm
    print(f"Nombre reserva: {nombre}")
    print(f"cantidad de dias: {dias}")
    print(f"Hab. vista al mar: {cuartos_vm}")
    print(f"descuento mas 20 dias $ {descuento2}")
    print(f"TOTAL con descuento efectivo: {total_desc2} ")
-   print(3)
+   print(5)
+
 #menos de 20 dias, hab. S V Mar paga, paga efectivo
 elif dias<20 and efectivo_debito=="si":
+   descuento3=precio2*.80 #20% mas de 20 dias hsvm
+   total_desc2=descuento3*dias #precio por la cantidad de dias alojados hsvm
    print(f"Nombre reserva: {nombre}")
    print(f"cantidad de dias: {dias}")
    print(f"Hab. vista al mar: {cuartos_vm}")
    print(f"TOTAL con descuento efectivo: {total_desc2} ")
-   print(4)
+   print(6)
+
 #menos de 20 dias, hab. S V Mar, paga otros medios
 else:
+    
     print(f"Nombre reserva: {nombre}")
     print(f"cantidad de dias: {dias}")
     print(f"Hab. vista al mar: {cuartos_vm}")
-    print(f"descuento mas 20 dias $ {total_desc1}")
-    print(5)
+    print(f"total a pagar $ {totalsdesc1}")
+    print(7)
