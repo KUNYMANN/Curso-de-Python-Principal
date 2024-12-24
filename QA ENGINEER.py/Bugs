@@ -1,0 +1,131 @@
+Bueno, en el capítulo anterior acabamos de ver cómo ejecutar y cómo diseñar y ejecutar casos de prueba.
+
+Y lo hicimos con un lo mostramos con un ejemplo.
+
+Cuando estamos ejecutando los casos de prueba, es muy posible que encontremos bugs.
+
+Entonces, en este capítulo vamos a hablar un poquito de qué son los bugs y cómo se reportan, porque
+
+es importante reportar bien y también el flujo de vida o el ciclo de vida de un bug.
+
+Y como siempre, lo vamos a mirar prácticamente después con un ejemplo.
+
+Entonces, qué es un bug?
+
+En términos informáticos?
+
+Se refiere a un error o defecto en el software que hace que un programa no funcione correctamente?
+
+La mayoría de los bugs se originan por errores de quienes desarrollan el código de un software o sistema.
+
+Al diseñar estos o al no estar compatibles con otros programas o hardware.
+
+Bueno, y por qué es necesario escribir un buen reporte de bugs si el error se reporta eficientemente?
+
+Las probabilidades de que sea solucionado rápidamente serán mayores.
+
+Entonces la solución de una falla dependerá de la eficiencia con que se reporte la misma.
+
+Entonces nosotros como tester tenemos que asegurar que los bugs son reportados exitosamente a los desarrolladores,
+
+a los programadores.
+
+Para eso, entonces acá a mano derecha tenemos lo que es una estructura básica de un back, o sea,
+
+cómo se debe reportar que debe tener un reporte de un bug para que este sea claro para los desarrolladores.
+
+Esto es lo básico, cierto?
+
+Cómo se cómo se va a reportar?
+
+Se puede hacer también en un archivo de Excel?
+
+Se puede crear un documento de Word con un reporte de bugs o si en la empresa se tiene un manejador
+
+de bugs o un bug tracker como como lo es lleva a un gestor de proyectos, pero ahí se pueden reportar
+
+bugs o se pueden reportar en Azure DevOps también, o cualquier software que la empresa tenga para reportar
+
+bugs sería también muy bueno, ya que estos sistemas ya vienen con sus campos definidos, pero nosotros
+
+lo vamos a hacer de una manera práctica, rápida y sencilla en un lo vamos a hacer en un documento de
+
+Word.
+
+Entonces que debe tener ese reporte back?
+
+Bueno, debe tener un identificador que es un número de tener un título, cierto?
+
+El back debe tener el título de error.
+
+Qué es lo que está pasando la pantalla que lo que está pasando en la aplicación móvil también debe tener
+
+el que lo está reportando.
+
+O sea, el nombre del tester debe tener también la descripción del error.
+
+Entonces, una pequeña descripción más detallada donde se explica qué es lo que está pasando, en qué
+
+momento pasa, en que pantalla, en qué módulo, en qué área funcional, en que opción del celular.
+
+Bueno, si es una, si es una API o una API, en que parte la API está pasando?
+
+Bueno, ahí se escribe un poquito más de de qué es lo que está efectivamente pasando y por qué se está.
+
+Porque está fallando el sistema de tan y muy importante los pasos de reproducción, que son los pasos,
+
+como lo vimos en los casos de prueba, en describir cuáles son los pasos detallados para poder ejecutar
+
+ese error.
+
+Si, por ejemplo, ingresar a la pantalla, ingresar un usuario o una clave, darle enter, ingresar
+
+tal valor, describir paso a paso qué es lo que se debe hacer para que el desarrollador pueda reproducir
+
+ese error, lo pueda replicar?
+
+Sí, eso lo debe tener el reporte de Bugs.
+
+Bueno, el otro, el otro campo importante es el resultado esperado y el resultado obtenido.
+
+Estos campos generalmente vienen desde la historia de usuario, que es lo que estamos esperando nosotros
+
+en el escenario de que estamos haciendo y que es lo que realmente estamos obteniendo.
+
+Entonces ahí está como la expectativa y la realidad en esos dos campos.
+
+También es importante tener adjuntar a ese reporte una foto de una foto de la pantalla o una impresión
+
+de la pantalla del momento en el que sale el error.
+
+Si es si se tiene un video también, entonces todo eso le va a ayudar mucho al desarrollador a entender
+
+dónde está el error, en qué pantalla y poderlo solucionar más rápidamente.
+
+Y también es importante describir el sistema operativo en el que se está, en el que es en el que se
+
+está corriendo el sistema o el browser o explorador para que los desarrolladores tengan una idea más
+
+clara.
+
+Bueno, está pasando en Windows diez, están pasando Windows ocho o está pasando en Android ocho, Android
+
+nueve, Android diez, o sea el sistema operativo del celular, o si está o si el error pasa en Internet
+
+Explorer, por ejemplo en Firefox y no pasa en Microsoft o pasa en Opera y no pasa ni en Google Chrome.
+
+Entonces esto es importante, esa información es esencial para el desarrollador, tiene que tener,
+
+entre más detalles tenga el back, mejor para el desarrollo, poder entender y encontrar el error rápidamente
+
+y replicarlo.
+
+Y también la severidad de la prioridad.
+
+Entonces, el error que tan severo es y que nosotros estimamos que darle a este bug para que sea solucionado.
+
+Una manera más rápida o no, es la prioridad muy importante y las debilidades, el impacto que tiene
+
+sobre el sistema.
+
+Así es.
