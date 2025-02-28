@@ -21,7 +21,7 @@ print(f"cantidad de dias: {dias}")
 if dias>=20 and cuartos_vm=="si" and efectivo_debito=="si":
    
    costo_alojamiento1=precio1*dias # CVM  
-   descuento_efec=costo_alojamiento1*.80*.80 # 20% VM + 20% Efect
+   descuento_efec=costo_alojamiento1*.80*.90 # 20% VM + 10% Efect
    print(f"Hab. vista al mar: {cuartos_vm}")
    print(f"Importe a abonar con descuento del {masde} % por alojarse mas de 20 dias $ {costo_alojamiento1*.80:.2f}")
    print(f"Por abonar en efectivo su importe final es $ {descuento_efec:.2F} ")
@@ -51,7 +51,7 @@ if dias<20 and cuartos_vm=="si" and efectivo_debito=="no" :
 #mas de 20 dias, hab. S V Mar, paga efectivo
 if dias>=20 and cuartos_vm=="no" and efectivo_debito=="si":
    costo_alojamiento2=precio2*dias # SVM
-   descuento_efec=costo_alojamiento2*.80*.80 # 20% VM + 20% Efect
+   descuento_efec=costo_alojamiento2*.80*.90 # 20% VM + 20% Efect
    print(f"Hab. vista al mar: {cuartos_vm}")
    print(f"Importe a abonar con descuento del {masde} % por alojarse mas de 20 dias $ {costo_alojamiento2*.80:.2f}")
    print(f"Por abonar en efectivo su importe final es $ {descuento_efec:.2F} ")
@@ -68,7 +68,7 @@ if dias>=20 and cuartos_vm=="no" and efectivo_debito=="no":
 if dias<20 and cuartos_vm=="no" and efectivo_debito=="si":
    costo_alojamiento2=precio2*dias # SVM
    print(f"Hab. vista al mar: {cuartos_vm}")
-   print(f"Por abonar en efectivo su importe final es $ {costo_alojamiento2*.80:.2F} ")
+   print(f"Por abonar en efectivo su importe final es $ {costo_alojamiento2*.90:.2F} ")
    print(7) 
    
 #mas de 20 dias, hab. S V Mar, paga con otro medio
@@ -78,4 +78,4 @@ if dias<20 and cuartos_vm=="no" and efectivo_debito=="no":
    print(f"Total a pagar $ {costo_alojamiento2:.2f}")
    print(8) 
 
-print(     '"GRACIAS POR ALOJARSE EN NUESTRO HOTEL"')
+print(     '\n"GRACIAS POR ALOJARSE EN NUESTRO HOTEL"')
