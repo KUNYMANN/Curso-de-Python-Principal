@@ -24,7 +24,7 @@ if dias>=20 and cuartos_vm=="si" and efectivo_debito=="si":
    descuento_efec=costo_alojamiento1*.80*.90 # 20% VM + 10% Efect
    print(f"Hab. vista al mar: {cuartos_vm}")
    print(f"Importe a abonar con descuento del {masde} % por alojarse mas de 20 dias $ {costo_alojamiento1*.80:.2f}")
-   print(f"Por abonar en efectivo su importe final es $ {descuento_efec:.2F} ")
+   print(f"Por abonar en efectivo su importe final es $ {descuento_efec:.2f} ")
    print(1)
 
 #mas de 20 dias, Hab.C V Mar,paga con otro medio  
