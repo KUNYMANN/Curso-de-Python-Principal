@@ -20,11 +20,14 @@ if tipo_de_envio=="si":
     costo_envio1=peso_envio*10
     print("Su envio es NACIONAL")
     print(f"Envio para la localidad de {lugar_de_envio} \n el peso de su envio es de {peso_envio} kg \n el costo de su envio es de $ {costo_envio1:.2f}")
-else :
+
+elif tipo_de_envio=="no":
     costo_envio2=peso_envio*20
     print("Su envio es INTERNACIONAL")
-    print(f"Envio para la localidad de {lugar_de_envio} \n el peso de su envio es de {peso_envio} kg \n el costo de su envio es de $ {costo_envio2:.2f}")
+    print(f"Envio para la localidad de {lugar_de_envio} \n el peso de su envio es de {peso_envio} kg 13\n el costo de su envio es de $ {costo_envio2:.2f}")
 
+else:
+    print("'ERROR' verifique si el destino es nacional o no")
 
 
 
