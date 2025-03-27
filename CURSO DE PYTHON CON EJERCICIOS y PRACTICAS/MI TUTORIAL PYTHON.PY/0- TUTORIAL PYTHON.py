@@ -137,7 +137,7 @@ class Persona:
 
 Persona Santi,Kuny,Marita,Gorda
 
-Santi.Dni='44496778'
+Santi.Dni='13202425'
 
 print(Santi.Dni)'''
 

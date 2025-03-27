@@ -1,4 +1,4 @@
-''''
+
 
 precio1 = 200
 precio2 = 150
@@ -98,7 +98,7 @@ else:
 Reserva realizada a nombre de Sr./Sra.: {nombre_completo_pasajero}
 La cantidad de días de su reserva es: {dias_en_el_hotel}
 Solicito reserva para una habitación sin vista al mar: {cuartos_con_vista_al_mar}
-El total de su reserva por los {dias_en_el_hotel} días es $ {precio2 * dias_en_el_hotel}""") '''
+El total de su reserva por los {dias_en_el_hotel} días es $ {precio2 * dias_en_el_hotel}""") 
 
 
     
