@@ -1,9 +1,10 @@
-'''
-Los ciclos en Python son estructuras de control que repiten una serie de instrucciones hasta que se
+'''Los ciclos en Python son estructuras de control que repiten una serie de instrucciones hasta que se
 cumple una condición específica.
-En Python tenemos dos tipos de estructuras para ejecutar ciclos el "ciclo while" y el "ciclo for".
-Vamos a comenzar con el ciclo while.
-El ciclo while repite una serie de instrucciones mientras la condición a evaluar es verdadera y podemos
+En Python tenemos dos tipos de estructuras para ejecutar ciclos el "ciclo while" y el "ciclo for".'''
+'''ITERAR O RECORRER AMBOS TERMINOS SIGNIFICAN LO MISMO'''
+
+#CICLO DE WHILE
+'''El ciclo while repite una serie de instrucciones mientras la condición a evaluar es verdadera y podemos
 observar la sintaxis del ciclo while.
 Vamos a utilizar la palabra reservada while en minúsculas.
 Posteriormente dejamos este espacio y agregamos posteriormente una condición.
@@ -63,3 +64,13 @@ Ya podemos observar completa la salida con los valores del uno al tres y va a se
 Pero la variable de contador ya tiene el valor de cuatro.
 Por lo tanto, si revisamos la condición, podemos observar que en este caso cuatro no es menor o igual
 que tres, por lo tanto esta condición regresa falso y termina la ejecución de nuestro programa.'''
+
+#CICLO DE FOR
+'''El ciclo for itera o recorre una secuencia de valores, por ejemplo, los caracteres de una cadena,
+los valores de una lista, etcétera.
+Aún no hemos visto a detalle el concepto de lista, pero podemos observar en la imagen que una lista
+se parece mucho también a una cadena.
+Sin embargo, una cadena sabemos que puede almacenar caracteres en cada una de sus celdas.
+En cambio, una lista puede almacenar cualquier tipo de dato en sus celdas.
+Así que la diferencia es que una cadena almacena caracteres ordenados y una lista almacena cualquier
+tipo de dato de manera ordenada.'''
