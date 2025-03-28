@@ -74,3 +74,12 @@ Sin embargo, una cadena sabemos que puede almacenar caracteres en cada una de su
 En cambio, una lista puede almacenar cualquier tipo de dato en sus celdas.
 Así que la diferencia es que una cadena almacena caracteres ordenados y una lista almacena cualquier
 tipo de dato de manera ordenada.'''
+
+#sintaxis ciclo for
+'''  for variable in secuencia:  '''
+    #BLOQUE DE COIDIGO A EJECUTAR
+    
+#Ejemplo
+cadena="Hola Mundo"
+for letra in cadena:
+    print(letra, end=" ") #con la funcion end=" " recordemos que imprime todo en el mismo renglon separado por un espacio
