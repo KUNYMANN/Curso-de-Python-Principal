@@ -8,7 +8,7 @@ print('***Suma ACUMULATIVA***')
 
 #estas son las variables que creamos para utilizar
 maximo=10  # (1) definimos esta variable para saber hasta que numero va a iterar, podria ser cualquier número
-numero=2  # (2) definimos esta variable para saber cual sera el punto de partida de la iteración, puede variar dependiendo de lo que querramos
+numero=1  # (2) definimos esta variable para saber cual sera el punto de partida de la iteración, puede variar dependiendo de lo que querramos (1,2,3, etc)
 acumulador_suma=0 # esta va a guardar el valor de la suma acululada por cada iteración hasta que termine de evaluar la funcion while
 print()
 
