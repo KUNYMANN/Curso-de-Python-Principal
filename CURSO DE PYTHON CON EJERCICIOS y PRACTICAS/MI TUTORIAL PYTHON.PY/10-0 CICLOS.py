@@ -4,6 +4,22 @@ En Python tenemos dos tipos de estructuras para ejecutar ciclos el "ciclo while"
 '''ITERAR O RECORRER AMBOS TERMINOS SIGNIFICAN LO MISMO'''
 
 #CICLO DE WHILE
+#🧠 ¿Qué es un bucle while?
+'Un bucle while (en inglés significa "mientras") repite un bloque de código mientras una condición sea verdadera (True).'
+condicion="he creado esta variable solo para mostrar"
+while condicion=="he creado esta variable solo para mostrar":
+    condicion="hola"
+    print("esto es tambien es un ejemplo solo para mostrar")
+   
+print()
+
+# bloque de código que se ejecuta mientras la condición sea True
+""" El bucle de While funciona de esta manera: 
+Primero- revisa la condición
+Segundo- si es True, ejecuta el codigo dentro del bucle
+Tercero- al llegar al final del bloque, vuelve al primer paso 
+Cuarto- Si la condición es False, sale del bucle """
+
 '''El ciclo while repite una serie de instrucciones mientras la condición a evaluar es verdadera y podemos
 observar la sintaxis del ciclo while.
 Vamos a utilizar la palabra reservada while en minúsculas.
@@ -11,6 +27,7 @@ Posteriormente dejamos este espacio y agregamos posteriormente una condición.
 Posteriormente tenemos dos puntos y se agrega el bloque de código a ejecutar.
 Este bloque de código se va a repetir tantas veces como esta condición sea verdadera y se va a detener
 hasta que la condición sea falsa.'''
+
 
 #ejemplo ciclo while
 contador=1
@@ -23,7 +40,7 @@ while contador<=5:
 #                    O-------inicio
 #                    |
 #                contador = 1
-#volvemos a          |             mientras el contador va corroborando y de la evaluacion surge que el valor resultante es un numero menor o igual a tres sera True
+#  vuelve a          |          mientras el contador va corroborando y de la evaluacion surge que el valor resultante es un numero menor o igual a tres sera True
 #  evaluar           |             
 #           -- contador <=3 --------
 #           |        |           False
@@ -64,6 +81,7 @@ Ya podemos observar completa la salida con los valores del uno al tres y va a se
 Pero la variable de contador ya tiene el valor de cuatro.
 Por lo tanto, si revisamos la condición, podemos observar que en este caso cuatro no es menor o igual
 que tres, por lo tanto esta condición regresa falso y termina la ejecución de nuestro programa.'''
+print()
 
 #CICLO DE FOR
 '''El ciclo for itera o recorre una secuencia de valores, por ejemplo, los caracteres de una cadena,

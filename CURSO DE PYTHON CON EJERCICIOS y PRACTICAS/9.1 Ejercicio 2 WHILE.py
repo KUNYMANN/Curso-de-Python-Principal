@@ -1,4 +1,4 @@
- '''Ejercicio con contador:
+'''Ejercicio con contador:
 
 El programa debe pedir al usuario que escriba la palabra mágica ("por favor"). Tiene 3 intentos. Si la escribe correctamente dentro de esos intentos, debe mostrar un mensaje de éxito. Si se equivoca las 3 veces, debe mostrar un mensaje de que no lo logró.
 
