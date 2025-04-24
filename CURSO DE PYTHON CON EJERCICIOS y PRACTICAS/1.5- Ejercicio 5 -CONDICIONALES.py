@@ -35,7 +35,7 @@ elif opcion==4:
     print("good bye")
 else:
     ("Error al ingresar la opcion de MENÚ")
-
+'''
 
 def mostrar_menu():    #muestra las opciones del MENU
     print("\nMENÚ:")
@@ -80,6 +80,5 @@ def main():                      #es el bucle principal del programa. Muestra el
             print("Opcion No Valida.Por favor ingrese una opción valida")
 if __name__=="__main__":
         main()
-    
-           
+    '''         
 

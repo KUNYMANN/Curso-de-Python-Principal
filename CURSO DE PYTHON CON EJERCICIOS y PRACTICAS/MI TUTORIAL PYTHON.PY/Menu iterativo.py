@@ -5,12 +5,12 @@ Posteriormente vamos a solicitar una opción, por ejemplo en este caso Crear cue
 El objetivo del ejercicio es crear un menú que se repita tantas veces como sea necesario hasta que proporcionemos la opción de salir.'''
 
 print("***SISTEMA DE ADMINISTRACION DE CUENTAS***")
-salir=False
+salir=False  #variable booleana 
 while not salir:
     print('''MENU:
-  1. Crear
-  2. Eliminar cuenta
-  3. Salir''')
+    1. Crear
+    2. Eliminar cuenta
+    3. Salir''')
     opcion=int(input("Escoje una opcion:"))
     if opcion==1:
         print("Creando cuenta...\n")
@@ -21,6 +21,3 @@ while not salir:
         salir=True
     else:
         print('Opción invalida')
-   
-
-
