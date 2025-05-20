@@ -126,10 +126,166 @@ print ("FIN") #un extrita
 palabras=input("Ingresa una palalabra magica: ").lower()
 while palabras!="abracadabra":
     palabras=input("Ingresa una palalabra magica: ")
-print("Excelente la palabra magica es ABRACADABRA") """ 
-numero=0
-while numero>=0 and numero>=15:
-    numero+=1
-    print(numero)
+print("Excelente la palabra magica es ABRACADABRA") 
 
-   
+numero=0
+while numero<15:
+    numero+=1 #OJO donde colocamos el parametro, ya que hay diferencias ver el ejemplo de abajo
+    print(numero)
+    
+
+print()
+numero=10
+while numero>=1:
+    print(numero)
+    numero-=1 #OJO donde colocamos el parametro, ya que hay diferencias ver el ejemplo de arriba
+
+
+suma=0
+numero=1
+while numero<=20:
+    suma+=numero
+    numero+=1
+    print(suma)  # OJO la identacion del print porque imprime manera diferente el resultado ver ejemplo de abajo
+
+print()    
+
+suma = 0
+numero = 1
+while numero <= 20:
+    suma += numero
+    numero += 1
+print("La suma final es:", suma)# OJO la identacion del print porque imprime manera diferente el resultado ver ejemplo de arriba
+
+print() 
+numero=int(input("Ingrese un numero: "))
+while numero!=0:
+     numero=int(input("Ingrese otro numero: "))
+     numero==0
+print("Saliendo")
+
+print()
+
+contraseña="HEZ11"
+clave=input("Ingrese una clave: ").strip()
+while contraseña!=clave:
+    clave=input("Ingrese una nueva clave: ").strip()
+    contraseña==clave
+print(f"Ingreso exitoso la clave era: {contraseña}")
+
+
+print()
+
+numero=float(input("Ingrese un numero: "))
+numero1=float(input("Ingrese otro numero: "))
+suma=numero+numero1
+print(f"La suma es: {suma}")  
+respuesta=input("indique (si/no) si desea continuar: ").lower()
+
+while respuesta!="no":
+    numero=float(input("Ingrese un numero: "))
+    numero1=float(input("Ingrese otro numero: "))
+    suma=numero+numero1
+    print(f"La suma es: {suma}")  
+    respuesta=input("indique (si/no) si desea continuar: ").lower()
+
+print()
+
+continuar = "sí"  # Variable de control
+
+while continuar.lower() == "sí":  # Mientras el usuario escriba "sí", el bucle se repite
+    num1 = float(input("Ingresa el primer número: "))   # Pide primer número
+    num2 = float(input("Ingresa el segundo número: "))  # Pide segundo número
+    suma = num1 + num2
+    print(f"La suma es: {suma}")
+
+    continuar = input("¿Quieres sumar otros números? (sí/no): ")  # Pregunta si desea continuar
+
+ #Escribe un programa que sume los números del 1 hasta un número ingresado por el usuario. 
+suma=0
+numero=1
+ingreso=int(input("Ingrese un numero sin decimales como limite de la suma:"))
+
+while numero<=ingreso:
+    suma+=numero
+    numero+=1
+print(suma)
+
+print()
+
+#Escribe un programa que sume todos los números pares entre 1 y un número N dado por el usuario.
+suma=0
+numero=2
+ingreso=int(input("Ingrese un numero limite de la suma: "))
+
+while numero<=ingreso:
+    suma+=numero
+    numero+=2
+
+print(f"La suma de los numeros pares hasta el {ingreso} es: {suma}")
+
+print()
+
+# Pedimos al usuario el número límite
+n = int(input("Ingresa un número positivo: "))
+
+# Inicializamos la suma y el contador
+suma = 0
+numero = 2  # El primer número par
+
+# Bucle para sumar solo pares
+while numero <= n:
+    suma += numero
+    numero += 2  # Saltamos de par en par
+
+# Mostramos el resultado
+print("La suma de los números pares entre 1 y", n, "es:", suma) 
+
+#Escribe un programa que muestre los números desde N hasta 1 en orden descendente.
+n=int(input("Ingrese un numero desde donde ordenar desendentemente hasta 1: "))
+
+while n>=1:
+  print(n)
+  n-=1
+
+#pedir numeros hasta que el usuario escriba 0
+
+ingreso=int(input('ingrese un numero: '))
+while ingreso!=0:
+     ingreso=int(input('ingrese un numero: '))
+
+print('fin del programa')
+
+print()
+
+num = int(input("Escribe un número (0 para salir): "))
+while num != 0:
+    print("Ingresaste:", num)
+    num = int(input("Escribe otro número (0 para salir): "))
+print("¡Fin del programa!")
+
+contraseña="321.hez"
+ingreso=input('Ingrese su contrasena: ')
+while ingreso!=contraseña:
+    print("Clave erronea")
+    ingreso=input('Ingrese de nuevo su contrasena: ')
+
+print("Clave exitosa")
+
+num = int(input("Introduce un número: "))
+i = 1
+while i <= 10:
+    print(f"{num} x {i} = {num * i}")
+    i += 1
+
+ingreso=int(input("Ingrese un numero: "))
+numero=1
+while numero<=10:
+    print(f"{ingreso} x {numero} = {ingreso*numero}")
+    numero+=1
+   """
+num=int(input("Ingrese un numero entero positivo: "))
+while num>=0:
+      print(f"{num}")
+      num-=1
+            
