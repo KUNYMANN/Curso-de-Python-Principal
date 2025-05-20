@@ -55,7 +55,7 @@ palabra=input("Ingrese una palabra: ").strip().lower() #Pide al usuario que ingr
 while palabra!="salir":
     suma_palabras+=1
     palabra=input("Ingrese otra palabra o salir para abandonar el programa: ").strip().lower()
-print(f"La suma total de palabras ingresadas es: {suma_palabras}")"""
+print(f"La suma total de palabras ingresadas es: {suma_palabras}")
 
 
 
@@ -95,11 +95,41 @@ print()
 #el programa debe tener un número secreto (puede estar fijo, como 7).
 #El usuario debe adivinarlo. Si falla, el programa debe pedir otro intento hasta que acierte.
 
-'''
+
 numero_secreto=7
 numero=int(input("ingrese el numero secreto:" ))
 while numero!=numero_secreto:
       print("ERROR")
       numero=int(input("ingrese el numero secreto:" ))
 print("Felicitaciones ese es el numero secreto")
-'''
+
+
+#Mostrá los números del 10 al 1 en orden descendente usando un bucle while.
+numeros=10
+while numeros>=1:
+    print(numeros)
+    numeros-=1
+
+ #Pedir números hasta que el usuario ingrese 0
+'''El programa debe pedir números al usuario. El ciclo se repite hasta que se ingresa un 0. Al final, 
+muestra cuántos números se ingresaron (sin contar el 0).'''
+numero_al_usuario=int(input("Ingrese un numero: "))
+cantidad_de_numeros_ingresados=0
+while numero_al_usuario!=0: #mientas que
+    cantidad_de_numeros_ingresados+=1 #vaya sumando la cantidad de ingresos
+    numero_al_usuario=int(input("Ingrese otro numero o 0 para finalizar: ")) #efectue la cantidad de ingresos y defina si sigue o termina
+print(f"Ingresaste {cantidad_de_numeros_ingresados} numeros") #impresion final terminado el ciclo
+print ("FIN") #un extrita
+          
+
+
+palabras=input("Ingresa una palalabra magica: ").lower()
+while palabras!="abracadabra":
+    palabras=input("Ingresa una palalabra magica: ")
+print("Excelente la palabra magica es ABRACADABRA") """ 
+numero=0
+while numero>=0 and numero>=15:
+    numero+=1
+    print(numero)
+
+   
