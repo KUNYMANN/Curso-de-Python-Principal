@@ -283,9 +283,26 @@ numero=1
 while numero<=10:
     print(f"{ingreso} x {numero} = {ingreso*numero}")
     numero+=1
-   """
+  
 num=int(input("Ingrese un numero entero positivo: "))
 while num>=0:
       print(f"{num}")
       num-=1
-            
+"""
+
+
+import selenium
+import bs4
+import requests
+
+print("¡Todo funciona bien!")
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+options.add_argument("--start-maximized")  # ejemplo de opción
+
+driver = webdriver.Chrome(options=options)
+driver.get("https://www.google.com")
